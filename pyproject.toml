@@ -1,0 +1,12 @@
+[project]
+name = "geoslope-review"
+version = "0.7.5"
+requires-python = ">=3.11"
+description = "Aplicación offline de revisión de anomalías estadísticas"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+ignore = ["E402"]
