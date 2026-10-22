@@ -24,15 +24,20 @@ jobs:
       - name: Instalar dependencias del proyecto
         run: |
           python -m pip install --upgrade pip
-          pip install pytest flake8
+          pip install pytest flake8 pyyaml
+          # Instalar el paquete si existe pyproject.toml en la raiz o en la subcarpeta
           if [ -f pyproject.toml ]; then pip install -e .; fi
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -d geoslope_review ] && [ -f geoslope_review/pyproject.toml ]; then pip install -e ./geoslope_review; fi
 
       - name: Revision de sintaxis con Flake8
         run: |
-          # Detiene la ejecucion si hay errores de sintaxis en Python
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 
       - name: Ejecutar pruebas unitarias (Pytest)
         run: |
-          pytest
+          # Si los tests estan dentro de geoslope_review, corre pytest ahi
+          if [ -d "geoslope_review/tests" ]; then
+            cd geoslope_review && pytest
+          else
+            pytest
+          fi
