@@ -1,0 +1,25 @@
+month,station_id,calendar_days,recorded_days,measured_days,missing_days,rainy_days_observed,zero_rain_days_observed,observed_rainfall_total_mm,coverage_pct,incomplete_month,warning
+2013-01,029167,31,31,31,0,5,26,44.8,100,False,Total de días observados del mes completo
+2013-02,029167,28,28,28,0,5,23,65.6,100,False,Total de días observados del mes completo
+2013-03,029167,31,31,30,1,6,24,10,96.7741935484,True,Total parcial: días desconocidos; no imputados
+2013-04,029167,30,30,30,0,1,29,0.2,100,False,Total de días observados del mes completo
+2013-05,029167,31,31,31,0,3,28,1,100,False,Total de días observados del mes completo
+2013-06,029167,30,30,30,0,0,30,0,100,False,Total de días observados del mes completo
+2013-07,029167,31,31,31,0,1,30,0.2,100,False,Total de días observados del mes completo
+2013-08,029167,31,31,31,0,0,31,0,100,False,Total de días observados del mes completo
+2013-09,029167,30,30,30,0,0,30,0,100,False,Total de días observados del mes completo
+2013-10,029167,31,31,30,1,0,30,0,96.7741935484,True,Total parcial: días desconocidos; no imputados
+2013-11,029167,30,30,30,0,4,26,8.2,100,False,Total de días observados del mes completo
+2013-12,029167,31,31,30,1,8,22,46.4,96.7741935484,True,Total parcial: días desconocidos; no imputados
+2014-01,029167,31,31,31,0,16,15,169.8,100,False,Total de días observados del mes completo
+2014-02,029167,28,28,28,0,17,11,362.8,100,False,Total de días observados del mes completo
+2014-03,029167,31,31,31,0,3,28,26.8,100,False,Total de días observados del mes completo
+2014-04,029167,30,30,30,0,2,28,9.8,100,False,Total de días observados del mes completo
+2014-05,029167,31,31,31,0,1,30,0.2,100,False,Total de días observados del mes completo
+2014-06,029167,30,30,30,0,1,29,1,100,False,Total de días observados del mes completo
+2014-07,029167,31,31,31,0,0,31,0,100,False,Total de días observados del mes completo
+2014-08,029167,31,31,30,1,0,30,0,96.7741935484,True,Total parcial: días desconocidos; no imputados
+2014-09,029167,30,30,29,1,0,29,0,96.6666666667,True,Total parcial: días desconocidos; no imputados
+2014-10,029167,31,31,30,1,0,30,0,96.7741935484,True,Total parcial: días desconocidos; no imputados
+2014-11,029167,30,30,30,0,9,21,55.4,100,False,Total de días observados del mes completo
+2014-12,029167,31,31,30,1,11,19,86,96.7741935484,True,Total parcial: días desconocidos; no imputados

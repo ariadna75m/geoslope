@@ -1,0 +1,12 @@
+{
+  "min_dispersion_observations": 2,
+  "min_window_observations": 3,
+  "min_window_span_fraction": 0.25,
+  "min_slope_observations": 3,
+  "min_baseline_observations": 20,
+  "min_baseline_span_hours": 24.0,
+  "short_interval_hours": 0.016666666666666666,
+  "prolonged_gap_hours": 72.0,
+  "dispersion_epsilon": 0.0,
+  "robust_mad_scale": 1.4826
+}

@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/9cb3dba9b90b/monitoreo-taludes/scripts/verify_phase6.py", line 95, in <module>
+    verify()
+  File "/workspace/scratch/9cb3dba9b90b/monitoreo-taludes/scripts/verify_phase6.py", line 43, in verify
+    pd.testing.assert_frame_equal(frame,restored[name],check_exact=True)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 1279, in assert_frame_equal
+    assert_series_equal(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 975, in assert_series_equal
+    assert_attr_equal("dtype", left, right, obj=f"Attributes of {obj}")
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 421, in assert_attr_equal
+    raise_assert_detail(obj, msg, left_attr, right_attr)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 614, in raise_assert_detail
+    raise AssertionError(msg)
+AssertionError: Attributes of DataFrame.iloc[:, 39] (column name="model_available_from_timestamp") are different
+
+Attribute "dtype" are different
+[left]:  datetime64[s]
+[right]: datetime64[ns]

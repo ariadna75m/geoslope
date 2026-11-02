@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/9cb3dba9b90b/monitoreo-taludes/scripts/verify_phase6.py", line 90, in <module>
+    verify()
+  File "/workspace/scratch/9cb3dba9b90b/monitoreo-taludes/scripts/verify_phase6.py", line 43, in verify
+    pd.testing.assert_frame_equal(frame,restored[name],check_exact=True)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 1226, in assert_frame_equal
+    assert_index_equal(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 322, in assert_index_equal
+    raise_assert_detail(obj, msg, left, right)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 614, in raise_assert_detail
+    raise AssertionError(msg)
+AssertionError: DataFrame.index are different
+
+DataFrame.index values are different (100.0 %)
+[left]:  Index([  20,  180,  610,  652,  693,  772,  985, 1523, 1548, 1715, 1855, 2011,
+       2279, 2317, 2387, 2400, 2676, 2680, 2684, 2872, 3058, 3237, 3258, 3761,
+       3879, 5025, 5289, 5963, 6237, 6380, 6929, 6984, 7076, 7175],
+      dtype='int64')
+[right]: RangeIndex(start=0, stop=34, step=1)

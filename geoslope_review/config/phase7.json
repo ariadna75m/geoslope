@@ -1,0 +1,10 @@
+{
+  "architecture": "offline modular monolith",
+  "phase6_frozen": true,
+  "policy": "hybrid",
+  "window_hours": 72,
+  "min_marks": 2,
+  "spatial_units": "unvalidated original values",
+  "crs": "unknown",
+  "topography": null
+}

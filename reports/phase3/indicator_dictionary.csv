@@ -1,0 +1,22 @@
+indicator,formula_or_definition,unit,limitations
+rows/observations,Conteo de registros conservados,filas,Por fuente o prisma; no número de fallas independientes
+unique_timestamps,Número de instantes distintos dentro del prisma,instantes,No se toleran duplicados
+coverage_days/observed_days,(último timestamp − primero)/86400,días,"Duración, no porcentaje de continuidad"
+median_interval_hours,Mediana de diferencias temporales consecutivas dentro de ID /3600,horas,No se calculan velocidades
+max_gap_hours,Máxima diferencia temporal consecutiva dentro de ID /3600,horas,Sin interpolación
+gaps_gt24h,Número de intervalos >24 h dentro del prisma,intervalos,Criterio informativo de cobertura
+coverage_insufficient,Instantes únicos <20,booleano,"Mínimo operativo, no geotécnico"
+std_sample,"Desviación estándar muestral, ddof=1",unidad del campo,NaN para una sola medición; se usa para variabilidad descriptiva
+q1/q3,"Percentiles 25/75, interpolación lineal de cuantiles",unidad del campo,No interpolación de observaciones temporales
+iqr,q3 − q1,unidad del campo,No excluye atípicos
+range,máximo − mínimo,unidad del campo,"Todas las mediciones, incluidos extremos"
+final_minus_initial,último valor − primero según timestamp,unidad del campo,No velocidad ni trayectoria recorrida
+increases/decreases/equals,Número de pares consecutivos con diferencia >0/<0/=0,pares,Compara observaciones adyacentes; no longitud máxima de racha
+unknown_comparisons,Pares consecutivos cuyo campo es desconocido,pares,No se salta un faltante para unir mediciones alejadas
+reported_3d_movement_mm,Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente,mm,Variable reportada en West Wall; no acumulación validada
+easting_diff/northing_diff/height_diff,Valores relativos reportados; unidad pendiente de validación,requiere validación,Sin conversión ni norma física
+observed_rainfall_total_mm,"Suma de lluvia de días medidos, sum(min_count=1)",mm,Mes incompleto: suma parcial explícita; todos desconocidos -> desconocido
+measured_days_pct/coverage_pct,100 × días medidos / días calendario,%,Solo continuidad meteorológica de calendario diario explícito
+rainy_days_observed,Días medidos con lluvia >0,días,Desconocidos no se incluyen
+zero_rain_days_observed,Días medidos con lluvia exactamente 0,días,No incluye desconocidos
+selection_groups,3 mayores conteos; 3 mayores rangos por campo; 2 menores std con ≥20; todos <20,categorías,Empates ID ascendente; sin fecha de falla

@@ -1,0 +1,316 @@
+feature_name,group,unit,temporal_window,dtype,row_count,available_count,nan_count,nan_pct,available_pct,fully_empty,constant_among_known
+prism_id,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+date_original,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+time_original,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+easting,source,requiere validación,observación actual,float64,7178,7178,0,0,100,False,False
+northing,source,requiere validación,observación actual,float64,7178,7178,0,0,100,False,False
+rl,source,requiere validación,observación actual,float64,7178,7178,0,0,100,False,False
+reported_3d_movement_mm,source,mm,observación actual,float64,7178,7178,0,0,100,False,False
+original__prism_id,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+original__date_original,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+original__time_original,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+original__easting,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+original__northing,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+original__rl,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+original__reported_3d_movement_mm,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+row_id,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+source_line,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+source_name,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,True
+source_sha256,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,True
+timestamp,source,no aplica / campo original,observación actual,datetime64[ns],7178,7178,0,0,100,False,False
+quality_flags,source,no aplica / campo original,observación actual,object,7178,7178,0,0,100,False,False
+source_record_id,source,no aplica,actual/anterior,object,7178,7178,0,0,100,False,False
+source_file_reference,source,no aplica,actual/anterior,object,7178,7178,0,0,100,False,True
+previous_timestamp,interval,fecha,t anterior,datetime64[ns],7178,7129,49,0.68264140429088882,99.317358595709109,False,False
+previous_timestamp_available,availability,booleano,t anterior,bool,7178,7178,0,0,100,False,False
+movement_observation_available,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,True
+elapsed_hours,interval,horas,actual/anterior,float64,7178,7129,49,0.68264140429088882,99.317358595709109,False,False
+elapsed_hours_available,availability,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+elapsed_days,interval,días,actual/anterior,float64,7178,7129,49,0.68264140429088882,99.317358595709109,False,False
+elapsed_days_available,availability,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+is_first_observation,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+is_nonpositive_interval,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,True
+is_gap_over_24h,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+is_gap_over_72h,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+is_gap_over_7d,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+is_unusually_short_interval,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,True
+is_prolonged_gap,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+movement_delta_mm,change,mm,actual/anterior,float64,7178,7129,49,0.68264140429088882,99.317358595709109,False,False
+movement_delta_mm_available,availability,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+absolute_movement_delta_mm,change,mm,actual/anterior,float64,7178,7129,49,0.68264140429088882,99.317358595709109,False,False
+absolute_movement_delta_mm_available,availability,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+movement_increased,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+movement_decreased,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+movement_unchanged,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+movement_rate_mm_per_day,rate,mm/día,actual/anterior,float64,7178,7129,49,0.68264140429088882,99.317358595709109,False,False
+movement_rate_mm_per_day_available,availability,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+absolute_movement_rate_mm_per_day,rate,mm/día,actual/anterior,float64,7178,7129,49,0.68264140429088882,99.317358595709109,False,False
+absolute_movement_rate_mm_per_day_available,availability,booleano,actual/anterior,bool,7178,7178,0,0,100,False,False
+total_prior_observations,historical,observaciones,t anterior,int64,7178,7178,0,0,100,False,False
+prior_valid_observations,historical,observaciones,"[inicio, t)",int64,7178,7178,0,0,100,False,False
+prior_valid_observations_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,True
+prior_history_duration_hours,historical,horas,"[inicio, t)",float64,7178,7129,49,0.68264140429088882,99.317358595709109,False,False
+prior_history_duration_hours_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+has_sufficient_history,historical,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+historical_mean_mm,historical,mm,"[inicio, t)",float64,7178,6217,961,13.388130398439676,86.611869601560329,False,False
+historical_mean_mm_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+historical_median_mm,historical,mm,"[inicio, t)",float64,7178,6217,961,13.388130398439676,86.611869601560329,False,False
+historical_median_mm_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+historical_std_mm,historical,mm,"[inicio, t)",float64,7178,6217,961,13.388130398439676,86.611869601560329,False,False
+historical_std_mm_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+historical_mad_mm,historical,mm,"[inicio, t)",float64,7178,6217,961,13.388130398439676,86.611869601560329,False,False
+historical_mad_mm_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+difference_from_prior_mean_mm,historical,mm,"[inicio, t)",float64,7178,6217,961,13.388130398439676,86.611869601560329,False,False
+difference_from_prior_mean_mm_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+difference_from_prior_median_mm,historical,mm,"[inicio, t)",float64,7178,6217,961,13.388130398439676,86.611869601560329,False,False
+difference_from_prior_median_mm_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+historical_z_score,historical,adimensional,"[inicio, t)",float64,7178,6217,961,13.388130398439676,86.611869601560329,False,False
+historical_z_score_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+historical_robust_z_score,historical,adimensional,"[inicio, t)",float64,7178,6217,961,13.388130398439676,86.611869601560329,False,False
+historical_robust_z_score_available,availability,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+historical_std_zero,historical,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,True
+historical_mad_zero,historical,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,True
+historical_dispersion_insufficient,historical,booleano,"[inicio, t)",bool,7178,7178,0,0,100,False,False
+window_24h_observation_count,window_24h,observaciones,"(t−24h,t]",int64,7178,7178,0,0,100,False,False
+window_24h_observation_count_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+window_24h_valid_movement_count,window_24h,observaciones,"(t−24h,t]",int64,7178,7178,0,0,100,False,False
+window_24h_valid_movement_count_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+window_24h_duration_hours,window_24h,horas,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+window_24h_duration_hours_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+window_24h_valid_duration_hours,window_24h,horas,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+window_24h_valid_duration_hours_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+window_24h_max_gap_hours,window_24h,horas,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+window_24h_max_gap_hours_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+window_24h_has_long_gap,window_24h,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+has_sufficient_24h_history,window_24h,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+movement_24h_mean_mm,movement_24h,mm,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+movement_24h_mean_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+movement_24h_median_mm,movement_24h,mm,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+movement_24h_median_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+movement_24h_min_mm,movement_24h,mm,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+movement_24h_min_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+movement_24h_max_mm,movement_24h,mm,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+movement_24h_max_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+movement_24h_range_mm,movement_24h,mm,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+movement_24h_range_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+movement_24h_std_mm,movement_24h,mm,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+movement_24h_std_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+movement_24h_mad_mm,movement_24h,mm,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+movement_24h_mad_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+movement_24h_first_mm,movement_24h,mm,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+movement_24h_first_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+movement_24h_last_mm,movement_24h,mm,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+movement_24h_last_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+movement_24h_net_change_mm,movement_24h,mm,"(t−24h,t]",float64,7178,7178,0,0,100,False,False
+movement_24h_net_change_mm_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+delta_24h_mean,delta_24h,mm,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+delta_24h_mean_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+delta_24h_median,delta_24h,mm,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+delta_24h_median_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+delta_24h_std,delta_24h,mm,"(t−24h,t]",float64,7178,4517,2661,37.071607690164392,62.928392309835608,False,False
+delta_24h_std_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+delta_24h_min,delta_24h,mm,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+delta_24h_min_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+delta_24h_max,delta_24h,mm,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+delta_24h_max_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+delta_24h_sum,delta_24h,mm,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+delta_24h_sum_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+delta_24h_absolute_sum,delta_24h,mm,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+delta_24h_absolute_sum_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+increase_proportion_24h,delta_24h,proporción 0–1,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+increase_proportion_24h_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+delta_24h_decrease_proportion,delta_24h,proporción 0–1,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+delta_24h_decrease_proportion_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+delta_24h_valid_count,delta_24h,observaciones,"(t−24h,t]",int64,7178,7178,0,0,100,False,False
+delta_24h_valid_count_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+rate_24h_mean,rate_24h,mm/día,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+rate_24h_mean_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+rate_24h_median,rate_24h,mm/día,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+rate_24h_median_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+rate_24h_std,rate_24h,mm/día,"(t−24h,t]",float64,7178,4517,2661,37.071607690164392,62.928392309835608,False,False
+rate_24h_std_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+rate_24h_min,rate_24h,mm/día,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+rate_24h_min_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+rate_24h_max,rate_24h,mm/día,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+rate_24h_max_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+rate_24h_sum,rate_24h,mm/día,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+rate_24h_sum_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+rate_24h_absolute_sum,rate_24h,mm/día,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+rate_24h_absolute_sum_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+rate_24h_increase_proportion,rate_24h,proporción 0–1,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+rate_24h_increase_proportion_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+rate_24h_decrease_proportion,rate_24h,proporción 0–1,"(t−24h,t]",float64,7178,6284,894,12.454722764001115,87.545277235998881,False,False
+rate_24h_decrease_proportion_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,False
+rate_24h_valid_count,rate_24h,observaciones,"(t−24h,t]",int64,7178,7178,0,0,100,False,False
+rate_24h_valid_count_available,availability,booleano,"(t−24h,t]",bool,7178,7178,0,0,100,False,True
+window_72h_observation_count,window_72h,observaciones,"(t−72h,t]",int64,7178,7178,0,0,100,False,False
+window_72h_observation_count_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+window_72h_valid_movement_count,window_72h,observaciones,"(t−72h,t]",int64,7178,7178,0,0,100,False,False
+window_72h_valid_movement_count_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+window_72h_duration_hours,window_72h,horas,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+window_72h_duration_hours_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+window_72h_valid_duration_hours,window_72h,horas,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+window_72h_valid_duration_hours_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+window_72h_max_gap_hours,window_72h,horas,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+window_72h_max_gap_hours_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+window_72h_has_long_gap,window_72h,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+has_sufficient_72h_history,window_72h,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+movement_72h_mean_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+movement_72h_mean_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+movement_72h_median_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+movement_72h_median_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+movement_72h_min_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+movement_72h_min_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+movement_72h_max_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+movement_72h_max_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+movement_72h_range_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+movement_72h_range_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+movement_72h_std_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+movement_72h_std_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+movement_72h_mad_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+movement_72h_mad_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+movement_72h_first_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+movement_72h_first_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+movement_72h_last_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+movement_72h_last_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+movement_72h_net_change_mm,movement_72h,mm,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+movement_72h_net_change_mm_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+delta_72h_mean,delta_72h,mm,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+delta_72h_mean_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+delta_72h_median,delta_72h,mm,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+delta_72h_median_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+delta_72h_std,delta_72h,mm,"(t−72h,t]",float64,7178,6675,503,7.00752298690443,92.992477013095566,False,False
+delta_72h_std_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+delta_72h_min,delta_72h,mm,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+delta_72h_min_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+delta_72h_max,delta_72h,mm,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+delta_72h_max_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+delta_72h_sum,delta_72h,mm,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+delta_72h_sum_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+delta_72h_absolute_sum,delta_72h,mm,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+delta_72h_absolute_sum_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+increase_proportion_72h,delta_72h,proporción 0–1,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+increase_proportion_72h_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+delta_72h_decrease_proportion,delta_72h,proporción 0–1,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+delta_72h_decrease_proportion_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+delta_72h_valid_count,delta_72h,observaciones,"(t−72h,t]",int64,7178,7178,0,0,100,False,False
+delta_72h_valid_count_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+rate_72h_mean,rate_72h,mm/día,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+rate_72h_mean_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+rate_72h_median,rate_72h,mm/día,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+rate_72h_median_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+rate_72h_std,rate_72h,mm/día,"(t−72h,t]",float64,7178,6675,503,7.00752298690443,92.992477013095566,False,False
+rate_72h_std_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+rate_72h_min,rate_72h,mm/día,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+rate_72h_min_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+rate_72h_max,rate_72h,mm/día,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+rate_72h_max_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+rate_72h_sum,rate_72h,mm/día,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+rate_72h_sum_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+rate_72h_absolute_sum,rate_72h,mm/día,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+rate_72h_absolute_sum_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+rate_72h_increase_proportion,rate_72h,proporción 0–1,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+rate_72h_increase_proportion_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+rate_72h_decrease_proportion,rate_72h,proporción 0–1,"(t−72h,t]",float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+rate_72h_decrease_proportion_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+rate_72h_valid_count,rate_72h,observaciones,"(t−72h,t]",int64,7178,7178,0,0,100,False,False
+rate_72h_valid_count_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+local_trend_72h_points,trend_72h,observaciones,"(t−72h,t]",int64,7178,7178,0,0,100,False,False
+local_trend_72h_points_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+local_trend_72h_duration_hours,trend_72h,horas,"(t−72h,t]",float64,7178,7178,0,0,100,False,False
+local_trend_72h_duration_hours_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,True
+local_trend_72h_slope_mm_per_day,trend_72h,mm/día,"(t−72h,t]",float64,7178,6638,540,7.5229869044302031,92.477013095569802,False,False
+local_trend_72h_slope_mm_per_day_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+local_trend_72h_r_squared,trend_72h,adimensional,"(t−72h,t]",float64,7178,6638,540,7.5229869044302031,92.477013095569802,False,False
+local_trend_72h_r_squared_available,availability,booleano,"(t−72h,t]",bool,7178,7178,0,0,100,False,False
+window_7d_observation_count,window_7d,observaciones,"(t−168h,t]",int64,7178,7178,0,0,100,False,False
+window_7d_observation_count_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+window_7d_valid_movement_count,window_7d,observaciones,"(t−168h,t]",int64,7178,7178,0,0,100,False,False
+window_7d_valid_movement_count_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+window_7d_duration_hours,window_7d,horas,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+window_7d_duration_hours_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+window_7d_valid_duration_hours,window_7d,horas,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+window_7d_valid_duration_hours_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+window_7d_max_gap_hours,window_7d,horas,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+window_7d_max_gap_hours_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+window_7d_has_long_gap,window_7d,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+has_sufficient_7d_history,window_7d,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+movement_7d_mean_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+movement_7d_mean_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+movement_7d_median_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+movement_7d_median_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+movement_7d_min_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+movement_7d_min_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+movement_7d_max_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+movement_7d_max_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+movement_7d_range_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+movement_7d_range_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+movement_7d_std_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+movement_7d_std_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+movement_7d_mad_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+movement_7d_mad_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+movement_7d_first_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+movement_7d_first_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+movement_7d_last_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+movement_7d_last_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+movement_7d_net_change_mm,movement_7d,mm,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+movement_7d_net_change_mm_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+delta_7d_mean,delta_7d,mm,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+delta_7d_mean_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+delta_7d_median,delta_7d,mm,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+delta_7d_median_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+delta_7d_std,delta_7d,mm,"(t−168h,t]",float64,7178,7040,138,1.9225410977988298,98.077458902201172,False,False
+delta_7d_std_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+delta_7d_min,delta_7d,mm,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+delta_7d_min_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+delta_7d_max,delta_7d,mm,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+delta_7d_max_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+delta_7d_sum,delta_7d,mm,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+delta_7d_sum_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+delta_7d_absolute_sum,delta_7d,mm,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+delta_7d_absolute_sum_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+increase_proportion_7d,delta_7d,proporción 0–1,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+increase_proportion_7d_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+delta_7d_decrease_proportion,delta_7d,proporción 0–1,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+delta_7d_decrease_proportion_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+delta_7d_valid_count,delta_7d,observaciones,"(t−168h,t]",int64,7178,7178,0,0,100,False,False
+delta_7d_valid_count_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+rate_7d_mean,rate_7d,mm/día,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+rate_7d_mean_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+rate_7d_median,rate_7d,mm/día,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+rate_7d_median_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+rate_7d_std,rate_7d,mm/día,"(t−168h,t]",float64,7178,7040,138,1.9225410977988298,98.077458902201172,False,False
+rate_7d_std_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+rate_7d_min,rate_7d,mm/día,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+rate_7d_min_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+rate_7d_max,rate_7d,mm/día,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+rate_7d_max_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+rate_7d_sum,rate_7d,mm/día,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+rate_7d_sum_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+rate_7d_absolute_sum,rate_7d,mm/día,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+rate_7d_absolute_sum_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+rate_7d_increase_proportion,rate_7d,proporción 0–1,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+rate_7d_increase_proportion_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+rate_7d_decrease_proportion,rate_7d,proporción 0–1,"(t−168h,t]",float64,7178,7114,64,0.89161326274728336,99.108386737252715,False,False
+rate_7d_decrease_proportion_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+rate_7d_valid_count,rate_7d,observaciones,"(t−168h,t]",int64,7178,7178,0,0,100,False,False
+rate_7d_valid_count_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+local_trend_7d_points,trend_7d,observaciones,"(t−168h,t]",int64,7178,7178,0,0,100,False,False
+local_trend_7d_points_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+local_trend_7d_duration_hours,trend_7d,horas,"(t−168h,t]",float64,7178,7178,0,0,100,False,False
+local_trend_7d_duration_hours_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,True
+local_trend_7d_slope_mm_per_day,trend_7d,mm/día,"(t−168h,t]",float64,7178,6661,517,7.2025633881303985,92.7974366118696,False,False
+local_trend_7d_slope_mm_per_day_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+local_trend_7d_r_squared,trend_7d,adimensional,"(t−168h,t]",float64,7178,6661,517,7.2025633881303985,92.7974366118696,False,False
+local_trend_7d_r_squared_available,availability,booleano,"(t−168h,t]",bool,7178,7178,0,0,100,False,False
+increase_streak_count,streak,cambios consecutivos,racha hasta t,float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+increase_streak_count_available,availability,booleano,racha hasta t,bool,7178,7178,0,0,100,False,False
+decrease_streak_count,streak,cambios consecutivos,racha hasta t,float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+decrease_streak_count_available,availability,booleano,racha hasta t,bool,7178,7178,0,0,100,False,False
+increase_streak_duration_hours,streak,horas,racha hasta t,float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+increase_streak_duration_hours_available,availability,booleano,racha hasta t,bool,7178,7178,0,0,100,False,False
+decrease_streak_duration_hours,streak,horas,racha hasta t,float64,7178,7020,158,2.2011702424073558,97.798829757592642,False,False
+decrease_streak_duration_hours_available,availability,booleano,racha hasta t,bool,7178,7178,0,0,100,False,False
+streak_evaluable,streak,booleano,racha hasta t,bool,7178,7178,0,0,100,False,False
+has_numeric_overflow,quality,booleano,actual/anterior,bool,7178,7178,0,0,100,False,True
+feature_quality_status,quality,categoría de calidad,prefijo hasta t,object,7178,7178,0,0,100,False,False

@@ -1,0 +1,21 @@
+{
+  "weights": {
+    "historical_z": 0.7,
+    "trend": 0.2,
+    "persistence": 0.1
+  },
+  "trend_reference": {
+    "center": 0.09224501082449146,
+    "scale": 1.8040653242146176,
+    "scale_policy": "MAD escalada"
+  },
+  "persistence_reference": {
+    "center": 1.7344444444444445,
+    "scale": 2.5714873333333332,
+    "scale_policy": "MAD escalada"
+  },
+  "formula": "w_z*abs(previous_robust_z) + w_trend*abs(train_robust_trend_deviation) + w_persistence*log1p(positive_train_robust_streak_duration_deviation)",
+  "quality_policy": "eligibility gating; no score for ineligible rows",
+  "fit_scope": "training only",
+  "operational_alert": false
+}

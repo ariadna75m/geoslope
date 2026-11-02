@@ -1,0 +1,19 @@
+{
+  "baseline": "GeoSlope_Review_Fase7.zip version 2 (0.7.2)",
+  "unchanged_files": 637,
+  "changed_existing_files": [
+    "monitoreo-taludes/geoslope_review/README.md",
+    "monitoreo-taludes/geoslope_review/app.py",
+    "monitoreo-taludes/geoslope_review/assets/spatial.css",
+    "monitoreo-taludes/geoslope_review/config/app_config.yaml",
+    "monitoreo-taludes/geoslope_review/docs/manual_usuario.md",
+    "monitoreo-taludes/geoslope_review/pyproject.toml",
+    "monitoreo-taludes/geoslope_review/reports/phase7/phase7_findings.md",
+    "monitoreo-taludes/geoslope_review/reports/phase7/validation_report.md",
+    "monitoreo-taludes/geoslope_review/scripts/validate_browser.py",
+    "monitoreo-taludes/geoslope_review/tests/test_phase7_ui.py",
+    "monitoreo-taludes/geoslope_review/tests/test_spatial_redesign.py"
+  ],
+  "unchanged_phase1_to6_files": 507,
+  "core_layers_unchanged": true
+}

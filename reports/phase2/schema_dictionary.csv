@@ -1,0 +1,35 @@
+﻿source,original_column,normalized_column,unit_or_status,description,original_value_column
+west_wall,Prism,prism_id,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__prism_id
+west_wall,Date,date_original,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__date_original
+west_wall,Time,time_original,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__time_original
+west_wall,Easting,easting,requiere validación,Sin conversión física; requiere validación,original__easting
+west_wall,Northing,northing,requiere validación,Sin conversión física; requiere validación,original__northing
+west_wall,RL,rl,requiere validación,Sin conversión física; requiere validación,original__rl
+west_wall,Cumulative 3D Movement (mm) Since 20th Nov,reported_3d_movement_mm,mm (explícito en encabezado),Movimiento 3D reportado en milímetros respecto a la referencia indicada en el encabezado. No se asume que sea una trayectoria acumulativa estrictamente creciente,original__reported_3d_movement_mm
+south_west,Prism,prism_id,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__prism_id
+south_west,Date,date_original,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__date_original
+south_west,Time,time_original,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__time_original
+south_west,Easting,easting,requiere validación,Sin conversión física; requiere validación,original__easting
+south_west,Northing,northing,requiere validación,Sin conversión física; requiere validación,original__northing
+south_west,Height,height,requiere validación,Sin conversión física; requiere validación,original__height
+south_west,Adjusted Distance Diff,adjusted_distance_diff,requiere validación,Sin conversión física; requiere validación,original__adjusted_distance_diff
+south_west,Unadjusted Slope Distance Diff,unadjusted_slope_distance_diff,requiere validación,Sin conversión física; requiere validación,original__unadjusted_slope_distance_diff
+south_west,Easting Diff,easting_diff,requiere validación,Sin conversión física; requiere validación,original__easting_diff
+south_west,Northing Diff,northing_diff,requiere validación,Sin conversión física; requiere validación,original__northing_diff
+south_west,Height Diff,height_diff,requiere validación,Sin conversión física; requiere validación,original__height_diff
+rainfall_2013,Product code,product_code,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__product_code
+rainfall_2013,Bureau of Meteorology station number,station_id,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__station_id
+rainfall_2013,Year,year,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__year
+rainfall_2013,Month,month,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__month
+rainfall_2013,Day,day,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__day
+rainfall_2013,Rainfall amount (millimetres),rainfall_mm,mm (explícito en encabezado),Sin conversión física; mm (explícito en encabezado),original__rainfall_mm
+rainfall_2013,Period over which rainfall was measured (days),rainfall_period_days,días (explícito en encabezado),Sin conversión física; días (explícito en encabezado),original__rainfall_period_days
+rainfall_2013,Quality,quality_code,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__quality_code
+rainfall_2014,Product code,product_code,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__product_code
+rainfall_2014,Bureau of Meteorology station number,station_id,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__station_id
+rainfall_2014,Year,year,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__year
+rainfall_2014,Month,month,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__month
+rainfall_2014,Day,day,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__day
+rainfall_2014,Rainfall amount (millimetres),rainfall_mm,mm (explícito en encabezado),Sin conversión física; mm (explícito en encabezado),original__rainfall_mm
+rainfall_2014,Period over which rainfall was measured (days),rainfall_period_days,días (explícito en encabezado),Sin conversión física; días (explícito en encabezado),original__rainfall_period_days
+rainfall_2014,Quality,quality_code,no aplica / componente de fecha o identificador,Sin conversión física; no aplica / componente de fecha o identificador,original__quality_code

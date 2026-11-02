@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "observations": [
+    "Bootstrap, TOTP y dashboard correctos",
+    "Bandeja de revisión visible y sin errores",
+    "Vista espacial visible y sin errores",
+    "Centrado, vista completa y plano 2D comprobados",
+    "Prismas visible y sin errores",
+    "Calidad de datos visible y sin errores",
+    "Usuarios visible y sin errores",
+    "Auditoría visible y sin errores",
+    "Reportes visible y sin errores",
+    "Revisión persistida",
+    "PDF descargado",
+    "Backup cifrado creado",
+    "Logout elimina acceso",
+    "Cero solicitudes externas"
+  ],
+  "external_requests": [],
+  "synthetic_runtime_removed": true,
+  "screenshots_redact_totp": true
+}

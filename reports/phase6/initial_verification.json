@@ -1,0 +1,56 @@
+{
+  "checkpoint_initial": "5da058eff47a10c529f97d2ac67e90e2292cba3d",
+  "previous_test_total": 158,
+  "previous_tests_passed": 158,
+  "rows": 7178,
+  "prisms": 49,
+  "eligible_rows": 5898,
+  "required_columns_verified": [
+    "source_record_id",
+    "prism_id",
+    "timestamp",
+    "period",
+    "feature_quality_status",
+    "model_eligible",
+    "model_ineligibility_reason",
+    "imputed_feature_count",
+    "imputed_feature_names",
+    "is_prolonged_gap",
+    "has_sufficient_history",
+    "has_sufficient_72h_history",
+    "has_sufficient_7d_history",
+    "baseline_score",
+    "isolation_forest_score",
+    "baseline_training_percentile",
+    "baseline_marked_q95",
+    "baseline_marked_q98",
+    "baseline_marked_q99",
+    "isolation_forest_training_percentile",
+    "isolation_forest_marked_q95",
+    "isolation_forest_marked_q98",
+    "isolation_forest_marked_q99",
+    "isolation_forest_marked_internal",
+    "baseline_robust_z_reference_marked",
+    "model_version",
+    "model_config_reference",
+    "model_config_sha256",
+    "descriptive_explanation",
+    "feature_deviation_details"
+  ],
+  "phase5_exact_thresholds": {
+    "baseline": {
+      "q95": 2.296719011369966,
+      "q98": 3.3276954249368584,
+      "q99": 4.439772224885318
+    },
+    "isolation_forest": {
+      "q95": 0.504322769039763,
+      "q98": 0.5456692204066086,
+      "q99": 0.5872931971929567,
+      "internal": 0.5456692204066084
+    }
+  },
+  "protected_file_count": 426,
+  "environment_dependencies_restored_from_pinned_requirements": true,
+  "source": "data/processed/phase5/anomaly_scores.csv"
+}

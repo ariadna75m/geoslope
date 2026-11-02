@@ -1,0 +1,3 @@
+-r requirements.txt
+# Solo para generar un XLS sintético en la prueba de compatibilidad (no producción).
+xlwt==1.3.0

@@ -1,0 +1,53 @@
+/* Scoped compact spatial workspace. Role authorization remains server-side. */
+[data-testid="stAppViewContainer"]:has(.st-key-spatial_workspace){background:{{spatial_background}};color:{{spatial_text}};}
+.stApp:has(.st-key-spatial_workspace) [data-testid="stHeader"]{height:0;background:transparent;}
+.stApp:has(.st-key-spatial_workspace) .block-container {max-width:none;padding:16px 20px 8px;}
+.st-key-spatial_workspace h1{font-size:28px!important;line-height:1.2;color:{{spatial_heading}};padding:0;}
+.st-key-spatial_workspace h3{font-size:20px!important;color:{{spatial_text}};padding:2px 0;}
+.st-key-spatial_workspace p,.st-key-spatial_workspace label,.st-key-spatial_workspace [data-testid="stCaptionContainer"]{color:{{spatial_text}};}
+.st-key-spatial_workspace [data-testid="stCaptionContainer"]{font-size:11px;color:#a8c2d9;line-height:1.35;}
+.st-key-spatial_workspace [data-testid="stVerticalBlock"]{gap:8px;}
+.st-key-spatial_workspace [data-testid="stWidgetLabel"] p{font-size:12px;}
+.st-key-spatial_workspace [data-testid="stMetric"]{background:{{spatial_panel}};border:1px solid {{spatial_border}};padding:8px;border-radius:8px;}
+.st-key-spatial_workspace [data-testid="stMetricValue"]{color:{{spatial_selected}};font-size:22px;}
+.st-key-spatial_workspace [data-testid="stMetricLabel"] p{font-size:11px;}
+.st-key-spatial_workspace button{min-height:34px;}
+.st-key-spatial_workspace button p {color:#15334e;font-size:12px;}
+.st-key-spatial_workspace [data-testid="stBaseButton-primary"] p{color:white;}
+.st-key-spatial_workspace [data-testid="stTextInput"] input,.st-key-spatial_workspace [data-testid="stDateInput"] input{background:#102b43;color:{{spatial_text}};}
+.st-key-spatial_workspace [data-baseweb="select"]>div {background:#102b43;color:{{spatial_text}};}
+.st-key-spatial_workspace [data-baseweb="select"] span {color:{{spatial_text}};}
+.st-key-spatial_workspace [data-testid="stSegmentedControl"] button p{color:{{spatial_text}};}
+.st-key-spatial_filters{padding:8px 12px;border:1px solid {{spatial_border}};border-radius:8px;}
+.st-key-spatial_scene_panel,.st-key-spatial_detail_panel,.st-key-spatial_terrain_panel{padding:12px;border:1px solid {{spatial_border}};border-radius:10px;background:{{spatial_panel}};}
+.sx-status{display:flex;gap:8px;justify-content:flex-end;font-size:12px;}
+.sx-status span{border:1px solid {{spatial_border}};border-radius:6px;padding:5px 10px;color:{{spatial_text}};background:#102b43;}
+.sx-notice{background:#12324d;border:1px solid #254b66;border-radius:7px;padding:7px 12px;font-size:12px;color:#cbe4f9;}
+.sx-coordinates{width:100%;font-size:12px;color:{{spatial_text}};border-collapse:collapse;}
+.sx-coordinates td{padding:6px 8px;border:1px solid #244159;}
+button:focus-visible,input:focus-visible {outline:2px solid {{spatial_selected}}!important;outline-offset:2px;}
+@media(max-width:1100px){.st-key-spatial_filters [data-testid="stHorizontalBlock"]{flex-wrap:wrap;}.st-key-spatial_filters [data-testid="stColumn"]{min-width:140px;}.sx-notice{font-size:11px;}}
+
+.st-key-spatial_workspace button {background:#102b43;border-color:{{spatial_border}};}
+.st-key-spatial_workspace button p {color:{{spatial_text}};}
+.st-key-spatial_workspace button[aria-pressed="true"],.st-key-spatial_workspace [data-testid="stBaseButton-primary"]{background:{{teal}};}
+.st-key-spatial_workspace input::placeholder{color:#9bb5cb!important;}
+.st-key-spatial_workspace [data-baseweb="select"]>div>div{background:#102b43;color:{{spatial_text}};}
+.st-key-spatial_detail_panel {max-height:calc(100vh - 248px);overflow-y:auto;}
+.st-key-spatial_actions {position:sticky;bottom:0;background:{{spatial_panel}};z-index:3;padding-top:6px;}
+.st-key-spatial_scene_panel {padding:10px;}
+
+.st-key-spatial_detail_panel{position:relative;max-height:calc(100vh - 282px);padding-bottom:82px;box-sizing:border-box;}
+.st-key-spatial_actions{position:absolute!important;bottom:8px;left:12px;right:12px;}
+.st-key-spatial_workspace [role="combobox"]{background:#102b43!important;color:{{spatial_text}}!important;}
+
+.st-key-spatial_workspace [data-testid="stVerticalBlock"]{gap:4px;}
+.st-key-spatial_workspace [data-testid="stMetric"]{padding:5px;}
+.st-key-spatial_workspace [data-testid="stMetricValue"]{font-size:20px;line-height:1;}
+.st-key-spatial_workspace [data-testid="stMetricLabel"] p{font-size:10px;line-height:1.2;}
+.sx-coordinates td{padding:3px 7px;line-height:14px;}
+.st-key-spatial_detail_panel{max-height:calc(100vh - 244px);padding-bottom:78px;}
+
+
+
+.sx-subtitle{margin:8px 0 0;padding:0;font-size:12px;line-height:1.4;color:#a8c2d9!important;}

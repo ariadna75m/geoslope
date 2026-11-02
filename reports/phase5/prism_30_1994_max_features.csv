@@ -1,0 +1,10 @@
+variant,period,prism_id,eligible_rows,marked_q99_rows,marked_q99_pct,maximum_score,prism_rows_in_top30,top30_prism_share_pct
+1 (int),entrenamiento,30-1994,15,15,100,0.83582651676986164,15,50
+1 (int),validación,30-1994,0,0,,,0,0
+1 (int),prueba,30-1994,0,0,,,0,0
+0.5 (float),entrenamiento,30-1994,15,15,100,0.85524987763710059,15,50
+0.5 (float),validación,30-1994,0,0,,,0,0
+0.5 (float),prueba,30-1994,0,0,,,0,0
+1.0 (float),entrenamiento,30-1994,15,15,100,0.85704771955812298,15,50
+1.0 (float),validación,30-1994,0,0,,,0,0
+1.0 (float),prueba,30-1994,0,0,,,0,0

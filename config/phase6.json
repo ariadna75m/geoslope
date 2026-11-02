@@ -1,0 +1,18 @@
+{
+  "schema_version": "phase6-v1",
+  "primary_policy": "hybrid",
+  "primary_window_hours": 72,
+  "primary_min_marks": 2,
+  "sensitivity_windows_hours": [24, 48, 72],
+  "sensitivity_min_marks": [2, 3],
+  "policies": ["union", "consensus", "persistence", "hybrid"],
+  "window_boundaries": "[t - window, t]; inclusive",
+  "candidate_requires_current_union_mark": true,
+  "episode_continuity_across_partitions": true,
+  "quality_records_do_not_reset_episode": true,
+  "threshold_source": "models/phase5/model_metadata.json",
+  "input_scores": "data/processed/phase5/anomaly_scores.csv",
+  "input_features_for_existing_evidence": "data/processed/phase4/west_wall_features.csv",
+  "recommendation_criteria": ["causal", "reproducible", "fewer candidate rows than simple union", "interpretable", "offline", "specialist validation required"],
+  "window_justification": "72 horas es la ventana técnica provisional solicitada; no se calibra con eventos físicos ni se interpreta como umbral geotécnico."
+}

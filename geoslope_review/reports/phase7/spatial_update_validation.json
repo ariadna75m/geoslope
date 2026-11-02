@@ -1,0 +1,65 @@
+{
+  "version": "0.7.1",
+  "status": "visual_update_validated_with_data_limitations",
+  "previous_tests": 258,
+  "new_spatial_tests": 4,
+  "total_tests": 262,
+  "all_passed": true,
+  "external_requests": [],
+  "original_project_files_byte_identical": 507,
+  "frozen_integrity": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "modules_verified": [
+      "streamlit",
+      "sqlalchemy",
+      "pandas",
+      "numpy",
+      "plotly",
+      "pydantic",
+      "argon2",
+      "pyotp",
+      "cryptography",
+      "qrcode",
+      "reportlab"
+    ],
+    "metrics": {
+      "prismas": 49,
+      "registros": 7178,
+      "episodios": 48,
+      "episodios candidatos": 20,
+      "registros candidatos": 102,
+      "interrupciones de calidad": 4
+    },
+    "integrity_files": 17
+  },
+  "browser": {
+    "status": "passed",
+    "observations": [
+      "Bootstrap, TOTP y dashboard correctos",
+      "Bandeja de revisión visible y sin errores",
+      "Vista espacial visible y sin errores",
+      "Centrado, vista completa y plano 2D comprobados",
+      "Prismas visible y sin errores",
+      "Calidad de datos visible y sin errores",
+      "Usuarios visible y sin errores",
+      "Auditoría visible y sin errores",
+      "Reportes visible y sin errores",
+      "Revisión persistida",
+      "PDF descargado",
+      "Backup cifrado creado",
+      "Logout elimina acceso",
+      "Cero solicitudes externas"
+    ],
+    "external_requests": [],
+    "synthetic_runtime_removed": true,
+    "screenshots_redact_totp": true
+  },
+  "changes": [
+    "spatial presentation charts, layout, styles, theme and local camera centering",
+    "version metadata, documentation and tests"
+  ],
+  "models_and_scores_modified": false,
+  "topography_created": false,
+  "geographic_transform_invented": false,
+  "clean_install_scope": "0.7.0 baseline ZIP validated previously; 0.7.1 regression and browser executed in newly installed venv, without claiming a repeated fresh-extracted-ZIP install"
+}

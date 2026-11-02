@@ -1,0 +1,25 @@
+{
+  "recommendation": "paired_experimental_scores; baseline interpretable reference and Isolation Forest multivariate comparator",
+  "operational_combination_rule": null,
+  "winner_by_real_accuracy": null,
+  "predeclared_criteria": {
+    "seed_rank_correlation_min": 0.9,
+    "seed_top_2pct_jaccard_min": 0.5,
+    "experimental_review_fraction_reference": 0.05,
+    "synthetic_detection_reference": 0.5
+  },
+  "synthetic_macro_marked_fraction": {
+    "baseline": 0.9081632653061223,
+    "isolation_forest": 0.508390022675737
+  },
+  "forest_minimum_seed_ranking_spearman": 0.9782475150781766,
+  "forest_minimum_seed_top_2pct_jaccard": 0.6470588235294118,
+  "test_q99_marked_pct": {
+    "baseline": 4.562268803945746,
+    "isolation_forest": 3.6991368680641186
+  },
+  "integrity_verified": 294,
+  "full_reproduction_completed": true,
+  "phase6_requires_formal_approval": true,
+  "disclaimer": "Este resultado es una señal de apoyo al seguimiento preventivo. No constituye una predicción definitiva de falla ni reemplaza la evaluación del ingeniero geomecánico."
+}

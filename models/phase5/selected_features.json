@@ -1,0 +1,22 @@
+{
+  "selected_features": [
+    "movement_rate_mm_per_day",
+    "local_trend_72h_slope_mm_per_day",
+    "local_trend_7d_slope_mm_per_day",
+    "historical_robust_z_score",
+    "increase_proportion_72h",
+    "increase_proportion_7d",
+    "movement_72h_mad_mm",
+    "movement_7d_mad_mm",
+    "delta_72h_absolute_sum",
+    "delta_7d_absolute_sum",
+    "movement_delta_mm",
+    "increase_streak_duration_hours",
+    "increase_streak_count",
+    "local_trend_72h_r_squared",
+    "local_trend_7d_r_squared",
+    "movement_72h_range_mm",
+    "movement_7d_range_mm"
+  ],
+  "selection_scope": "eligible training only"
+}

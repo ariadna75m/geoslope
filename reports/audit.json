@@ -1,0 +1,702 @@
+{
+  "files": [
+    {
+      "file": "radar-deformation-data/South_West_Corner_06082014.csv",
+      "size_bytes": 13371991,
+      "sha256": "3f323535d38ff3700a3d2d9d0c5d2f49ada690f9326a0ef6002f77d4f7b98b69",
+      "format": "CSV",
+      "encoding": "UTF-8",
+      "physical_lines": 82405,
+      "header_line_1based": 4,
+      "declared_columns": [
+        "Prism",
+        "Date",
+        "Time",
+        "Easting",
+        "Northing",
+        "Height",
+        "Adjusted Distance Diff",
+        "Unadjusted Slope Distance Diff",
+        "Easting Diff",
+        "Northing Diff",
+        "Height Diff"
+      ],
+      "columns": [
+        "Prism",
+        "Date",
+        "Time",
+        "Easting",
+        "Northing",
+        "Height",
+        "Adjusted Distance Diff",
+        "Unadjusted Slope Distance Diff",
+        "Easting Diff",
+        "Northing Diff",
+        "Height Diff"
+      ],
+      "columns_count": 11,
+      "rows": 82401,
+      "field_widths": {
+        "11": 82401
+      },
+      "prisms": 160,
+      "coverage_start": "2014-01-01 08:02:27",
+      "coverage_end": "2014-08-06 06:11:33",
+      "coverage_days": 216.9229861111111,
+      "invalid_timestamps": 0,
+      "timestamp_note": "fecha/hora sin zona horaria documentada",
+      "missing_cells": 0,
+      "rows_with_missing": 0,
+      "missing_by_column": {
+        "Prism": 0,
+        "Date": 0,
+        "Time": 0,
+        "Easting": 0,
+        "Northing": 0,
+        "Height": 0,
+        "Adjusted Distance Diff": 0,
+        "Unadjusted Slope Distance Diff": 0,
+        "Easting Diff": 0,
+        "Northing Diff": 0,
+        "Height Diff": 0
+      },
+      "duplicate_rows_extra": 1,
+      "duplicate_key_extra": 1,
+      "duplicate_key_affected_rows": 2,
+      "conflicting_key_groups": 0,
+      "backward_steps_original": 0,
+      "median_interval_hours": 4.011388888888889,
+      "min_positive_interval_hours": 0.08972222222222222,
+      "max_gap_hours": 1932.4797222222223,
+      "reading_notes": "Encabezado en línea 4; 3 líneas previas no tabulares."
+    },
+    {
+      "file": "radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv",
+      "size_bytes": 505043,
+      "sha256": "cbc1272f1ec0a8fc9b8b4e137a9d2bc007ee81937d0298f12908b2db954f2e02",
+      "format": "CSV",
+      "encoding": "UTF-8",
+      "physical_lines": 7179,
+      "header_line_1based": 1,
+      "declared_columns": [
+        "Prism",
+        "Date",
+        "Time",
+        "Easting",
+        "Northing",
+        "RL",
+        "Cumulative 3D Movement (mm) Since 20th Nov"
+      ],
+      "columns": [
+        "Prism",
+        "Date",
+        "Time",
+        "Easting",
+        "Northing",
+        "RL",
+        "Cumulative 3D Movement (mm) Since 20th Nov"
+      ],
+      "columns_count": 7,
+      "rows": 7178,
+      "field_widths": {
+        "7": 7178
+      },
+      "prisms": 49,
+      "coverage_start": "2013-11-20 12:41:22",
+      "coverage_end": "2014-02-20 09:17:53",
+      "coverage_days": 91.85869212962963,
+      "invalid_timestamps": 0,
+      "timestamp_note": "fecha/hora sin zona horaria documentada",
+      "missing_cells": 0,
+      "rows_with_missing": 0,
+      "missing_by_column": {
+        "Prism": 0,
+        "Date": 0,
+        "Time": 0,
+        "Easting": 0,
+        "Northing": 0,
+        "RL": 0,
+        "Cumulative 3D Movement (mm) Since 20th Nov": 0
+      },
+      "duplicate_rows_extra": 0,
+      "duplicate_key_extra": 0,
+      "duplicate_key_affected_rows": 0,
+      "conflicting_key_groups": 0,
+      "backward_steps_original": 0,
+      "median_interval_hours": 8.125277777777777,
+      "min_positive_interval_hours": 0.07333333333333333,
+      "max_gap_hours": 357.16805555555555,
+      "reading_notes": "Lectura rectangular sin errores de codificación o ancho."
+    },
+    {
+      "file": "radar-deformation-data/slopeMovement.dat",
+      "size_bytes": 12795137,
+      "sha256": "f53edfac6d8a3326354d01ef55c6992aee9a0c008b8cee9c3b7c29ce68f0b527",
+      "format": "CSV-like DAT",
+      "encoding": "UTF-8",
+      "physical_lines": 82402,
+      "header_line_1based": 1,
+      "declared_columns": [
+        "%Prism",
+        "day",
+        "month",
+        "year",
+        "hour",
+        "minute",
+        "second",
+        "Easting",
+        "Northing",
+        "Height",
+        "Adjusted Distance Diff",
+        "Unadjusted Slope Distance Diff",
+        "Easting Diff",
+        "Northing Diff",
+        "Height Diff"
+      ],
+      "columns": [
+        "prism_part_1",
+        "prism_part_2",
+        "day",
+        "month",
+        "year",
+        "hour",
+        "minute",
+        "second",
+        "Easting",
+        "Northing",
+        "Height",
+        "Adjusted Distance Diff",
+        "Unadjusted Slope Distance Diff",
+        "Easting Diff",
+        "Northing Diff",
+        "Height Diff"
+      ],
+      "columns_count": 16,
+      "rows": 82401,
+      "field_widths": {
+        "16": 82401
+      },
+      "prisms": 160,
+      "coverage_start": "2014-01-01 08:02:27",
+      "coverage_end": "2014-08-06 06:11:33",
+      "coverage_days": 216.9229861111111,
+      "invalid_timestamps": 0,
+      "timestamp_note": "requiere validación: año 14 interpretado como 2014 por equivalencia con CSV",
+      "missing_cells": 0,
+      "rows_with_missing": 0,
+      "missing_by_column": {
+        "prism_part_1": 0,
+        "prism_part_2": 0,
+        "day": 0,
+        "month": 0,
+        "year": 0,
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "Easting": 0,
+        "Northing": 0,
+        "Height": 0,
+        "Adjusted Distance Diff": 0,
+        "Unadjusted Slope Distance Diff": 0,
+        "Easting Diff": 0,
+        "Northing Diff": 0,
+        "Height Diff": 0
+      },
+      "duplicate_rows_extra": 1,
+      "duplicate_key_extra": 1,
+      "duplicate_key_affected_rows": 2,
+      "conflicting_key_groups": 0,
+      "backward_steps_original": 0,
+      "median_interval_hours": 4.011388888888889,
+      "min_positive_interval_hours": 0.08972222222222222,
+      "max_gap_hours": 1932.4797222222223,
+      "reading_notes": "Encabezado: 15 nombres; todas las filas: 16 campos. Se proponen dos partes del ID del prisma, corroboradas fila a fila con CSV. No aceptar lectura silenciosa desplazada."
+    },
+    {
+      "file": "seismic-event-data/events-and-blasts.csv",
+      "size_bytes": 71691,
+      "sha256": "b024b25b188c95c121da9e2f3bb45ec90efd3edc4c5773e9e74a40c2a78a1404",
+      "format": "CSV",
+      "encoding": "UTF-8",
+      "physical_lines": 1172,
+      "header_line_1based": 1,
+      "declared_columns": [
+        "#Index",
+        "EventTimeEpochSeconds",
+        "Local Magnitude",
+        "Potency [m^3]",
+        "LocE [m]",
+        "LocN [m]",
+        "LocU [m]"
+      ],
+      "columns": [
+        "#Index",
+        "EventTimeEpochSeconds",
+        "Local Magnitude",
+        "Potency [m^3]",
+        "LocE [m]",
+        "LocN [m]",
+        "LocU [m]"
+      ],
+      "columns_count": 7,
+      "rows": 1171,
+      "field_widths": {
+        "7": 1171
+      },
+      "prisms": null,
+      "coverage_start": "2013-12-25 11:24:21.901587486+00:00",
+      "coverage_end": "2014-03-31 15:11:36.451744080+00:00",
+      "coverage_days": 96.15780729347222,
+      "invalid_timestamps": 0,
+      "timestamp_note": "UTC bajo interpretación Unix del nombre; requiere validación de la exportación",
+      "missing_cells": 0,
+      "rows_with_missing": 0,
+      "missing_by_column": {
+        "#Index": 0,
+        "EventTimeEpochSeconds": 0,
+        "Local Magnitude": 0,
+        "Potency [m^3]": 0,
+        "LocE [m]": 0,
+        "LocN [m]": 0,
+        "LocU [m]": 0
+      },
+      "duplicate_rows_extra": 0,
+      "duplicate_key_extra": 0,
+      "duplicate_key_affected_rows": 0,
+      "conflicting_key_groups": 0,
+      "backward_steps_original": 0,
+      "median_interval_hours": 0.6576808338695834,
+      "min_positive_interval_hours": 4.204458666666667e-05,
+      "max_gap_hours": 69.01433528112028,
+      "reading_notes": "Lectura rectangular sin errores de codificación o ancho."
+    },
+    {
+      "file": "velocity-change-measurements/mean-velocity-changes.txt",
+      "size_bytes": 3627,
+      "sha256": "b870e5eba0dcae9dc2de54c0a572b5cd59749df41ecfc9275e05a5093fac331b",
+      "format": "TSV",
+      "encoding": "UTF-8",
+      "physical_lines": 45,
+      "header_line_1based": 1,
+      "declared_columns": [
+        "Date",
+        "Velocity Change (%)",
+        "Velocity Change plus Standard Deviation (%)",
+        "Velocity Change minus Standard Deviation (%)"
+      ],
+      "columns": [
+        "Date",
+        "Velocity Change (%)",
+        "Velocity Change plus Standard Deviation (%)",
+        "Velocity Change minus Standard Deviation (%)"
+      ],
+      "columns_count": 4,
+      "rows": 44,
+      "field_widths": {
+        "4": 44
+      },
+      "prisms": null,
+      "coverage_start": "2013-12-25 00:25:00",
+      "coverage_end": "2014-03-22 12:15:00",
+      "coverage_days": 87.49305555555556,
+      "invalid_timestamps": 0,
+      "timestamp_note": "fecha/hora sin zona horaria documentada",
+      "missing_cells": 0,
+      "rows_with_missing": 0,
+      "missing_by_column": {
+        "Date": 0,
+        "Velocity Change (%)": 0,
+        "Velocity Change plus Standard Deviation (%)": 0,
+        "Velocity Change minus Standard Deviation (%)": 0
+      },
+      "duplicate_rows_extra": 0,
+      "duplicate_key_extra": 0,
+      "duplicate_key_affected_rows": 0,
+      "conflicting_key_groups": 0,
+      "backward_steps_original": 0,
+      "median_interval_hours": 48.833333333333336,
+      "min_positive_interval_hours": 48.833333333333336,
+      "max_gap_hours": 48.833333333333336,
+      "reading_notes": "Lectura rectangular sin errores de codificación o ancho."
+    },
+    {
+      "file": "weather-data/IDCJAC0009_029167_2013_Data.csv",
+      "size_bytes": 14012,
+      "sha256": "d836033a4a543a641e61c9458e7faa5592b011be4a19c16da83dccbf0df93310",
+      "format": "CSV",
+      "encoding": "UTF-8",
+      "physical_lines": 366,
+      "header_line_1based": 1,
+      "declared_columns": [
+        "Product code",
+        "Bureau of Meteorology station number",
+        "Year",
+        "Month",
+        "Day",
+        "Rainfall amount (millimetres)",
+        "Period over which rainfall was measured (days)",
+        "Quality"
+      ],
+      "columns": [
+        "Product code",
+        "Bureau of Meteorology station number",
+        "Year",
+        "Month",
+        "Day",
+        "Rainfall amount (millimetres)",
+        "Period over which rainfall was measured (days)",
+        "Quality"
+      ],
+      "columns_count": 8,
+      "rows": 365,
+      "field_widths": {
+        "8": 365
+      },
+      "prisms": null,
+      "coverage_start": "2013-01-01 00:00:00",
+      "coverage_end": "2013-12-31 00:00:00",
+      "coverage_days": 364.0,
+      "invalid_timestamps": 0,
+      "timestamp_note": "día calendario; hora de cierre/intervalo de lluvia requiere validación",
+      "missing_cells": 9,
+      "rows_with_missing": 3,
+      "missing_by_column": {
+        "Product code": 0,
+        "Bureau of Meteorology station number": 0,
+        "Year": 0,
+        "Month": 0,
+        "Day": 0,
+        "Rainfall amount (millimetres)": 3,
+        "Period over which rainfall was measured (days)": 3,
+        "Quality": 3
+      },
+      "duplicate_rows_extra": 0,
+      "duplicate_key_extra": 0,
+      "duplicate_key_affected_rows": 0,
+      "conflicting_key_groups": 0,
+      "backward_steps_original": 0,
+      "median_interval_hours": 24.0,
+      "min_positive_interval_hours": 24.0,
+      "max_gap_hours": 24.0,
+      "reading_notes": "Lectura rectangular sin errores de codificación o ancho."
+    },
+    {
+      "file": "weather-data/IDCJAC0009_029167_2014_Data.csv",
+      "size_bytes": 14022,
+      "sha256": "da1e56a8fbf5293115060913e3c911e53fba3bc7997b5d63334ec1487b2fd9c7",
+      "format": "CSV",
+      "encoding": "UTF-8",
+      "physical_lines": 366,
+      "header_line_1based": 1,
+      "declared_columns": [
+        "Product code",
+        "Bureau of Meteorology station number",
+        "Year",
+        "Month",
+        "Day",
+        "Rainfall amount (millimetres)",
+        "Period over which rainfall was measured (days)",
+        "Quality"
+      ],
+      "columns": [
+        "Product code",
+        "Bureau of Meteorology station number",
+        "Year",
+        "Month",
+        "Day",
+        "Rainfall amount (millimetres)",
+        "Period over which rainfall was measured (days)",
+        "Quality"
+      ],
+      "columns_count": 8,
+      "rows": 365,
+      "field_widths": {
+        "8": 365
+      },
+      "prisms": null,
+      "coverage_start": "2014-01-01 00:00:00",
+      "coverage_end": "2014-12-31 00:00:00",
+      "coverage_days": 364.0,
+      "invalid_timestamps": 0,
+      "timestamp_note": "día calendario; hora de cierre/intervalo de lluvia requiere validación",
+      "missing_cells": 12,
+      "rows_with_missing": 4,
+      "missing_by_column": {
+        "Product code": 0,
+        "Bureau of Meteorology station number": 0,
+        "Year": 0,
+        "Month": 0,
+        "Day": 0,
+        "Rainfall amount (millimetres)": 4,
+        "Period over which rainfall was measured (days)": 4,
+        "Quality": 4
+      },
+      "duplicate_rows_extra": 0,
+      "duplicate_key_extra": 0,
+      "duplicate_key_affected_rows": 0,
+      "conflicting_key_groups": 0,
+      "backward_steps_original": 0,
+      "median_interval_hours": 24.0,
+      "min_positive_interval_hours": 24.0,
+      "max_gap_hours": 24.0,
+      "reading_notes": "Lectura rectangular sin errores de codificación o ancho."
+    },
+    {
+      "file": "weather-data/IDCJMD0040.029167.SiteInfo.pdf",
+      "size_bytes": 294429,
+      "sha256": "492ad042a3ed81ec6d497ab02b457b34c92227f4b280a9e13e42c2fd2122bda5",
+      "format": "PDF",
+      "pages": 17,
+      "rows": null,
+      "columns_count": null,
+      "prisms": null,
+      "coverage_start": null,
+      "coverage_end": null,
+      "reading_notes": "Texto extraído de las 17 páginas; no es tabla de mediciones. Metadatos compilados 28 JUL 2021. Advertencias del PDF sobre completitud/calidad histórica."
+    }
+  ],
+  "checks": {
+    "csv_dat_equivalence": {
+      "same_row_count": true,
+      "same_prism_order": true,
+      "same_timestamp_order": true,
+      "numeric_exact_float_equal": true,
+      "columns_compared": [
+        "Easting",
+        "Northing",
+        "Height",
+        "Adjusted Distance Diff",
+        "Unadjusted Slope Distance Diff",
+        "Easting Diff",
+        "Northing Diff",
+        "Height Diff"
+      ]
+    },
+    "main_west_prism_overlap": [
+      "28-1939",
+      "28-1940",
+      "28-1941",
+      "28-1982",
+      "28-1983",
+      "28-1984",
+      "30-1993",
+      "30-1996",
+      "31-1914",
+      "31-1915",
+      "31-1931",
+      "31-1932",
+      "31-1957",
+      "31-1977",
+      "31-1992",
+      "31-2004",
+      "31-2006",
+      "31-2007",
+      "31-2008",
+      "31-2009",
+      "31-2010",
+      "40-1928",
+      "40-1929",
+      "40-1933",
+      "40-1934",
+      "40-1937",
+      "40-1938",
+      "40-1942",
+      "40-1943",
+      "40-1958",
+      "40-1959",
+      "40-1975",
+      "40-1976",
+      "40-1978",
+      "40-1979",
+      "40-1980",
+      "40-1981"
+    ],
+    "numeric_checks": [
+      {
+        "file": "radar-deformation-data/South_West_Corner_06082014.csv",
+        "nonfinite_numeric_cells": 0,
+        "coordinate_ranges": {
+          "Easting": [
+            46040.2768,
+            46598.3442043441
+          ],
+          "Northing": [
+            27395.9333,
+            28050.6255
+          ],
+          "Height": [
+            876.83033997567,
+            1143.97078084094
+          ]
+        },
+        "component_scale_evidence": {
+          "Easting": {
+            "hypothesis": "component_diff = (coordinate - first_coordinate_of_prism) * 1000",
+            "within_abs_1e_5_rows": 82401,
+            "max_abs_residual": 7.275958036068175e-08,
+            "exceptions": 0
+          },
+          "Northing": {
+            "hypothesis": "component_diff = (coordinate - first_coordinate_of_prism) * 1000",
+            "within_abs_1e_5_rows": 82401,
+            "max_abs_residual": 9.822545621318568e-08,
+            "exceptions": 0
+          },
+          "Height": {
+            "hypothesis": "component_diff = (coordinate - first_coordinate_of_prism) * 1000",
+            "within_abs_1e_5_rows": 82401,
+            "max_abs_residual": 5.343324005480099e-09,
+            "exceptions": 0
+          }
+        }
+      },
+      {
+        "file": "radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv",
+        "nonfinite_numeric_cells": 0,
+        "coordinate_ranges": {
+          "Easting": [
+            46051.218,
+            46671.6914
+          ],
+          "Northing": [
+            27441.8335,
+            28360.0184
+          ],
+          "RL": [
+            876.849,
+            1143.465
+          ]
+        },
+        "negative_displacement_rows": 0,
+        "movement_decreases": 3370,
+        "movement_increases": 3755
+      }
+    ],
+    "rainfall": [
+      {
+        "file": "weather-data/IDCJAC0009_029167_2013_Data.csv",
+        "missing_rain_dates": [
+          "2013-03-08",
+          "2013-10-07",
+          "2013-12-29"
+        ],
+        "negative_rain": 0,
+        "multi_day_measurements": 0,
+        "period_values": {
+          "1": 362,
+          "": 3
+        },
+        "quality_values": {
+          "N": 362,
+          "": 3
+        },
+        "max_daily_or_period_amount_mm": 28.2,
+        "missing_period_dates": [
+          "2013-03-08",
+          "2013-10-07",
+          "2013-12-29"
+        ]
+      },
+      {
+        "file": "weather-data/IDCJAC0009_029167_2014_Data.csv",
+        "missing_rain_dates": [
+          "2014-08-17",
+          "2014-09-17",
+          "2014-10-09",
+          "2014-12-18"
+        ],
+        "negative_rain": 0,
+        "multi_day_measurements": 0,
+        "period_values": {
+          "1": 361,
+          "": 4
+        },
+        "quality_values": {
+          "N": 361,
+          "": 4
+        },
+        "max_daily_or_period_amount_mm": 115.0,
+        "missing_period_dates": [
+          "2014-08-17",
+          "2014-09-17",
+          "2014-10-09",
+          "2014-12-18"
+        ]
+      }
+    ],
+    "cross_file_checks": {
+      "shared_prism_count": 37,
+      "shared_keys": 3618,
+      "shared_easting_exact_equal": true,
+      "shared_northing_exact_equal": true,
+      "shared_height_RL_exact_equal": true,
+      "union_prism_count": 172
+    },
+    "main_duplicate_records": [
+      {
+        "Prism": "31-1637",
+        "Date": "22-May-14",
+        "Time": "21:36:56",
+        "Easting": "46598.2616671468",
+        "Northing": "27450.0874476071",
+        "Height": "925.631220276214",
+        "Adjusted Distance Diff": "-39.1886282252472",
+        "Unadjusted Slope Distance Diff": "-68.5746072999791",
+        "Easting Diff": "-10.6328532056068",
+        "Northing Diff": "67.7476071177807",
+        "Height Diff": "-182.879723786414"
+      },
+      {
+        "Prism": "31-1637",
+        "Date": "22-May-14",
+        "Time": "21:36:56",
+        "Easting": "46598.2616671468",
+        "Northing": "27450.0874476071",
+        "Height": "925.631220276214",
+        "Adjusted Distance Diff": "-39.1886282252472",
+        "Unadjusted Slope Distance Diff": "-68.5746072999791",
+        "Easting Diff": "-10.6328532056068",
+        "Northing Diff": "67.7476071177807",
+        "Height Diff": "-182.879723786414"
+      }
+    ],
+    "main_duplicate_source_lines": [
+      24762,
+      24763
+    ],
+    "main_prism_summary": {
+      "rows_min": 1,
+      "rows_max": 1577,
+      "prisms_lt20_rows": 4,
+      "prisms_gap_gt24h": 158,
+      "longest_gaps": [
+        {
+          "prism": "24-1115",
+          "rows": 10,
+          "start": "2014-01-04 02:34:07",
+          "end": "2014-06-06 01:18:39",
+          "max_gap_hours": 1932.4797222222223
+        },
+        {
+          "prism": "31-1386",
+          "rows": 158,
+          "start": "2014-01-01 14:34:47",
+          "end": "2014-05-18 22:28:41",
+          "max_gap_hours": 748.5408333333334
+        },
+        {
+          "prism": "31-1773",
+          "rows": 504,
+          "start": "2014-01-01 08:45:47",
+          "end": "2014-08-05 18:21:48",
+          "max_gap_hours": 654.9252777777778
+        }
+      ]
+    },
+    "runtime": {
+      "python": "3.12.14",
+      "pandas": "2.2.3",
+      "numpy": "2.3.5"
+    }
+  }
+}

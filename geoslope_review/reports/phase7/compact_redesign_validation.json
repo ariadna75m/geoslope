@@ -1,0 +1,108 @@
+{
+  "version": "0.7.2",
+  "status": "approved_with_observations",
+  "tests": {
+    "previous": 262,
+    "new": 7,
+    "total": 269,
+    "all_passed": true
+  },
+  "lint_passed": true,
+  "browser": {
+    "status": "passed",
+    "observations": [
+      "Bootstrap, TOTP y dashboard correctos",
+      "Bandeja de revisión visible y sin errores",
+      "Vista espacial visible y sin errores",
+      "Clic real sobre prisma 3D actualiza la ficha",
+      "Pantalla completa local comprobada",
+      "Prismas, filtros, selección de punto y tres resoluciones validados",
+      "Centrado, vista completa y plano 2D comprobados",
+      "Prismas visible y sin errores",
+      "Calidad de datos visible y sin errores",
+      "Usuarios visible y sin errores",
+      "Auditoría visible y sin errores",
+      "Reportes visible y sin errores",
+      "Revisión persistida",
+      "PDF descargado",
+      "Backup cifrado creado",
+      "Logout elimina acceso",
+      "Cero solicitudes externas"
+    ],
+    "external_requests": [],
+    "synthetic_runtime_removed": true,
+    "screenshots_redact_totp": true
+  },
+  "preservation": {
+    "prior_project_files_byte_identical": 507,
+    "protected_application_files_byte_identical": 17,
+    "frozen_artifacts_hashes_verified": 17,
+    "models_and_scores_modified": false,
+    "training_performed": false,
+    "changed_existing_app_files": [
+      "README.md",
+      "app.py",
+      "assets/spatial.css",
+      "config/app_config.yaml",
+      "docs/manual_usuario.md",
+      "gsreview/presentation/charts.py",
+      "gsreview/presentation/views.py",
+      "pyproject.toml",
+      "scripts/validate_browser.py",
+      "tests/test_phase7_spatial_workspace.py",
+      "tests/test_phase7_ui.py"
+    ],
+    "observations": [
+      "Verificación byte a byte frente a la entrega 0.7.1; sin modificar artefactos o fuentes de Fases 1–6."
+    ]
+  },
+  "frozen_integrity": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "modules_verified": [
+      "streamlit",
+      "sqlalchemy",
+      "pandas",
+      "numpy",
+      "plotly",
+      "pydantic",
+      "argon2",
+      "pyotp",
+      "cryptography",
+      "qrcode",
+      "reportlab"
+    ],
+    "metrics": {
+      "prismas": 49,
+      "registros": 7178,
+      "episodios": 48,
+      "episodios candidatos": 20,
+      "registros candidatos": 102,
+      "interrupciones de calidad": 4
+    },
+    "integrity_files": 17
+  },
+  "validated_resolutions": [
+    [
+      1366,
+      768
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1920,
+      1080
+    ]
+  ],
+  "scene_width_at_least_60_percent": true,
+  "topography_created": false,
+  "crs_or_units_invented": false,
+  "clean_install_scope": "Instalación de dependencias en venv nuevo para 0.7.2; evidencia de extracción e instalación limpia del ZIP corresponde únicamente a la base histórica 0.7.0.",
+  "pending": [
+    "CRS y unidades espaciales documentados",
+    "Topografía válida para futuras funciones",
+    "Comprobación nativa Windows y Python 3.11",
+    "Validación especializada de candidatos"
+  ]
+}

@@ -1,0 +1,57 @@
+/* Permanent shared rail; icons are local SVG masks, with no font/CDN request. */
+[data-testid="stSidebar"]:has(.st-key-navigation_rail) {
+  width:88px!important; min-width:88px!important; max-width:88px!important;
+  height:100dvh; background:#0c2941; border-right:1px solid #183d57;
+  transform:none!important; position:relative;
+}
+.stApp:has(.st-key-navigation_rail) [data-testid="stSidebarCollapseButton"],
+.stApp:has(.st-key-navigation_rail) [data-testid="stSidebarCollapsedControl"] {display:none!important;}
+[data-testid="stSidebar"]:has(.st-key-navigation_rail) [data-testid="stSidebarContent"],
+[data-testid="stSidebar"]:has(.st-key-navigation_rail) [data-testid="stSidebarUserContent"] {
+  padding:0!important; height:100%; overflow:hidden;
+}
+.st-key-navigation_rail {height:100dvh; padding:16px 0 0; box-sizing:border-box;}
+.st-key-navigation_rail > [data-testid="stVerticalBlock"] {height:100%;gap:14px;}
+.st-key-navigation_rail [data-testid="stImage"] {margin:0 auto;}
+.st-key-rail_links {flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;}
+.st-key-rail_links [data-testid="stVerticalBlock"] {gap:3px;}
+.st-key-rail_links button, .st-key-rail_logout button, .st-key-rail_profile button[data-testid="stPopoverButton"] {
+  display:flex!important;flex-direction:column;align-items:center;justify-content:center;
+  width:100%;min-height:59px;padding:7px 4px;gap:5px;border:0;border-radius:0;
+  border-left:3px solid transparent;background:transparent;color:#b9ccdf;
+  transition:background-color .16s ease,color .16s ease;box-shadow:none;
+}
+.st-key-rail_links button::before, .st-key-rail_logout button::before,
+.st-key-rail_profile button[data-testid="stPopoverButton"]::before {
+  content:"";display:block;flex-shrink:0;width:23px;height:23px;background:currentColor;
+  mask-size:contain;mask-position:center;mask-repeat:no-repeat;
+}
+.st-key-rail_links button p, .st-key-rail_logout button p,
+.st-key-rail_profile button[data-testid="stPopoverButton"] p {
+  color:inherit!important;font-size:12px;line-height:1.2;font-weight:400;white-space:normal;
+  overflow-wrap:normal;word-break:normal;text-align:center;margin:0;
+}
+.st-key-rail_links button[data-testid="stBaseButton-primary"] {
+  background:rgba(35,151,208,.19);border-left-color:#34ccfa;color:#40d5ff;
+}
+.st-key-rail_links button:hover, .st-key-rail_logout button:hover,
+.st-key-rail_profile button[data-testid="stPopoverButton"]:hover {background:#173e58;color:#e5f6ff;}
+.st-key-rail_links button:focus-visible, .st-key-rail_identity button:focus-visible {
+  outline:2px solid #40d5ff;outline-offset:-3px;
+}
+.st-key-rail_identity {flex-shrink:0;background:#0c2941;border-top:1px solid #183d57;padding:5px 0 8px;}
+.st-key-rail_identity [data-testid="stVerticalBlock"] {gap:0;}
+.st-key-rail_profile button[data-testid="stPopoverButton"] p {font-size:10px;}
+.st-key-rail_profile button[data-testid="stPopoverButton"] svg {display:none;}
+.stApp:has(.st-key-navigation_rail) .block-container {max-width:none;padding-left:22px;padding-right:22px;}
+@media(max-height:700px){.st-key-rail_links button{min-height:53px;}.st-key-navigation_rail{padding-top:10px;}}
+@media(prefers-reduced-motion:reduce){.st-key-navigation_rail button{transition:none;}}
+/* Keyed Streamlit containers are themselves vertical blocks. Pin the two zones
+   so the framework header/padding cannot move profile and logout off-screen. */
+.st-key-navigation_rail {position:fixed;inset:0 auto 0 0;width:88px;height:100dvh;z-index:10;overflow:hidden;}
+.st-key-navigation_rail [data-testid="stImage"] {width:48px!important;align-self:center;}
+.st-key-rail_links {position:absolute;top:78px;bottom:138px;left:0;right:0;gap:3px;}
+.st-key-rail_links > div {flex-shrink:0;}
+.st-key-rail_identity {position:absolute;bottom:0;left:0;right:0;gap:0;}
+.st-key-rail_profile button[data-testid="stPopoverButton"] [data-testid="stIconMaterial"] {display:none;}
+.st-key-rail_logout button {min-height:51px;}

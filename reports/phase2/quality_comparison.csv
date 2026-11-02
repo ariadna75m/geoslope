@@ -1,0 +1,5 @@
+source,input_rows,retained_rows,excluded_rows,exact_duplicate_excluded_rows,quarantined_invalid_key_rows,quarantined_conflicting_key_rows,corrected_identifier_rows,marked_retained_rows,reordered_rows,new_timestamp_rows,missing_cells_before,missing_cells_after,missing_rain_before,missing_rain_after,duplicate_rows_before,duplicate_rows_after,zero_intervals_before,zero_intervals_after,invalid_timestamps_before,invalid_timestamps_after,insufficient_prisms_before,insufficient_prisms_after,errors_before,errors_after,warnings_before,warnings_after
+west_wall,7178,7178,0,0,0,0,0,21,6813,7178,0,0,,,0,0,0,0,0,0,2,2,0,0,4,4
+south_west,82401,82400,1,1,0,0,0,32,82400,82401,0,0,,,1,0,1,0,0,0,4,4,0,0,6,4
+rainfall_2013,365,365,0,0,0,0,0,3,0,365,9,9,3.0,3.0,0,0,0,0,0,0,0,0,0,0,3,3
+rainfall_2014,365,365,0,0,0,0,0,4,0,365,12,12,4.0,4.0,0,0,0,0,0,0,0,0,0,0,3,3
