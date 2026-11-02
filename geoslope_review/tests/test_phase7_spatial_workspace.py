@@ -60,3 +60,16 @@ def test_workspace_center_reset_and_empty_filters(app, monkeypatch):
     [i for i in at.text_input if i.label == "Buscar prisma"][0].set_value("SIN-PRISMA").run()
     assert not at.exception and not at.error
     assert any("No existen prismas" in x.value for x in at.info)
+
+def test_spatial_highlights_candidates_and_marks_with_size_hierarchy(app):
+    points = app.reader.spatial("2014-02-20 23:59:59")
+    fig = spatial(points, "3D")
+
+    sizes = {}
+
+    for trace in fig.data:
+        if trace.name in ("Candidato para revisión", "Marca estadística", "Sin marca"):
+            sizes[trace.name] = trace.marker.size
+
+    assert sizes["Candidato para revisión"] > sizes["Marca estadística"]
+    assert sizes["Marca estadística"] > sizes["Sin marca"]

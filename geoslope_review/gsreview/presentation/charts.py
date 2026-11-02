@@ -119,6 +119,12 @@ def spatial(points, dimension="3D", colors=None, selected=None, focus=False, lab
         custom = (
             group[["prism_id", "timestamp", "model_eligible", "episode_id"]].astype(str).to_numpy()
         )
+        if state == "candidato_revision":
+            marker_size = 10 if dimension == "3D" else 16
+        elif state in ("marca_aislada", "episodio_en_observacion"):
+            marker_size = 8 if dimension == "3D" else 13
+        else:
+            marker_size = 6 if dimension == "3D" else 11
         common = dict(
             mode="markers+text" if labels else "markers",
             text=group.prism_id,
@@ -137,7 +143,7 @@ def spatial(points, dimension="3D", colors=None, selected=None, focus=False, lab
                 state == "marca_aislada" and "episodio_en_observacion" in set(points.causal_state)
             ),
             marker={
-                "size": 6 if dimension == "3D" else 11,
+                "size": marker_size,
                 "color": colors[state],
                 "symbol": "circle-open"
                 if state in ("marca_aislada", "episodio_en_observacion")
