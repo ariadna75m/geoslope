@@ -27,7 +27,7 @@ jobs:
           pip install pytest flake8 pyyaml
           # Instalar el paquete si existe pyproject.toml en la raiz o en la subcarpeta
           if [ -f pyproject.toml ]; then pip install -e .; fi
-          if [ -d geoslope_review ] && [ -f geoslope_review/pyproject.toml ]; then pip install -e ./geoslope_review; fi
+          if [ -f geoslope_review/requirements.txt ]; then pip install -r geoslope_review/requirements.txt; fi
 
       - name: Revision de sintaxis con Flake8
         run: |
