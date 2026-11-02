@@ -420,13 +420,31 @@ def quality_view(c, token):
     st.info(
         "Ausencia de datos no significa estabilidad. La calidad se conserva separada de las marcas estadísticas."
     )
+    reasons = sorted(bad.model_ineligibility_reason.dropna().unique().tolist())
+
+    selected_reason = st.selectbox(
+        "Filtrar por motivo de no evaluabilidad",
+        ["Todos"] + reasons,
+        key="quality_reason_filter",
+    )
+
+    filtered_bad = (
+        bad
+        if selected_reason == "Todos"
+        else bad.loc[bad.model_ineligibility_reason == selected_reason]
+    )
+
+    st.caption(
+        f"Mostrando {len(filtered_bad)} de {len(bad)} registros no evaluables."
+    )
+
     counts = (
-        bad.model_ineligibility_reason.value_counts()
+        filtered_bad.model_ineligibility_reason.value_counts()
         .rename_axis("Motivo")
         .reset_index(name="Registros")
     )
     st.dataframe(counts, hide_index=True)
-    counts = bad.groupby("prism_id").size().rename("Registros").reset_index()
+    counts = filtered_bad.groupby("prism_id").size().rename("Registros").reset_index()
     st.plotly_chart(
         px.bar(
             counts,
@@ -437,7 +455,7 @@ def quality_view(c, token):
         ),
         width="stretch",
     )
-    counts = bad.groupby(bad.timestamp.dt.date).size().rename("Registros").reset_index()
+    counts = filtered_bad.groupby(filtered_bad.timestamp.dt.date).size().rename("Registros").reset_index()
     st.plotly_chart(
         px.bar(
             counts,
@@ -449,7 +467,7 @@ def quality_view(c, token):
         width="stretch",
     )
     st.dataframe(
-        bad[
+        filtered_bad[
             [
                 "prism_id",
                 "timestamp",

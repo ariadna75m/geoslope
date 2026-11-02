@@ -65,3 +65,30 @@ def test_ui_no_access_with_invalid_session_and_unknown_nav(app, monkeypatch):
     at.run()
     assert not at.exception and "token" not in at.session_state
     assert not at.metric
+
+def test_quality_reason_filter_updates_quality_view(app, monkeypatch):
+    monkeypatch.setenv("GEOSLOPE_RUNTIME", str(app.runtime))
+
+    at = AppTest.from_file(str(app.app_root / "app.py"), default_timeout=15)
+    at.session_state["token"] = app.test_admin
+    at.session_state["nav"] = "Calidad de datos"
+    at.run()
+
+    assert not at.exception and not at.error
+
+    bad = app.reader.rows.loc[~app.reader.rows.model_eligible]
+    reason = sorted(bad.model_ineligibility_reason.dropna().unique().tolist())[0]
+
+    quality_filter = at.selectbox(key="quality_reason_filter")
+    assert quality_filter.value == "Todos"
+
+    quality_filter.set_value(reason).run()
+
+    assert not at.exception and not at.error
+
+    expected = len(bad.loc[bad.model_ineligibility_reason == reason])
+
+    assert any(
+        f"Mostrando {expected} de {len(bad)} registros no evaluables." in caption.value
+        for caption in at.caption
+    )
