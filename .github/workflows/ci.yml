@@ -18,7 +18,7 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.12'
           cache: 'pip'
 
       - name: Instalar dependencias del proyecto
@@ -27,7 +27,7 @@ jobs:
           pip install pytest flake8 pyyaml
           # Instalar el paquete si existe pyproject.toml en la raiz o en la subcarpeta
           if [ -f pyproject.toml ]; then pip install -e .; fi
-          if [ -d geoslope_review ] && [ -f geoslope_review/pyproject.toml ]; then pip install -e ./geoslope_review; fi
+          if [ -f geoslope_review/requirements.txt ]; then pip install -r geoslope_review/requirements.txt; fi
 
       - name: Revision de sintaxis con Flake8
         run: |

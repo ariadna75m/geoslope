@@ -1,0 +1,27 @@
+{
+  "tables_identical": true,
+  "table_count": 15,
+  "table_hashes": {
+    "west_wall_summary.csv": "c6b68e2c1a1c332b45ce713c808763820a33509013c298d3401d0b8eba9199b1",
+    "west_wall_prism_profiles.csv": "d26485306e6fe475471a78f6196cff41a29de26ab2a29b7468335b633340df23",
+    "west_wall_representative_prisms.csv": "8374e0ce341a8470020b15ac17423b39bc59292bc00e74e9bd38bbaf89c5a3be",
+    "south_west_summary.csv": "a3f7a3f72ed43f2ba2bbfc38c287fe4fe3bf5f2b9dd55eb08348b33ee3cae9ba",
+    "south_west_prism_profiles.csv": "bd266bab3fe4be45473113b09cb69a5165671bdae8aba164d296fa811d7c2964",
+    "south_west_representative_prisms.csv": "dcb44426713f5086ae5c8827d5ef8236697b4ff94dfe1cec32c689efa9d2022a",
+    "rainfall_summary.csv": "b18027063008c2302cdb786d99a7769eb78106b78e24960934e9a8da20d199e0",
+    "rainfall_monthly.csv": "83a6402c037cf9cf8a0ffdc3a454c84b045321fa2f9c4d9578b0f7476573b416",
+    "rainfall_daily_concatenated.csv": "0497dfcf810a23527775b2233f20922c88019ff85365916c2ea270f0746b5b08",
+    "events_summary.csv": "854b0ef72e33d8b570bad90f30c68ad01881f70ec20a81df8a76dcb152e00f15",
+    "events_records.csv": "d92408cbfc9c40cfa336af18d8673faf74d5f7015d1a6422851b3a42ca7932bb",
+    "seismic_velocity_summary.csv": "6419aaf9197f6981e50734e711cc71593ba4d111bceff9482cb6e59f2f4c7b98",
+    "seismic_velocity_records.csv": "bc6a4936d036232e2d5ae772524e5e177dd96ccffa3cf24e32249b6a7f6770c1",
+    "west_wall_daily_availability.csv": "54fab568c8aac7d6419f068ab945a56b55214792ec44bba654de0f1496885e85",
+    "indicator_dictionary.csv": "911a9e00af9980fb0f4be04324ceb5dfeaa4381026bc33459485814790616ebf"
+  },
+  "full_pipeline_repeated": true,
+  "protected_files_intact": 59,
+  "png_validated": 55,
+  "html_local_assets_validated": 55,
+  "plotly_js_sha256": "3b6e15d45dbb7fca5bd2094291e961ddc5472cd887009e6009a56dab668d721f",
+  "checkpoint_before": "f64070e"
+}

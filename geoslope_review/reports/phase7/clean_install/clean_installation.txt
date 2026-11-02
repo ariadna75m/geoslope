@@ -1,0 +1,25 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "modules_verified": [
+    "streamlit",
+    "sqlalchemy",
+    "pandas",
+    "numpy",
+    "plotly",
+    "pydantic",
+    "argon2",
+    "pyotp",
+    "cryptography",
+    "qrcode",
+    "reportlab"
+  ],
+  "metrics": {
+    "prismas": 49,
+    "registros": 7178,
+    "episodios": 48,
+    "episodios candidatos": 20,
+    "registros candidatos": 102,
+    "interrupciones de calidad": 4
+  },
+  "integrity_files": 17
+}

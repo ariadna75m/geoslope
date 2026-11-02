@@ -1,0 +1,242 @@
+# Monitoreo de taludes — Diagnóstico del dataset: Fase 1
+
+Fecha de diagnóstico: 3 de octubre de 2026. Fuente: exclusivamente los ocho archivos adjuntos en `Data.zip`. Se inspeccionaron todas las filas de las siete tablas y se extrajo el texto de las 17 páginas del PDF. No se entrenaron modelos, no se construyó interfaz ni se generó un dataset limpio. Las transformaciones temporales existen solo en memoria para obtener métricas del diagnóstico.
+
+## Dictamen
+
+El conjunto permite desarrollar un MVP de exploración temporal y detección de señales de atención, sujeto a validar las unidades y el contexto. **No permite demostrar predicción de falla ni medir anticipación o falsos positivos con la información adjunta.** Se recomienda comenzar por West Wall, que declara movimiento 3D en mm, y habilitar South West como fuente ampliada cuando se confirme su escala física. Las filas son mediciones repetidas de puntos, no eventos de falla independientes.
+
+## 1. Inventario completo
+
+Los tamaños se expresan en bytes exactos; filas excluyen encabezados y preámbulos. Los prismas no aplican a eventos, clima ni TXT. El DAT tiene 15 nombres en el encabezado pero 16 campos en cada registro.
+
+| Archivo (ruta bajo data/raw/) | Bytes | Formato | Filas | Columnas | Prismas | Cobertura |
+| --- | --- | --- | --- | --- | --- | --- |
+| radar-deformation-data/South_West_Corner_06082014.csv | 13371991 | CSV | 82401 | 11 | 160 | 2014-01-01 08:02:27 → 2014-08-06 06:11:33 |
+| radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv | 505043 | CSV | 7178 | 7 | 49 | 2013-11-20 12:41:22 → 2014-02-20 09:17:53 |
+| radar-deformation-data/slopeMovement.dat | 12795137 | CSV-like DAT | 82401 | 16 | 160 | 2014-01-01 08:02:27 → 2014-08-06 06:11:33 |
+| seismic-event-data/events-and-blasts.csv | 71691 | CSV | 1171 | 7 | no aplica | 2013-12-25 11:24:21.901587486+00:00 → 2014-03-31 15:11:36.451744080+00:00 |
+| velocity-change-measurements/mean-velocity-changes.txt | 3627 | TSV | 44 | 4 | no aplica | 2013-12-25 00:25:00 → 2014-03-22 12:15:00 |
+| weather-data/IDCJAC0009_029167_2013_Data.csv | 14012 | CSV | 365 | 8 | no aplica | 2013-01-01 00:00:00 → 2013-12-31 00:00:00 |
+| weather-data/IDCJAC0009_029167_2014_Data.csv | 14022 | CSV | 365 | 8 | no aplica | 2014-01-01 00:00:00 → 2014-12-31 00:00:00 |
+| weather-data/IDCJMD0040.029167.SiteInfo.pdf | 294429 | PDF | 17 páginas | no aplica | no aplica | Metadatos compilados 28-07-2021 → no es serie temporal |
+
+
+ZIP original: **8.943.265 bytes**. Total de archivos descomprimidos: **27.069.952 bytes**. SHA-256 del ZIP: `b0d3eca632c5c7831d391f6f90b4d88b1a7384b3eb596c19ddaaf64147a24d22`. La extracción comprobó rutas y rechazó enlaces simbólicos; los bytes de cada archivo se cotejaron contra su entrada ZIP. Las huellas por archivo están en `original_manifest.json`. No se modificó ningún original.
+
+## 2. Lectura y correspondencia entre archivos
+
+- **South West:** encabezado real en línea 4; tres líneas previas de metadatos de Quikslope5. Delimitador coma, UTF-8; 82.401 filas de 11 columnas. No usar la primera línea como encabezado.
+- **DAT:** encabezado en línea 1. `%Prism` corresponde aparentemente a dos campos (`31`,`1626`, etc.); la propuesta `31-1626` coincide con el CSV en todas las filas. Tras separar esas dos partes, coinciden exactamente el orden de los prismas, las fechas/horas y los ocho campos numéricos de las 82.401 filas. **Es una segunda representación de los mismos datos**, no una fuente adicional.
+- **West Wall:** CSV regular con 7 columnas y encabezado en línea 1. Hay 37 prismas compartidos con South West y 3.618 claves prisma-fecha-hora coincidentes. En todas coinciden Easting, Northing y RL/Height. No concatenar indiscriminadamente; las bases de desplazamiento difieren. La unión de IDs contiene 172 prismas (160 + 49 − 37).
+- **Eventos:** CSV de 7 columnas, encabezado en línea 1, índice `#Index`. El archivo incluye eventos y voladuras en su nombre, pero **no tiene una columna de tipo de evento**.
+- **TXT:** separado por tabulaciones, 44 filas y 4 columnas. Es una serie agregada sin ID de prisma.
+- **Clima:** dos CSV diarios, 365 fechas cada uno, estación textual `029167`.
+- **PDF:** metadatos de la estación, no mediciones. La página 1 documenta CENTURY MINE, QLD, estación 029167; no identifica la ubicación de cada prisma ni la fecha de una falla.
+
+No se encontraron errores de ancho en los otros seis archivos tabulares ni errores de decodificación UTF-8. La extracción de texto del PDF produjo advertencias de escapes en algunas páginas; se pudo extraer texto de las 17 páginas y se verificó visualmente la página 1. Algunas tablas y diagramas del PDF pierden su disposición al extraer texto; no se interpretaron esas tablas automáticamente.
+
+## 3. Calidad de datos
+
+| Archivo | Celdas vacías | Filas con vacío | Duplicados exactos adicionales | Duplicados clave adicionales | Fechas no interpretables |
+| --- | --- | --- | --- | --- | --- |
+| South_West_Corner_06082014.csv | 0 | 0 | 1 | 1 | 0 |
+| West Wall Prism Movements - 3 months to 20-Feb-14.csv | 0 | 0 | 0 | 0 | 0 |
+| slopeMovement.dat | 0 | 0 | 1 | 1 | 0 |
+| events-and-blasts.csv | 0 | 0 | 0 | 0 | 0 |
+| mean-velocity-changes.txt | 0 | 0 | 0 | 0 | 0 |
+| IDCJAC0009_029167_2013_Data.csv | 9 | 3 | 0 | 0 | 0 |
+| IDCJAC0009_029167_2014_Data.csv | 12 | 4 | 0 | 0 | 0 |
+
+
+Vacío significa celda vacía o solo espacios; no se supuso que códigos numéricos como 0 o −999 significan ausencias. Duplicado exacto = coincidencia de todos los campos; duplicado de clave = prisma+instante en prismas, o instante en series sin prisma. No se detectaron claves duplicadas con valores contradictorios. Todos los campos numéricos esperados pudieron interpretarse y no hay NaN/infinito explícitos entre sus valores no vacíos.
+
+**Duplicado concreto:** prisma `31-1637`, 22-05-2014 a las 21:36:56; aparece en líneas 24.762 y 24.763 del CSV principal y también en el DAT. Es una fila adicional (dos filas afectadas), no dos duplicados adicionales. Permanece intacto. Causaría intervalo cero y debe gestionarse con registro de transformación en Fase 2.
+
+**Lluvia faltante:** 2013-03-08, 2013-10-07 y 2013-12-29; 2014-08-17, 2014-09-17, 2014-10-09 y 2014-12-18. En cada fecha faltan simultáneamente lluvia, período y calidad: 21 celdas vacías y 7 días afectados en total. La cobertura calendario completa no significa precipitación completa. Hay 723/730 registros con lluvia (99,04%). Los días de lluvia vacíos de 2014 quedan fuera del período principal hasta 06-08-2014; el 29-12-2013 puede afectar ventanas previas y el análisis West Wall.
+
+No hay precipitación negativa. En los 723 registros medidos el período es 1 día y `Quality` vale `N`; el significado de N requiere validación. No sustituir ausencias por 0.
+
+### Frecuencia, huecos y cantidad de observaciones
+
+| Serie | Mediana de intervalo | Mayor hueco | Observación |
+| --- | --- | --- | --- |
+| South West / DAT | 4,011 h | 1.932,480 h (80,52 días) | Intervalos positivos ordenados por prisma; un intervalo cero por duplicado. |
+| West Wall | 8,125 h | 357,168 h (14,88 días) | Intervalos por prisma. |
+| TXT de cambios de velocidad | 48 h 50 min | 48 h 50 min | Frecuencia uniforme en los 43 intervalos. |
+| Clima | 24 h | 24 h calendario | Existen días con medición vacía. |
+| Eventos | 0,658 h entre eventos | 69,014 h | Intervalo entre eventos; no frecuencia de muestreo de sensor. |
+
+
+El archivo principal contiene entre **1 y 1.577 filas por prisma**. 158 de 160 prismas presentan al menos un hueco mayor a 24 horas. Cuatro tienen menos de 20 filas: `24-1115` (10), `31-1481` (14), `31-1608` (1) y `31-1871` (7). Un prisma con una sola observación no admite cálculo de velocidad ni entrenamiento individual. La mediana global no describe todos los prismas; el detalle individual está en `prism_coverage.csv`.
+
+Las series de cada prisma están ordenadas cronológicamente en sus bloques originales (0 retrocesos dentro de cada prisma). Los archivos de prismas están agrupados por ID, por lo que **no están ordenados globalmente por tiempo**. Un corte temporal futuro debe usar timestamp, no simplemente número de fila.
+
+### Mediciones sospechosas y límites de la validación
+
+En West Wall el movimiento declarado en mm no tiene valores negativos, pero **disminuye entre mediciones 3.370 veces**. Esto no demuestra corrupción; podría tratarse de distancia respecto a referencia, reversión u otra definición. No interpretarlo como distancia total recorrida siempre creciente sin verificar la fórmula.
+
+`Local Magnitude` va de −4,5 a 2,4; los valores negativos se conservan. `LocU [m]` va de −4.025,1 a 1.487,3: se marca para revisar el datum y definición de U, sin declararlo imposible. No existen límites geomecánicos, precisión instrumental o banderas de corrupción documentados para certificar valores físicamente imposibles. La ausencia de errores de lectura no certifica exactitud física. No se eliminaron atípicos.
+
+## 4. Diccionario preliminar y mapeo propuesto
+
+Las unidades explícitas se toman de los encabezados. Las inferidas se marcan **requiere validación**. Los rangos, tipos observados, faltantes y nombres normalizados por columna están en `data_dictionary.csv`; los originales se conservan. Para el DAT se incluyen 16 campos propuestos, además de conservar su encabezado de 15 nombres en `audit.json`.
+
+### South_West_Corner_06082014.csv
+
+| Columna real / campo propuesto DAT | Significado preliminar | Unidad | Mapeo |
+| --- | --- | --- | --- |
+| Prism | Identificador de prisma | no aplica | prism_id |
+| Date | Fecha registrada | calendario | timestamp (junto con Time) |
+| Time | Hora registrada | hh:mm:ss | timestamp (junto con Date) |
+| Easting | Coordenada rotulada Easting | posibles m; requiere validación | easting |
+| Northing | Coordenada rotulada Northing | posibles m; requiere validación | northing |
+| Height | Coordenada rotulada Height | posibles m; requiere validación | height |
+| Adjusted Distance Diff | Diferencia de distancia rotulada Adjusted Distance Diff | requiere validación | adjusted_distance_diff |
+| Unadjusted Slope Distance Diff | Diferencia de distancia rotulada Unadjusted Slope Distance Diff | requiere validación | unadjusted_slope_distance_diff |
+| Easting Diff | Diferencia del componente respecto a la primera coordenada observada de cada prisma, verificada numéricamente | posibles mm; requiere validación | easting_diff |
+| Northing Diff | Diferencia del componente respecto a la primera coordenada observada de cada prisma, verificada numéricamente | posibles mm; requiere validación | northing_diff |
+| Height Diff | Diferencia del componente respecto a la primera coordenada observada de cada prisma, verificada numéricamente | posibles mm; requiere validación | height_diff |
+
+
+### West Wall Prism Movements - 3 months to 20-Feb-14.csv
+
+| Columna real / campo propuesto DAT | Significado preliminar | Unidad | Mapeo |
+| --- | --- | --- | --- |
+| Prism | Identificador de prisma | no aplica | prism_id |
+| Date | Fecha registrada | calendario | timestamp (junto con Time) |
+| Time | Hora registrada | hh:mm:ss | timestamp (junto con Date) |
+| Easting | Coordenada rotulada Easting | posibles m; requiere validación | easting |
+| Northing | Coordenada rotulada Northing | posibles m; requiere validación | northing |
+| RL | Coordenada rotulada RL | posibles m; requiere validación | height_candidate |
+| Cumulative 3D Movement (mm) Since 20th Nov | Movimiento 3D acumulado según encabezado, con referencia rotulada 20 de noviembre | mm (explícito en encabezado) | displacement_3d_mm |
+
+
+### slopeMovement.dat
+
+| Columna real / campo propuesto DAT | Significado preliminar | Unidad | Mapeo |
+| --- | --- | --- | --- |
+| prism_part_1 | Parte del ID propuesta para el campo %Prism; ambas partes forman el ID del CSV | no aplica | prism_id_part_1 |
+| prism_part_2 | Parte del ID propuesta para el campo %Prism; ambas partes forman el ID del CSV | no aplica | prism_id_part_2 |
+| day | Componente de fecha/hora | calendario | timestamp (componente) |
+| month | Componente de fecha/hora | calendario | timestamp (componente) |
+| year | Componente de fecha/hora | calendario | timestamp (componente) |
+| hour | Componente de fecha/hora | hour | timestamp (componente) |
+| minute | Componente de fecha/hora | minute | timestamp (componente) |
+| second | Componente de fecha/hora | second | timestamp (componente) |
+| Easting | Coordenada rotulada Easting | posibles m; requiere validación | easting |
+| Northing | Coordenada rotulada Northing | posibles m; requiere validación | northing |
+| Height | Coordenada rotulada Height | posibles m; requiere validación | height |
+| Adjusted Distance Diff | Diferencia de distancia rotulada Adjusted Distance Diff | requiere validación | adjusted_distance_diff |
+| Unadjusted Slope Distance Diff | Diferencia de distancia rotulada Unadjusted Slope Distance Diff | requiere validación | unadjusted_slope_distance_diff |
+| Easting Diff | Diferencia del componente respecto a la primera coordenada observada de cada prisma, verificada numéricamente | posibles mm; requiere validación | easting_diff |
+| Northing Diff | Diferencia del componente respecto a la primera coordenada observada de cada prisma, verificada numéricamente | posibles mm; requiere validación | northing_diff |
+| Height Diff | Diferencia del componente respecto a la primera coordenada observada de cada prisma, verificada numéricamente | posibles mm; requiere validación | height_diff |
+
+
+### events-and-blasts.csv
+
+| Columna real / campo propuesto DAT | Significado preliminar | Unidad | Mapeo |
+| --- | --- | --- | --- |
+| #Index | Índice de evento | no aplica | event_id |
+| EventTimeEpochSeconds | Instante del evento expresado como EpochSeconds según encabezado | s (por encabezado) | event_timestamp |
+| Local Magnitude | Magnitud local según encabezado | escala de magnitud; definición requiere validación | local_magnitude |
+| Potency [m^3] | Potency según encabezado; definición operacional requiere validación | m³ (explícito) | potency_m3 |
+| LocE [m] | Componente espacial del evento según encabezado | m (explícito) | event_easting_m |
+| LocN [m] | Componente espacial del evento según encabezado | m (explícito) | event_northing_m |
+| LocU [m] | Componente espacial del evento según encabezado | m (explícito) | event_loc_u_m |
+
+
+### mean-velocity-changes.txt
+
+| Columna real / campo propuesto DAT | Significado preliminar | Unidad | Mapeo |
+| --- | --- | --- | --- |
+| Date | Fecha registrada | calendario | timestamp |
+| Velocity Change (%) | Cambio de velocidad | % (explícito) | velocity_change_pct |
+| Velocity Change plus Standard Deviation (%) | Cambio de velocidad más desviación estándar | % (explícito) | velocity_change_plus_sd_pct |
+| Velocity Change minus Standard Deviation (%) | Cambio de velocidad menos desviación estándar | % (explícito) | velocity_change_minus_sd_pct |
+
+
+### IDCJAC0009_029167_2013_Data.csv
+
+| Columna real / campo propuesto DAT | Significado preliminar | Unidad | Mapeo |
+| --- | --- | --- | --- |
+| Product code | Código de producto meteorológico | no aplica | weather_product_code |
+| Bureau of Meteorology station number | Identificador de estación meteorológica | no aplica | station_id |
+| Year | Componente de fecha/hora | calendario | timestamp (componente) |
+| Month | Componente de fecha/hora | calendario | timestamp (componente) |
+| Day | Componente de fecha/hora | calendario | timestamp (componente) |
+| Rainfall amount (millimetres) | Cantidad de precipitación registrada | mm (explícito) | rainfall_mm |
+| Period over which rainfall was measured (days) | Duración del período de medición de lluvia | días (explícito) | rainfall_period_days |
+| Quality | Código de calidad del registro meteorológico | no aplica | rainfall_quality_code |
+
+
+### IDCJAC0009_029167_2014_Data.csv
+
+| Columna real / campo propuesto DAT | Significado preliminar | Unidad | Mapeo |
+| --- | --- | --- | --- |
+| Product code | Código de producto meteorológico | no aplica | weather_product_code |
+| Bureau of Meteorology station number | Identificador de estación meteorológica | no aplica | station_id |
+| Year | Componente de fecha/hora | calendario | timestamp (componente) |
+| Month | Componente de fecha/hora | calendario | timestamp (componente) |
+| Day | Componente de fecha/hora | calendario | timestamp (componente) |
+| Rainfall amount (millimetres) | Cantidad de precipitación registrada | mm (explícito) | rainfall_mm |
+| Period over which rainfall was measured (days) | Duración del período de medición de lluvia | días (explícito) | rainfall_period_days |
+| Quality | Código de calidad del registro meteorológico | no aplica | rainfall_quality_code |
+
+
+### Evidencia y reservas del mapeo
+
+- En las 82.401 filas de South West, `Easting Diff`, `Northing Diff` y `Height Diff` equivalen a 1000 veces el cambio de su coordenada frente a la primera fila del prisma, con error absoluto menor a 1e-5. Es evidencia de escala relativa y referencia interna; **no documenta que coordenadas estén en m y diferencias en mm**.
+- `Adjusted Distance Diff` y `Unadjusted Slope Distance Diff`: requieren validación de unidad, corrección y significado físico. No son intercambiables con norma 3D.
+- `RL` coincide con `Height` en las filas compartidas, pero altura, datum y CRS requieren validación. No convertir estas coordenadas a latitud/longitud ni unirlas espacialmente con eventos o estación sin CRS compatible.
+- `Velocity Change (%)` y sus bandas tienen unidad % explícita, pero **no se documenta qué velocidad cambia**, el método ni su correspondencia con un prisma. No usarlas como velocidad de desplazamiento ni como etiquetas de falla.
+- La lluvia debe alinearse por el período realmente medido y su hora de disponibilidad. Unir el total de un día a mediciones de ese mismo día puede introducir lluvia futura.
+- Los timestamps de prismas/TXT no traen zona horaria. Los eventos se convierten a UTC bajo interpretación Unix; no compararlos directamente ni aplicar una zona por conjetura. La conversión float puede redondear los últimos decimales subsegundo; el original textual permanece intacto.
+
+## 5. Archivos recomendados para el MVP
+
+| Prioridad | Archivo | Uso propuesto y condición |
+| --- | --- | --- |
+| 1 — primer flujo | West Wall Prism Movements - 3 months to 20-Feb-14.csv | Serie con desplazamiento 3D en mm explícitos; 49 prismas. Confirmar referencia/fórmula y zona horaria antes de interpretar velocidad. |
+| 2 — ampliación | South_West_Corner_06082014.csv | Más observaciones y período; 160 prismas. Validar unidades antes de reportar mm/h. Norma de componentes respecto a referencia es candidata, no distancia de trayectoria. |
+| Complemento | Los dos CSV meteorológicos | Concatenar calendario 2013/2014 manteniendo ausencias, estación y calidad; usar ventanas pasadas con hora de disponibilidad validada. |
+| Complemento condicionado | events-and-blasts.csv | Eventos observados en un catálogo mixto; conteo/magnitud solo con alineación temporal documentada. No separar sismos/voladuras sin etiquetas. |
+| Conservar como cotejo | slopeMovement.dat | No sumar al CSV: representación idéntica con encabezado defectuoso. |
+| Posponer como característica | mean-velocity-changes.txt | Sin prisma ni definición del tipo de velocidad. Útil solo como serie contextual una vez documentada. |
+| Documentación | IDCJMD0040.029167.SiteInfo.pdf | Contexto de estación 029167; no aporta etiquetas de falla ni mediciones de desplazamiento. |
+
+
+La lluvia cubre todos los días calendario de ambas series de prismas, con ausencias señaladas. El catálogo de eventos termina el 31-03-2014, mientras South West continúa hasta agosto: **fuera de cobertura no significa cero eventos**. El TXT termina el 22-03-2014. La coincidencia de fechas no prueba sincronización ni causalidad.
+
+## 6. Riesgos y condiciones pendientes
+
+1. No hay archivo de descripción del evento, artículo, README, licencia de la colección ni etiquetas de falla adjuntos. El nombre de una estación no confirma por sí solo procedencia del conjunto, mecanismo o fecha de colapso. No se asignó fecha de falla.
+2. No hay evidencia para afirmar cuántas fallas reales contiene el conjunto. Las 82.401 mediciones no son 82.401 ejemplos independientes de falla. Un solo sitio limita la generalización a minas peruanas.
+3. Faltan CRS, datum, precisión instrumental, unidades de South West, metodología de ajustes y zona horaria. Esto condiciona la interpretación física y los enlaces entre fuentes.
+4. Prismas superpuestos y DAT duplicado pueden inflar cantidad de datos. West Wall y South West usan definiciones/referencias distintas: no sumar sus desplazamientos.
+5. Huecos largos y prismas muy cortos impiden características robustas en algunos puntos. No interpolar grandes huecos silenciosamente.
+6. El catálogo mezcla eventos sin tipo y no documenta completitud. No tratarlo como todas las voladuras ni todos los sismos de la mina.
+7. El PDF contiene advertencias sobre calidad y completitud de metadatos históricos. No implica que los CSV estén completamente verificados.
+8. No hay etiquetas suficientes para accuracy, precision, recall, F1, falsos positivos o anticipación de falla. La evaluación inicial será exploratoria y temporal.
+9. Ventanas centradas, ajuste de escaladores con toda la serie y lluvia del día aún no disponible introducirían información futura; en fases siguientes deberán evitarse.
+10. Se conserva el aviso profesional: **Este resultado es una señal de apoyo al seguimiento preventivo. No constituye una predicción definitiva de falla ni reemplaza la evaluación del ingeniero geomecánico.**
+
+## 7. Archivos entregados y reproducción
+
+- `scripts/inspect_phase1.py`: auditoría completa de filas, fechas, huecos, duplicados y equivalencias.
+- `scripts/build_diagnostic.py`: generación del diccionario y este informe.
+- `reports/inventory.csv`: inventario por archivo con métricas.
+- `reports/data_dictionary.csv`: 61 campos por fuente con unidades y notas de validación.
+- `reports/column_profile.csv`: rangos y faltantes de cada columna.
+- `reports/prism_coverage.csv`: 369 perfiles por archivo (160 CSV + 160 DAT + 49 West); las repeticiones son representaciones, no prismas únicos.
+- `reports/audit.json`: resultados detallados, encabezados originales y evidencia.
+- `reports/original_manifest.json`: tamaños y SHA-256 de los ocho originales.
+- `reports/station_metadata_extracted.txt`: texto del PDF por página.
+- `data/raw/`: ocho originales extraídos, sin cambios.
+
+Entorno utilizado: Python 3.12.14, Pandas 2.2.3, NumPy 2.3.5. Consultar `README.md` para reproducir. Se ejecutaron ambos scripts y verificaciones de integridad y consistencia; estas son comprobaciones del diagnóstico, no pruebas de una aplicación. El punto de control Git anterior al trabajo es `1c7c14e`.
+
+## Estado y siguiente paso
+
+**Fase 1 terminada. Fases 2–8 pendientes.** La carpeta nueva contiene únicamente originales y herramientas/resultados del diagnóstico. No hay app, base de datos, dataset procesado ni modelo entrenado todavía. Se espera aprobación expresa para Fase 2: carga y limpieza con registro de transformaciones; los campos pendientes de validación seguirán identificados hasta contar con evidencia.

@@ -1,0 +1,23 @@
+{
+  "prior_project_files_byte_identical": 507,
+  "protected_application_files_byte_identical": 17,
+  "frozen_artifacts_hashes_verified": 17,
+  "models_and_scores_modified": false,
+  "training_performed": false,
+  "changed_existing_app_files": [
+    "README.md",
+    "app.py",
+    "assets/spatial.css",
+    "config/app_config.yaml",
+    "docs/manual_usuario.md",
+    "gsreview/presentation/charts.py",
+    "gsreview/presentation/views.py",
+    "pyproject.toml",
+    "scripts/validate_browser.py",
+    "tests/test_phase7_spatial_workspace.py",
+    "tests/test_phase7_ui.py"
+  ],
+  "observations": [
+    "Verificación byte a byte frente a la entrega 0.7.1; sin modificar artefactos o fuentes de Fases 1–6."
+  ]
+}

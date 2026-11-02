@@ -1,0 +1,25 @@
+{
+  "finalized_at_utc": "2026-10-04T02:22:23.017172+00:00",
+  "test_totals": {
+    "tests": 158,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "files_sha256": {
+    "reports/phase5/model_findings.md": "8e5153c44fd220a42e0e5ef4c3802b516b2b0b2ef7bdd85b6192d47b4c4728ac",
+    "reports/phase5/documentation_closure.json": "8cbf33344237a5312c3c2c2680e6d0f0399810211258e9a8b26273bce2e36ac9",
+    "reports/phase5/pytest-results.xml": "bb7ea5fbe9ac13c0545fe961004d0d01bd6fea2d502b1edde7d7b812eba2e425",
+    "reports/phase5/pytest-output.txt": "16b039d55795cc82c12b473cb27fb91ccf7362f33d693c18d03d84692016a3b8",
+    "reports/phase5/verification-log.txt": "ee1bb90cfe3d88cc34d4f3d8124f7d937f6d0b028e46e96f2ca75bee1a63bb74",
+    "reports/phase5/reproducibility.json": "7037a119f64931e2cc4b1bc4c2cfdf0a008aae7c558ee32ed148d391150d216c",
+    "scripts/build_phase5_report.py": "b284377a0f3d37d9367272db071edf5715e237ba6b264fec9bf2fa977a9b3961",
+    "scripts/close_phase5_documentation.py": "c907674ea0d060688f8499531614a438d9e2658509c294ce09a75e93134659ef",
+    "tests/test_max_features_revision.py": "503a09e12567c89161b1e39516b238123ebcda611da93a42eb622d63d874bef5",
+    "models/phase5/model_metadata.json": "8b1739d1c70131116f9e5e4c7b57714aed61078c904601eb4eb9248f60502894"
+  },
+  "report_rebuilt_from_existing_artifacts": true,
+  "production_retraining_performed": false,
+  "checkpoint_file": "reports/phase5/git_checkpoint.txt",
+  "checkpoint_recorded_after_commit_to_avoid_self_reference": true
+}

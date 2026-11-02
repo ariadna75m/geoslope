@@ -1,0 +1,305 @@
+{
+  "version": "0.7.2",
+  "baseline_0_7_0": {
+    "status": "approved_with_observations",
+    "previous_tests": 200,
+    "new_tests": 58,
+    "total_tests": 258,
+    "all_passed": true,
+    "clean_validation": {
+      "status": "passed",
+      "archive_sha256": "51bbaf03d33cf2ea30b5021cba2f7b7248b9c1e7f1b1a6eba3eff154bed568a9",
+      "fresh_venv": true,
+      "pip_install_passed": true,
+      "full_suite_passed": true,
+      "workflow_passed": true,
+      "browser_passed": true,
+      "tested_python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "platform": "linux",
+      "code_sha256": {
+        "geoslope_review/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "geoslope_review/app.py": "34a02cae73f52b6d7a9248da52b30a8adee07e5fba1ada037ac3d2a67cdcf5e4",
+        "geoslope_review/scripts/validate_clean_install.py": "c721fd7f9fe1606285cfc629d6b7f9c9ef726ebe302ca5e65345916cb6ac1c0c",
+        "geoslope_review/scripts/verify_integrity.py": "7e533bd7ec151c83e33bfc48db64cb927e149375b86835cd63a6af687b74fbba",
+        "geoslope_review/scripts/create_backup.py": "fbe8dd3f796b85e36139bfa2fb0e4b5d0a123efcdf2c0791ab683b74c92f4ca8",
+        "geoslope_review/scripts/run_app.py": "b0f424056d8012f8e5254980ccba2ad1c7981d33d6c79386666bd4d7e24da101",
+        "geoslope_review/scripts/initialize_database.py": "ce70eeaf29a5e2833f22571d1a7bf3b0b0d7393af1bb0649acbd72b3ea968be3",
+        "geoslope_review/scripts/verify_installation.py": "7c6096bbe241f8a87d1634a7fba41e0a104ceac791f8c69b44f64dc3d758bf36",
+        "geoslope_review/scripts/import_phase6.py": "3f42080598f4fc029d0a700216ce991c0c2462986737b5257348b2989aba5dc2",
+        "geoslope_review/scripts/package_phase7.py": "c6e872464257ffd12c7f4292934bd54266354201d028cf1691fea2201e40c4be",
+        "geoslope_review/scripts/validate_browser.py": "16d93a3747ca592dbf4dc71f68998054509207d6cb4c62aa70390ab088686576",
+        "geoslope_review/tests/conftest.py": "075346b4c047a53a20f6de0b630dc1b90d84832e262d962513e3913f40b9ed64",
+        "geoslope_review/tests/test_phase7_ui.py": "3f6f3c2e442365a9fc409f741ba1f0bdcca896eb3e7f26bcb83b6ee0096c4e92",
+        "geoslope_review/tests/test_phase7_security.py": "6aef702439cae2c7e087f0861a1c82b70d1a9b03269a45825a4b9bc804bc60e3",
+        "geoslope_review/tests/test_phase7_integration.py": "3b2b099d0592facd4ef6b8f5433acd19ec45f46b63b2066daa15f33f2b98b4a1",
+        "geoslope_review/gsreview/configuration.py": "4bc4c64d85a9535aed8901ab9e4a0e43238a836e92eeba73b761d41e194d79ea",
+        "geoslope_review/gsreview/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "geoslope_review/gsreview/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "geoslope_review/gsreview/domain/rules.py": "8998cc8c59a81bcd13d817347d327dab2c8ed1372231c5e88cd4e9e2f66caea7",
+        "geoslope_review/gsreview/presentation/charts.py": "450d1a8f02f3eeb498b47d8fcaf0b74f81777cc4d3dd4fb442f09680d5978381",
+        "geoslope_review/gsreview/presentation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "geoslope_review/gsreview/presentation/views.py": "1ff5478de3b3cf0a220b407fed323e02bf83b7a157b7b32aab79dbae7336bcf0",
+        "geoslope_review/gsreview/application/reports.py": "83c6991e3686ccbb5f36b0e74cd969f69dbaa73eafaac69c5051b45c14b5d034",
+        "geoslope_review/gsreview/application/review.py": "52da60955668bf4c01e9224deb84f6571002992f1672be6e787e16a784171477",
+        "geoslope_review/gsreview/application/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "geoslope_review/gsreview/application/auth.py": "c4a4f0706f6e34ed1e707a84c4b85cc9f35263c9ac350b2d7a1e7cd712665baf",
+        "geoslope_review/gsreview/application/settings.py": "9a772dc968ad9dbafad983490d8830d1a199f5a458bb0df29e97cbc4a2ee27eb",
+        "geoslope_review/gsreview/application/container.py": "159f04961f1a82f1e584a50a937838e678555ce79a97796c93ad04653b3a81ef",
+        "geoslope_review/gsreview/application/backup.py": "8fee759cab9666bef151d6861d3adfbaf96d1d5198bf3bb31418620bcf617fec",
+        "geoslope_review/gsreview/analytics/artifacts.py": "c5c43de7e3d63d9d254cb3016d314f5858ea81bae1b19210479454961245fb73",
+        "geoslope_review/gsreview/analytics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "geoslope_review/gsreview/infrastructure/security.py": "b0be51b65986f51e2efbf77d416b50ab97b687c853ac07185868ca20300be439",
+        "geoslope_review/gsreview/infrastructure/store.py": "b42cf74b7384a73af8bc72123592bbeb11de7ec2b567643baf0822a37be573a2",
+        "geoslope_review/gsreview/infrastructure/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "geoslope_review/gsreview/infrastructure/reporting.py": "58d0f1c4202069021b44ab4b092cab2a81a93ce0cc57588ab5a81958a5218923"
+      },
+      "private_runtime_removed_after_validation": true
+    },
+    "final_application_code_identical_to_clean_test": true,
+    "test_harness_only_changes": [
+      "geoslope_review/scripts/validate_browser.py"
+    ],
+    "test_harness_rerun_passed": true,
+    "screenshots": 12,
+    "pdf_examples": 3,
+    "external_browser_requests": [],
+    "frozen_verification": {
+      "protected_files_intact": 426,
+      "model_hashes_unchanged": true,
+      "phase5_predictions_identical": true,
+      "training_blocked_during_entire_verification": true,
+      "phase6_training_performed": false,
+      "all_input_rows_preserved": 7178,
+      "ineligible_rows_preserved_unknown": 1280,
+      "reproduced_csv_byte_identical": 12,
+      "restored_all_columns_and_types_exact": true,
+      "causal_prefix_checks": [
+        {
+          "cutoff_exclusive": "2013-12-05",
+          "rows_checked": 732,
+          "all_causal_columns_identical": true
+        },
+        {
+          "cutoff_exclusive": "2014-01-15",
+          "rows_checked": 3917,
+          "all_causal_columns_identical": true
+        },
+        {
+          "cutoff_exclusive": "2014-02-02",
+          "rows_checked": 5453,
+          "all_causal_columns_identical": true
+        },
+        {
+          "cutoff_exclusive": "2014-02-15",
+          "rows_checked": 6799,
+          "all_causal_columns_identical": true
+        }
+      ],
+      "retrospective_summaries_stored_separately": true,
+      "specialist_fields_blank": true,
+      "validated_png_html_pairs": 10,
+      "thresholds": {
+        "baseline": 4.439772224885318,
+        "isolation_forest": 0.5872931971929567
+      },
+      "physical_event_not_a_decision_input": true,
+      "aggregation_causality_scope": "conditional on frozen Phase 5 marks",
+      "training_scores_retrospective_not_operational_at_original_time": true,
+      "source_metadata_sha256": "cc824f4b09810ac4e8123382601d854ce5ca4c9c2afd4c5a9cb1324ac8b10e94"
+    },
+    "metrics": {
+      "records": 7178,
+      "prisms": 49,
+      "eligible": 5898,
+      "ineligible": 1280,
+      "episodes": 48,
+      "hybrid_records": 102,
+      "hybrid_episodes": 20,
+      "hybrid_prisms": 17,
+      "union_marks": 136,
+      "agreements": 66,
+      "unselected_marks": 34,
+      "episodes_quality_interruptions": 4
+    },
+    "observations": [
+      "Linux Python 3.12.14 tested; native Windows and Python 3.11 pending",
+      "Spatial units and CRS unvalidated; no terrain",
+      "Approved acceleration unavailable",
+      "Full-disk encryption and local ACL require installation validation",
+      "Professional validation pending"
+    ]
+  },
+  "visual_update_0_7_1": {
+    "version": "0.7.1",
+    "status": "visual_update_validated_with_data_limitations",
+    "previous_tests": 258,
+    "new_spatial_tests": 4,
+    "total_tests": 262,
+    "all_passed": true,
+    "external_requests": [],
+    "original_project_files_byte_identical": 507,
+    "frozen_integrity": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "modules_verified": [
+        "streamlit",
+        "sqlalchemy",
+        "pandas",
+        "numpy",
+        "plotly",
+        "pydantic",
+        "argon2",
+        "pyotp",
+        "cryptography",
+        "qrcode",
+        "reportlab"
+      ],
+      "metrics": {
+        "prismas": 49,
+        "registros": 7178,
+        "episodios": 48,
+        "episodios candidatos": 20,
+        "registros candidatos": 102,
+        "interrupciones de calidad": 4
+      },
+      "integrity_files": 17
+    },
+    "browser": {
+      "status": "passed",
+      "observations": [
+        "Bootstrap, TOTP y dashboard correctos",
+        "Bandeja de revisión visible y sin errores",
+        "Vista espacial visible y sin errores",
+        "Centrado, vista completa y plano 2D comprobados",
+        "Prismas visible y sin errores",
+        "Calidad de datos visible y sin errores",
+        "Usuarios visible y sin errores",
+        "Auditoría visible y sin errores",
+        "Reportes visible y sin errores",
+        "Revisión persistida",
+        "PDF descargado",
+        "Backup cifrado creado",
+        "Logout elimina acceso",
+        "Cero solicitudes externas"
+      ],
+      "external_requests": [],
+      "synthetic_runtime_removed": true,
+      "screenshots_redact_totp": true
+    },
+    "changes": [
+      "spatial presentation charts, layout, styles, theme and local camera centering",
+      "version metadata, documentation and tests"
+    ],
+    "models_and_scores_modified": false,
+    "topography_created": false,
+    "geographic_transform_invented": false,
+    "clean_install_scope": "0.7.0 baseline ZIP validated previously; 0.7.1 regression and browser executed in newly installed venv, without claiming a repeated fresh-extracted-ZIP install"
+  },
+  "current_visual_update": {
+    "version": "0.7.2",
+    "status": "approved_with_observations",
+    "tests": {
+      "previous": 262,
+      "new": 7,
+      "total": 269,
+      "all_passed": true
+    },
+    "lint_passed": true,
+    "browser": {
+      "status": "passed",
+      "observations": [
+        "Bootstrap, TOTP y dashboard correctos",
+        "Bandeja de revisión visible y sin errores",
+        "Vista espacial visible y sin errores",
+        "Clic real sobre prisma 3D actualiza la ficha",
+        "Pantalla completa local comprobada",
+        "Prismas, filtros, selección de punto y tres resoluciones validados",
+        "Centrado, vista completa y plano 2D comprobados",
+        "Prismas visible y sin errores",
+        "Calidad de datos visible y sin errores",
+        "Usuarios visible y sin errores",
+        "Auditoría visible y sin errores",
+        "Reportes visible y sin errores",
+        "Revisión persistida",
+        "PDF descargado",
+        "Backup cifrado creado",
+        "Logout elimina acceso",
+        "Cero solicitudes externas"
+      ],
+      "external_requests": [],
+      "synthetic_runtime_removed": true,
+      "screenshots_redact_totp": true
+    },
+    "preservation": {
+      "prior_project_files_byte_identical": 507,
+      "protected_application_files_byte_identical": 17,
+      "frozen_artifacts_hashes_verified": 17,
+      "models_and_scores_modified": false,
+      "training_performed": false,
+      "changed_existing_app_files": [
+        "README.md",
+        "app.py",
+        "assets/spatial.css",
+        "config/app_config.yaml",
+        "docs/manual_usuario.md",
+        "gsreview/presentation/charts.py",
+        "gsreview/presentation/views.py",
+        "pyproject.toml",
+        "scripts/validate_browser.py",
+        "tests/test_phase7_spatial_workspace.py",
+        "tests/test_phase7_ui.py"
+      ],
+      "observations": [
+        "Verificación byte a byte frente a la entrega 0.7.1; sin modificar artefactos o fuentes de Fases 1–6."
+      ]
+    },
+    "frozen_integrity": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "modules_verified": [
+        "streamlit",
+        "sqlalchemy",
+        "pandas",
+        "numpy",
+        "plotly",
+        "pydantic",
+        "argon2",
+        "pyotp",
+        "cryptography",
+        "qrcode",
+        "reportlab"
+      ],
+      "metrics": {
+        "prismas": 49,
+        "registros": 7178,
+        "episodios": 48,
+        "episodios candidatos": 20,
+        "registros candidatos": 102,
+        "interrupciones de calidad": 4
+      },
+      "integrity_files": 17
+    },
+    "validated_resolutions": [
+      [
+        1366,
+        768
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        1920,
+        1080
+      ]
+    ],
+    "scene_width_at_least_60_percent": true,
+    "topography_created": false,
+    "crs_or_units_invented": false,
+    "clean_install_scope": "Instalación de dependencias en venv nuevo para 0.7.2; evidencia de extracción e instalación limpia del ZIP corresponde únicamente a la base histórica 0.7.0.",
+    "pending": [
+      "CRS y unidades espaciales documentados",
+      "Topografía válida para futuras funciones",
+      "Comprobación nativa Windows y Python 3.11",
+      "Validación especializada de candidatos"
+    ]
+  }
+}

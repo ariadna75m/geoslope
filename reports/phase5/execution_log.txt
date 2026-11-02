@@ -1,0 +1,6 @@
+Entrenamiento y evaluación temporal...
+       period  rows  prisms  eligible_rows  eligible_pct
+entrenamiento  3917      46           2909     74.266020
+   validación  1536      46           1367     88.997396
+       prueba  1725      46           1622     94.028986
+Conservadas: 7178 Elegibles: 5898 Características: 17 Protegidos: 294 Figuras: 20

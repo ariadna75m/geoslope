@@ -1,0 +1,44 @@
+{
+  "protected_files_intact": 426,
+  "model_hashes_unchanged": true,
+  "phase5_predictions_identical": true,
+  "training_blocked_during_entire_verification": true,
+  "phase6_training_performed": false,
+  "all_input_rows_preserved": 7178,
+  "ineligible_rows_preserved_unknown": 1280,
+  "reproduced_csv_byte_identical": 12,
+  "restored_all_columns_and_types_exact": true,
+  "causal_prefix_checks": [
+    {
+      "cutoff_exclusive": "2013-12-05",
+      "rows_checked": 732,
+      "all_causal_columns_identical": true
+    },
+    {
+      "cutoff_exclusive": "2014-01-15",
+      "rows_checked": 3917,
+      "all_causal_columns_identical": true
+    },
+    {
+      "cutoff_exclusive": "2014-02-02",
+      "rows_checked": 5453,
+      "all_causal_columns_identical": true
+    },
+    {
+      "cutoff_exclusive": "2014-02-15",
+      "rows_checked": 6799,
+      "all_causal_columns_identical": true
+    }
+  ],
+  "retrospective_summaries_stored_separately": true,
+  "specialist_fields_blank": true,
+  "validated_png_html_pairs": 10,
+  "thresholds": {
+    "baseline": 4.439772224885318,
+    "isolation_forest": 0.5872931971929567
+  },
+  "physical_event_not_a_decision_input": true,
+  "aggregation_causality_scope": "conditional on frozen Phase 5 marks",
+  "training_scores_retrospective_not_operational_at_original_time": true,
+  "source_metadata_sha256": "cc824f4b09810ac4e8123382601d854ce5ca4c9c2afd4c5a9cb1324ac8b10e94"
+}

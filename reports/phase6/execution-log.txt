@@ -1,0 +1,9 @@
+{
+  "input_rows": 7178,
+  "eligible_rows": 5898,
+  "ineligible_rows": 1280,
+  "episodes": 48,
+  "union_mark_rows": 136,
+  "agreement_rows": 66,
+  "episodes_with_quality_interruption": 4
+}

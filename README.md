@@ -1,69 +1,228 @@
-# GeoSlope Review 0.7.5
+# Monitoreo de taludes — Fases 1 a 5
 
-Aplicación local offline para revisar anomalías estadísticas de prismas y registrar evaluaciones humanas. Monolito modular con Streamlit, servicios Python, SQLAlchemy y SQLite. Usa los artefactos aprobados de Fases 1–6 ubicados en la carpeta superior; no reentrena modelos ni recalcula resultados.
+Diagnóstico, preparación, exploración, características temporales y modelos no supervisados reproducibles de Data.zip. Las Fases 1 a 5 están completas. Los originales y los resultados históricos permanecen intactos. La Fase 6 requiere aprobación formal antes de comenzar.
 
-## Inicio en Windows
+## Consultar resultados
 
-Descomprime todo el ZIP y conserva la estructura `monitoreo-taludes/geoslope_review`. Abre una terminal dentro de `geoslope_review`:
+Abra `reports/Diagnostico_Fase1.md`. El inventario, diccionario por columna, perfiles por prisma y evidencia completa están en `reports/`. Los ocho archivos originales se conservan en `data/raw/`. La copia DAT y el CSV South West representan las mismas mediciones.
 
-```powershell
+## Reproducir el diagnóstico
+
+Python 3.11 o superior. Se ejecutó en Python 3.12.14 con Pandas 2.2.3, NumPy 2.3.5 y pypdf 6.10.0.
+
+```bash
 python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python scripts\verify_installation.py
-python scripts\initialize_database.py
-python scripts\run_app.py
+# Windows PowerShell:
+.venv\Scripts\Activate.ps1
+# Linux/macOS:
+# source .venv/bin/activate
+python -m pip install -r requirements-inspection.txt
+python scripts/inspect_phase1.py
+python scripts/build_diagnostic.py
 ```
 
-También puedes ejecutar `scripts/run_app.bat` después de instalar. La aplicación escucha únicamente en `127.0.0.1:8501`. El asistente crea el primer administrador y exige TOTP. No se distribuyen cuentas, contraseñas, claves, sesiones ni códigos de recuperación. Crea el ingeniero desde Usuarios; al primer acceso configura TOTP y cambia la contraseña temporal.
+Después de instalar dependencias, ambos scripts funcionan sin conexión. Solo escriben resultados dentro de `reports/`; leen todas las tablas manteniendo campos originales como texto y calculan fechas/números en memoria para la auditoría. No son módulos de carga/limpieza del MVP futuro.
 
-## Pantallas
+Los nombres abreviados de mes en inglés son los del export original; ejecutar con locale compatible con estos nombres. Revisar `invalid_timestamps` en `audit.json` si se reproduce en otro entorno.
 
-Inicio; bandeja y detalle de episodios; vista espacial 2D/3D; prismas; calidad; reportes; usuarios; auditoría; copias de seguridad; perfil. El ingeniero dispone de las siete pantallas correspondientes a su rol. Las funciones administrativas se verifican también en servicios, no solo en navegación.
+## Integridad y puntos de control
 
-## Resultados conservados
+ZIP original SHA-256: `b0d3eca632c5c7831d391f6f90b4d88b1a7384b3eb596c19ddaaf64147a24d22`.
 
-7.178 filas, 49 prismas, 5.898 evaluables, 1.280 no evaluables, 48 episodios, 102 registros candidatos en 20 episodios. Las 34 marcas no seleccionadas y los cuatro episodios con interrupciones siguen accesibles. La política híbrida usa 72 horas y mínimo dos marcas; sus parámetros y umbrales permanecen congelados.
+Las huellas de los ocho originales están en `reports/original_manifest.json`. Se verificaron contra cada entrada del ZIP al extraer y nuevamente al finalizar. Punto de control Git anterior a cambios: `1c7c14e`. El paquete descargable no incluye el directorio interno `.git`; incluye los scripts y resultados revisados.
 
-## Navegación compartida 0.7.3
+## Arquitectura prevista
 
-El sidebar permanece compacto (88 px) en todas las pantallas. Inicio → Revisión → Vista espacial → Prismas → Datos → Reportes → Usuarios → Auditoría. La opción activa tiene fondo azul y una línea cyan; los iconos SVG son locales. El menú de usuario inferior abre Mi perfil y, con permiso, Copias de seguridad. Salir cierra la sesión. Los permisos se consultan en el servicio de autorización existente.
+En las siguientes fases: presentación Streamlit; lógica modular en `src/`; datos originales CSV/Excel, resultados SQLite y modelo Joblib. Durante Fase 1 solo se añaden `scripts/` y `reports/` para separar la auditoría de los módulos futuros. No se crean módulos vacíos ni modelos ficticios.
 
-Ver [validación del sidebar](reports/phase7/shared_sidebar.md) y las capturas de ambos roles en `reports/phase7/shared_sidebar/`. La entrega registra 281 pruebas aprobadas.
+## Límites
 
-## Vista espacial conservada de 0.7.2
+En las Fases 1–2 no se disponía de una fecha de falla documentada. El artículo incorporado en Fase 3 documenta 23-02-2014 únicamente como referencia contextual; no aporta etiquetas independientes suficientes para métricas supervisadas. Se mantienen las unidades no documentadas como “requiere validación”. No se deducen voladuras a partir de magnitud, ni se usa el cambio de velocidad del TXT como velocidad de los prismas. Consulte el informe para zonas horarias, huecos, duplicados, bases de referencia y cobertura de eventos.
 
-Menú compacto, filtros horizontales, escena central de mayor tamaño y ficha a la derecha. La selección comienza vacía. Elige un prisma mediante clic 2D/3D o el selector; su ficha y minigráfico se sincronizan. `Centrar` acerca la cámara, `Vista completa` restablece el encuadre, `Ver historial` abre ese prisma y `Revisar episodio` abre el episodio relacionado. Puedes ocultar la ficha desde el menú de usuario. Cámara y filtros trabajan localmente; el renderer Plotly se distribuye en el paquete, sin CDN ni nuevas dependencias Python.
+Este resultado es una señal de apoyo al seguimiento preventivo. No constituye una predicción definitiva de falla ni reemplaza la evaluación del ingeniero geomecánico.
 
-Coordenadas de prismas originales sin unidades/CRS aprobados; no se infiere terreno a partir de ellas. Ver `reports/phase7/compact_redesign.md` para evidencia y limitaciones. Los informes y capturas de versiones anteriores se conservan como antecedentes.
 
-## Relieve integrado 0.7.4
+## Fase 2: instalar, ejecutar y probar
 
-En Vista espacial, activa **Mostrar relieve de Century Mine** para cambiar a la superficie real de Copernicus GLO-30. Usa Vista 2D/3D, la cámara, Vista completa y la exageración vertical 1×/3×/5×. Las cotas conservan sus valores y puedes descargar el GeoTIFF desde Fuente y archivo de relieve. Apaga el control para volver a los prismas y su ficha.
+Para usar la preparación:
 
-El relieve se distribuye localmente, con resolución aproximada de 30 m. Es una superficie satelital con cotas EGM2008, no un levantamiento detallado del talud ni una captura exacta de 2014. Los filtros instrumentales no cambian esta superficie. La superposición de prismas requiere validar su CRS local, unidades, datum vertical y puntos de control; no se aplicó un desplazamiento arbitrario. No se añaden dependencias geoespaciales a la instalación. Fuente, máscaras de calidad y licencia documentadas en `assets/terrain/`.
+```bash
+python -m pip install -r requirements.txt
+python scripts/run_phase2.py
+```
 
-## Datos y privacidad local
+Para ejecutar todas las pruebas (xlwt se usa únicamente para generar un XLS sintético):
 
-En 0.7.5, Revisión conserva el prisma y el episodio seleccionado al cambiar de módulo.
-El historial indica el identificador del episodio y sus versiones guardadas. Las evaluaciones
-siguen almacenadas en SQLite; no se modifica el esquema ni se reinicializan los datos privados.
+```bash
+python -m pip install -r requirements-dev.txt
+python -m pytest -q
+```
 
-La base y la clave se crean en `data/runtime/`, excluida del paquete entregado. Configura `GEOSLOPE_RUNTIME` y `GEOSLOPE_KEY_FILE` si deseas otro directorio privado. En Windows restringe el directorio a tu cuenta mediante permisos NTFS. Conserva una copia segura de la clave fuera de la laptop; sin ella no se recuperan TOTP ni backups cifrados.
+Todos los comandos se ejecutan desde esta carpeta. Los scripts funcionan sin conexión después de instalar las dependencias. `run_phase2.py` comprueba la integridad antes/después y genera cuatro carpetas distintas: `west_wall`, `south_west`, `rainfall_2013` y `rainfall_2014`. No une fuentes, interpola, calcula velocidades, entrena modelos ni construye interfaz.
 
-La instalación descarga dependencias; la ejecución posterior no necesita internet. TOTP requiere un reloj correcto, pero no un proveedor externo. Streamlit usa HTTP/WebSocket **locales** para comunicar navegador y aplicación; el requisito offline se verifica como ausencia de conexiones externas.
+La compatibilidad XLSX usa OpenPyXL; XLS usa xlrd. Los valores almacenados en Excel se representan como texto antes del tipado. XLSX conserva fórmulas como texto sin evaluarlas; XLS no recupera fórmulas. Los originales y su formato permanecen en raw.
 
-## Documentación y validación
+Lea `reports/phase2/Resultado_Fase2.md`, `quality_comparison.csv`, `summary.json`, `schema_dictionary.csv`, `pytest-output.txt`, `pytest-results.xml` y `reproducibility.json`. Este último documenta la ejecución completa dos veces con salidas idénticas.
 
-- [Instalación](docs/manual_instalacion.md)
-- [Usuario](docs/manual_usuario.md)
-- [Administrador](docs/manual_administrador.md)
-- [Arquitectura](docs/arquitectura.md)
-- [Seguridad](docs/seguridad.md)
-- [Diccionario](docs/diccionario_datos.md)
-- [Limitaciones](docs/limitaciones.md)
-- [Validación de Fase 7](reports/phase7/validation_report.md)
+## Auditar una fila
 
-Pruebas desde la raíz `monitoreo-taludes`: `PYTHONPATH=geoslope_review python -m pytest -q tests geoslope_review/tests`. En Windows usa `$env:PYTHONPATH="geoslope_review"` antes del comando. Ruff se ejecuta desde la subcarpeta de aplicación: `python -m ruff check .`. Las pruebas de navegador son opcionales para desarrolladores; requieren `requirements-dev.txt` y Chromium local: `python scripts/validate_browser.py --chromium RUTA`.
+1. Busque su `row_id` en `data/processed/<fuente>/row_dispositions.csv`.
+2. Compruebe `source_line`, estado, motivo de exclusión, vínculo a fila conservada y posición final.
+3. Consulte `original_rows.csv` para el valor fuente y `data.csv` o `excluded_rows.csv` para el valor tipado junto al campo `original__*`.
+4. Consulte `transformations.jsonl` para las políticas, estado antes/después y huellas de cada paso.
+5. Compruebe `source_sha256` contra `reports/original_manifest.json`.
 
-> GeoSlope Review es una herramienta experimental de apoyo. Las anomalías y episodios mostrados no representan predicciones de falla ni niveles de riesgo. Los resultados requieren revisión de un especialista geotécnico y no deben utilizarse por sí solos para tomar decisiones operativas o de seguridad.
+Los IDs y los resultados son deterministas para los mismos bytes, hoja y parámetros. Al editar cualquier byte del archivo, cambia su huella y los IDs derivados. Las marcas de calidad no son alertas de falla. El mínimo de 20 instantes únicos es operativo, configurable y no geotécnico.
+
+Para reabrir un CSV procesado preservando los campos originales y ceros iniciales:
+
+```python
+import pandas as pd
+# Capa textual íntegra; tipar posteriormente solo los campos definidos en metadata.
+text = pd.read_csv('data/processed/rainfall_2013/data.csv', dtype=str, keep_default_na=False)
+assert text['station_id'].eq('029167').all()
+rainfall = pd.to_numeric(text['rainfall_mm'], errors='coerce')  # Vacío -> desconocido, nunca 0.
+```
+
+Los datos procesados se regeneran con `run_phase2.py` y se incluyen en el paquete descargable. Se excluyen de Git para evitar versionar copias voluminosas; se versionan código, políticas e informes. Punto de control anterior a Fase 2: `2130e29`.
+
+
+Para comprobar los artefactos ya exportados:
+
+```bash
+python scripts/verify_phase2.py
+```
+
+Para regenerar y verificar reproducibilidad byte a byte con dos ejecuciones completas:
+
+```bash
+python scripts/verify_phase2.py --reproduce
+python scripts/build_phase2_report.py
+```
+
+`acceptance_checks.json` documenta la conservación de valores originales, partición completa de filas, timestamps ordenados y únicos dentro de cada identificador, y la cadena de huellas antes/después de cada transformación.
+
+
+## Fase 3: contexto y exploración descriptiva
+
+El artículo adjunto se conserva en `data/context/`. `reports/documentation/article_context.md` incluye referencia APA 7, páginas, evidencia e inferencias. La adenda documental mantiene intactos los informes históricos de Fases 1–2.
+
+Instalación y reproducción desde esta carpeta, con Python 3.11 o superior:
+
+```bash
+python -m pip install -r requirements-phase3.txt
+python scripts/run_phase3.py
+python scripts/verify_phase3.py --reproduce
+python scripts/execute_phase3_notebook.py
+python -m pytest -q --junitxml=reports/phase3/pytest-results.xml > reports/phase3/pytest-output.txt
+python scripts/build_phase3_report.py
+```
+
+`run_phase3.py` lee las salidas preparadas de cuatro fuentes y el catálogo/TXT originales independientemente. Solo escribe en `reports/phase3/`; verifica 59 archivos protegidos antes/después. `verify_phase3.py --reproduce` repite el pipeline y compara 15 tablas por SHA-256, valida los 55 PNG/HTML y los archivos anteriores. Omitir `--reproduce` verifica los artefactos sin regenerarlos.
+
+El notebook `notebooks/exploracion_fase3.ipynb` importa funciones de `src/`; contiene salidas ejecutadas. En este entorno el arranque convencional de Jupyter por puertos TCP quedó bloqueado. `execute_phase3_notebook.py` usa IPython en un solo proceso sin puertos, guarda salidas reales y falla si alguna celda tiene errores. En un equipo local también puede abrirse con Jupyter instalado por el usuario.
+
+Abra `reports/phase3/Exploracion_Fase3.html` en un navegador: contiene cinco gráficos integrados y enlaces a los 55 gráficos. Los HTML individuales usan el archivo **local** `interactive/plotly.min.js`; conservarlo junto a ellos. Ninguna visualización requiere internet tras instalar dependencias y descomprimir el proyecto. Consulte `exploratory_findings.md` para estadísticas, selección de prismas, hallazgos, límites y referencias; los perfiles CSV incluyen todos los prismas y un diccionario explica cada indicador.
+
+La selección usa conteos, rangos y desviación estándar muestral con ≥20 instantes; empates por ID. La fecha de falla no interviene. West Wall es movimiento 3D reportado en mm, no trayectoria acumulada validada. South West permanece con unidades por validar. Solo se concatenan los años meteorológicos de una estación; lluvia desconocida permanece desconocida y meses incompletos llevan total parcial. Catálogo UTC y cambios de velocidad sísmica se describen separados de prismas.
+
+Se entregan 75 pruebas satisfactorias, 10 celdas ejecutadas sin errores y evidencia de integridad. No se implementaron ingeniería de características, modelos, detección de cambios, alertas, SQLite ni Streamlit. El checkpoint previo a esta fase es `f64070e`; el final se registra en `reports/phase3/git_checkpoint.txt`.
+
+## Fase 4: características temporales de West Wall
+
+La tabla de características conserva las 7.178 filas y los 49 prismas de la preparación anterior. Tiene 315 columnas: 20 campos de entrada y 295 añadidos, incluidas banderas y trazabilidad. Los cambios negativos y los extremos se conservan. Se calculan cambios, tasas observadas entre mediciones, estadísticas retrospectivas de 24 h/72 h/7 días, tendencias locales, rachas y comparación con el historial estrictamente previo. Las fuentes complementarias y South West permanecen separados.
+
+```bash
+python -m pip install -r requirements-phase4.txt
+python scripts/run_phase4.py
+python scripts/verify_phase4.py --reproduce
+python -m pytest -q --junitxml=reports/phase4/pytest-results.xml > reports/phase4/pytest-output.txt
+python scripts/build_phase4_report.py
+```
+
+Los comandos solo escriben salidas nuevas en `data/processed/phase4/` y `reports/phase4/`; verifican 226 huellas de archivos anteriores. `verify_phase4.py --reproduce` recalcula siete CSV, compara sus bytes, prueba la lectura exacta de la tabla y modifica el futuro en una copia para comprobar que el pasado permanece idéntico. Sin `--reproduce`, verifica huellas y gráficos ya exportados. Los comandos funcionan sin conexión una vez instaladas las dependencias. Se ejecutaron en Python 3.12; requieren Python 3.11 o superior.
+
+Los criterios están en `config/phase4.json`: std muestral con ≥2 valores; ventana suficiente con ≥3 valores, duración ≥25% de su longitud y sin hueco interno >72 h; pendiente con ≥3 timestamps distintos y duración ≥18/42 h; línea base con ≥20 valores **anteriores** y ≥24 h de duración. Las ventanas son **(t−W,t]**, con límite inferior abierto. Los resúmenes de cambios/tasas solo incluyen pares con ambos extremos dentro de la ventana. Una tasa tras un hueco largo sigue siendo un promedio entre extremos y lleva bandera de calidad. Estos criterios no son umbrales de alerta y no utilizaron la fecha de falla.
+
+Los faltantes derivados permanecen NaN con banderas `_available`. Una media disponible con un dato no significa historia suficiente; consultar `has_sufficient_*_history`. Cero, desconocido o hueco prolongado rompe una racha. Los z-scores excluyen el presente de su referencia y quedan desconocidos cuando su dispersión es nula. Ningún score se convierte todavía en alerta. No se interpola, imputa ni asigna frecuencia esperada.
+
+Consulte `reports/phase4/feature_engineering_findings.md`, el diccionario por columna, disponibilidad por grupo/prisma, metadatos, `reproducibility.json` y evidencia Pytest. Hay 17 pares PNG/HTML descriptivos. Abra los HTML de `reports/phase4/interactive/` conservando a su lado `plotly.min.js`; funcionan sin internet. No se creó un dashboard.
+
+Para cargar las 315 columnas conservando tipos, textos originales y precisión numérica:
+
+```python
+import json
+from pathlib import Path
+from src.feature_validation import read_feature_dataset
+metadata = json.loads(Path('reports/phase4/phase4_metadata.json').read_text())
+features = read_feature_dataset(metadata['feature_dataset'], metadata['feature_dtypes'])
+```
+
+Este lector está destinado a la salida auditada de características. El cargador de archivos de entrada mantiene sus límites anteriores (incluido el límite de columnas) y no se modifica para aceptar la tabla derivada.
+
+La tasa observada y la pendiente local son estadísticas en mm/día, **no velocidades físicas validadas del macizo**. El archivo termina el 20-02-2014 y no observa la falla del 23-02-2014 documentada en el artículo. La Fase 4 no incluye modelos, alertas, métricas supervisadas, uniones de fuentes, SQLite o Streamlit. Checkpoint previo: `fef7d06`; el final se registra en `reports/phase4/git_checkpoint.txt` dentro del paquete.
+
+## Fase 5: modelos no supervisados y evaluación temporal
+
+Se conservaron 7.178 filas y 49 prismas; 5.898 filas son elegibles y 1.280 permanecen desconocidas para modelado. Se seleccionaron 17 de 20 candidatos exclusivamente con entrenamiento. La regla transparente y el Isolation Forest global producen scores, percentiles de entrenamiento y marcas **experimentales**, sin alertas operativas ni niveles de riesgo. No se unieron fuentes ni se utilizó la fecha documental de falla para ajustar parámetros.
+
+Consulte `reports/phase5/model_findings.md` (25 secciones), `provisional_recommendation.json`, tablas de sensibilidad, perfiles por prisma, pruebas sintéticas y `reproducibility.json`. La [adenda terminológica](reports/documentation/phase5_terminology.md) establece la formulación vigente: **Características temporalmente válidas, calculadas sin información futura y respetando el orden cronológico.** Esto no demuestra causalidad científica; se conservan los documentos anteriores para auditoría.
+
+Desde esta carpeta, con Python 3.11 o superior compatible (se ejecutó en Python 3.12):
+
+```bash
+python -m pip install -r requirements-phase5.txt
+# Verificar primero las salidas ya entregadas, sin reentrenar:
+python scripts/verify_phase5.py
+# Reproducción completa en carpeta temporal y prueba crítica contra fuga:
+python scripts/verify_phase5.py --reproduce
+python -m pytest -q --junitxml=reports/phase5/pytest-results.xml > reports/phase5/pytest-output.txt
+python scripts/build_phase5_report.py
+```
+
+Para regenerar únicamente los artefactos de Fase 5:
+
+```bash
+python scripts/run_phase5.py
+python scripts/verify_phase5.py --reproduce
+python scripts/build_phase5_report.py
+```
+
+Los comandos leen las fases anteriores y verifican 294 archivos protegidos. La reproducción compara 24 CSV byte a byte y el estado aprendido completo de los modelos; las puntuaciones son idénticas después de recargar. Los tiempos se registran separados de los resultados deterministas. No se debe regenerar una fase histórica sobre sus salidas protegidas antes de verificar esta fase: cambiar sus metadatos rompería su manifiesto de integridad. Los scripts funcionan offline tras instalar las dependencias. No requieren servicios ni credenciales.
+
+La división utiliza cuantiles de los 93 días calendario observados: entrenamiento antes de `2014-01-15 00:00:00`, validación hasta antes de `2014-02-02 00:00:00`, prueba desde ese instante. Días completos y timestamps iguales quedan en un solo periodo. Los porcentajes de filas pueden diferir de 60/20/20. Medianas, RobustScaler, referencias de la regla, árboles y umbrales se ajustan solo con las 2.909 filas elegibles de entrenamiento. El modelo usa 200 árboles, máximo 256 muestras, semilla 42 y contaminación 0,02. La calidad sirve para elegibilidad y contexto, no como predictor del bosque.
+
+Los modelos están en `models/phase5/`: preprocesador, pipeline de Isolation Forest, `scoring_bundle.joblib` para ambos métodos, regla JSON, variables y metadatos. El bundle necesita filas con características y banderas derivadas del historial, no una medición cruda aislada. `src/` debe permanecer importable al recargar. Un ejemplo que usa una fila de las características entregadas:
+
+```python
+import json
+import joblib
+from pathlib import Path
+from src.feature_validation import read_feature_dataset
+metadata = json.loads(Path('reports/phase4/phase4_metadata.json').read_text())
+features = read_feature_dataset(metadata['feature_dataset'], metadata['feature_dtypes'])
+bundle = joblib.load('models/phase5/scoring_bundle.joblib')
+result = bundle.score_new(features.tail(1))  # No reajusta el modelo.
+```
+
+La tabla maestra de puntuaciones es `data/processed/phase5/anomaly_scores.csv`. Para reabrirla preservando NaN y booleanos anulables:
+
+```python
+import pandas as pd
+metadata = json.loads(Path('reports/phase5/phase5_metadata.json').read_text())
+result = pd.read_csv('data/processed/phase5/anomaly_scores.csv',
+                     dtype={k: v for k, v in metadata['score_dtypes'].items() if v != 'datetime64[ns]'},
+                     parse_dates=['timestamp'], float_precision='round_trip')
+```
+
+Las filas no elegibles no son normales: sus scores, percentiles y marcas permanecen desconocidos. q95/q98/q99 y el umbral interno son referencias técnicas distintas. Las explicaciones son desviaciones descriptivas aproximadas, no contribuciones exactas de Isolation Forest. Sin etiquetas confiables no se calculan métricas supervisadas sobre datos reales. Los 14 ensayos artificiales usan copias de validación y están separados de la tabla real; sus resultados no validan predicción de fallas.
+
+Los 20 pares PNG/HTML están en `reports/phase5/figures/` e `interactive/`. Los HTML requieren su `plotly.min.js` local junto a ellos. No se construyó un dashboard. Checkpoint inicial de Fase 5: `11c2a12`; el hash final está en `reports/phase5/git_checkpoint.txt` dentro del paquete. Se espera aprobación formal antes de iniciar la Fase 6.
+
+### Revisión específica de `max_features`
+
+La auditoría confirmó que la configuración y el Joblib anteriores ya tenían `max_features=1.0` **float**, con 17 características disponibles en cada uno de los 200 árboles. La tabla anterior del informe mostraba `1` al quitar decimales; se corrige esa presentación y se valida explícitamente el tipo. No se afirma un cambio inexistente de entero a float en el artefacto histórico. Se reentrenó el principal y se recalcularon sus resultados, que permanecen numéricamente idénticos.
+
+Se añade una comparación controlada nueva: `1` entero → 1 variable por árbol; `0.5` float → 8; `1.0` float → 17. Mantiene el mismo entrenamiento, selector, imputador y escalador congelados, árboles, muestras, contaminación y semilla; cada variante obtiene umbrales únicamente de entrenamiento. `max_features_sensitivity.csv` cubre los rankings top 1/2/5%, scores, marcación, concentración, distancia KS y carga diaria; las tablas auxiliares conservan observaciones, perfiles y nombres disponibles/usados por árbol. `max_features_synthetic_results.csv` compara los mismos 14 escenarios sin modificar sus inyecciones ni reajustar durante los ensayos.
+
+`seed_rank_changes.csv` y `seed_prism_instability.csv` documentan variación de posición entre las cinco semillas, siempre con principal float 1.0. `prism_30_1994_max_features.csv` revisa su concentración sin eliminar extremos. El informe previo y su hash están en `reports/phase5/audit/`; checkpoint anterior: `8411a6306bebf2d2f18160f5511eb577a28ffca9`. Usar 17 variables disponibles no demuestra mejor precisión ni validez geomecánica. Se mantiene pendiente la aprobación formal para Fase 6.

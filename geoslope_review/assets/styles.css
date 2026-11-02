@@ -1,0 +1,11 @@
+.block-container {padding-top:2rem; max-width:1450px;}
+[data-testid="stSidebar"] {background:{{navy}};}
+[data-testid="stSidebar"] p, [data-testid="stSidebar"] label, [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {color:#f5f9fc;}
+[data-testid="stMetric"] {background:white; border:1px solid #dfe6ec; border-radius:14px; padding:16px;}
+[data-testid="stMetricValue"] {color:{{navy}}; font-size:2rem;}
+div[data-testid="stForm"] {border-radius:14px; background:white; padding:24px;}
+h1, h2, h3 {letter-spacing:-.03em;}
+.gs-badge {display:inline-block; background:#e5f1f3; color:#126976; border-radius:20px; padding:5px 12px; font-size:.85rem;}
+
+[data-testid="stSidebar"] button p {color:{{navy}};}
+.stAppDeployButton {display:none;}

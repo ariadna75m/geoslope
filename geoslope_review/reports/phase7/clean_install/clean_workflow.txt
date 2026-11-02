@@ -1,0 +1,1 @@
+{"roles_demonstrated": ["administrador", "ingeniero"], "review_persistent_after_restart": true, "formats": ["PDF", "CSV", "JSON"], "encrypted_backup_and_restore": true, "application_external_network_blocked": true, "no_production_training": true, "private_test_state_disposable": true}

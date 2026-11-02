@@ -1,0 +1,42 @@
+[
+  {
+    "path": "radar-deformation-data/slopeMovement.dat",
+    "bytes": 12795137,
+    "sha256": "f53edfac6d8a3326354d01ef55c6992aee9a0c008b8cee9c3b7c29ce68f0b527"
+  },
+  {
+    "path": "radar-deformation-data/South_West_Corner_06082014.csv",
+    "bytes": 13371991,
+    "sha256": "3f323535d38ff3700a3d2d9d0c5d2f49ada690f9326a0ef6002f77d4f7b98b69"
+  },
+  {
+    "path": "radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv",
+    "bytes": 505043,
+    "sha256": "cbc1272f1ec0a8fc9b8b4e137a9d2bc007ee81937d0298f12908b2db954f2e02"
+  },
+  {
+    "path": "seismic-event-data/events-and-blasts.csv",
+    "bytes": 71691,
+    "sha256": "b024b25b188c95c121da9e2f3bb45ec90efd3edc4c5773e9e74a40c2a78a1404"
+  },
+  {
+    "path": "velocity-change-measurements/mean-velocity-changes.txt",
+    "bytes": 3627,
+    "sha256": "b870e5eba0dcae9dc2de54c0a572b5cd59749df41ecfc9275e05a5093fac331b"
+  },
+  {
+    "path": "weather-data/IDCJAC0009_029167_2013_Data.csv",
+    "bytes": 14012,
+    "sha256": "d836033a4a543a641e61c9458e7faa5592b011be4a19c16da83dccbf0df93310"
+  },
+  {
+    "path": "weather-data/IDCJAC0009_029167_2014_Data.csv",
+    "bytes": 14022,
+    "sha256": "da1e56a8fbf5293115060913e3c911e53fba3bc7997b5d63334ec1487b2fd9c7"
+  },
+  {
+    "path": "weather-data/IDCJMD0040.029167.SiteInfo.pdf",
+    "bytes": 294429,
+    "sha256": "492ad042a3ed81ec6d497ab02b457b34c92227f4b280a9e13e42c2fd2122bda5"
+  }
+]

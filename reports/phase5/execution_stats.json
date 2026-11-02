@@ -1,0 +1,6 @@
+{
+  "pipeline_seconds": 69.30206850999821,
+  "inference_100_observations_seconds": 0.04306935400018119,
+  "model_artifact_bytes": 433200,
+  "timing_excluded_from_reproducibility": true
+}

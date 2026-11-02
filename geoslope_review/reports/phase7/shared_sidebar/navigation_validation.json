@@ -1,0 +1,366 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "role": "administrador",
+      "screen": "Inicio",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Revisión",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Vista espacial",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Prismas",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Datos",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Reportes",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Usuarios",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Auditoría",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Inicio",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Revisión",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Vista espacial",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Inicio",
+      "resolution": [
+        1440,
+        900
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Revisión",
+      "resolution": [
+        1440,
+        900
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Vista espacial",
+      "resolution": [
+        1440,
+        900
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Inicio",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Revisión",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "administrador",
+      "screen": "Vista espacial",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Inicio",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Revisión",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Vista espacial",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Prismas",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Datos",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Reportes",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Inicio",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Revisión",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Vista espacial",
+      "resolution": [
+        1366,
+        768
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Inicio",
+      "resolution": [
+        1440,
+        900
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Revisión",
+      "resolution": [
+        1440,
+        900
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Vista espacial",
+      "resolution": [
+        1440,
+        900
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Inicio",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Revisión",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    },
+    {
+      "role": "ingeniero",
+      "screen": "Vista espacial",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sidebar_width": 88,
+      "logout_visible": true,
+      "no_overlap": true
+    }
+  ],
+  "external_requests": [],
+  "roles": [
+    "administrador",
+    "ingeniero"
+  ],
+  "logout_both_roles": true,
+  "forced_password_change": true,
+  "short_height_scroll": true,
+  "synthetic_runtime_removed": true
+}

@@ -1,0 +1,394 @@
+{
+  "phase": 2,
+  "sources_joined": false,
+  "models_trained": false,
+  "physical_features_calculated": false,
+  "originals_verified_before_after": true,
+  "original_count": 8,
+  "comparison": [
+    {
+      "source": "west_wall",
+      "input_rows": 7178,
+      "retained_rows": 7178,
+      "excluded_rows": 0,
+      "exact_duplicate_excluded_rows": 0,
+      "quarantined_invalid_key_rows": 0,
+      "quarantined_conflicting_key_rows": 0,
+      "corrected_identifier_rows": 0,
+      "marked_retained_rows": 21,
+      "reordered_rows": 6813,
+      "new_timestamp_rows": 7178,
+      "numeric_columns_parsed": [
+        "easting",
+        "northing",
+        "rl",
+        "reported_3d_movement_mm"
+      ],
+      "note": "Normalización de nombres, tipado y columnas derivadas afectan la representación de todas las filas; no son correcciones físicas. Marcadas/corregidas son subconjuntos de conservadas.",
+      "missing_cells_before": 0,
+      "missing_cells_after": 0,
+      "missing_rain_before": null,
+      "missing_rain_after": null,
+      "duplicate_rows_before": 0,
+      "duplicate_rows_after": 0,
+      "zero_intervals_before": 0,
+      "zero_intervals_after": 0,
+      "invalid_timestamps_before": 0,
+      "invalid_timestamps_after": 0,
+      "insufficient_prisms_before": 2,
+      "insufficient_prisms_after": 2,
+      "errors_before": 0,
+      "errors_after": 0,
+      "warnings_before": 4,
+      "warnings_after": 4
+    },
+    {
+      "source": "south_west",
+      "input_rows": 82401,
+      "retained_rows": 82400,
+      "excluded_rows": 1,
+      "exact_duplicate_excluded_rows": 1,
+      "quarantined_invalid_key_rows": 0,
+      "quarantined_conflicting_key_rows": 0,
+      "corrected_identifier_rows": 0,
+      "marked_retained_rows": 32,
+      "reordered_rows": 82400,
+      "new_timestamp_rows": 82401,
+      "numeric_columns_parsed": [
+        "easting",
+        "northing",
+        "height",
+        "adjusted_distance_diff",
+        "unadjusted_slope_distance_diff",
+        "easting_diff",
+        "northing_diff",
+        "height_diff"
+      ],
+      "note": "Normalización de nombres, tipado y columnas derivadas afectan la representación de todas las filas; no son correcciones físicas. Marcadas/corregidas son subconjuntos de conservadas.",
+      "missing_cells_before": 0,
+      "missing_cells_after": 0,
+      "missing_rain_before": null,
+      "missing_rain_after": null,
+      "duplicate_rows_before": 1,
+      "duplicate_rows_after": 0,
+      "zero_intervals_before": 1,
+      "zero_intervals_after": 0,
+      "invalid_timestamps_before": 0,
+      "invalid_timestamps_after": 0,
+      "insufficient_prisms_before": 4,
+      "insufficient_prisms_after": 4,
+      "errors_before": 0,
+      "errors_after": 0,
+      "warnings_before": 6,
+      "warnings_after": 4
+    },
+    {
+      "source": "rainfall_2013",
+      "input_rows": 365,
+      "retained_rows": 365,
+      "excluded_rows": 0,
+      "exact_duplicate_excluded_rows": 0,
+      "quarantined_invalid_key_rows": 0,
+      "quarantined_conflicting_key_rows": 0,
+      "corrected_identifier_rows": 0,
+      "marked_retained_rows": 3,
+      "reordered_rows": 0,
+      "new_timestamp_rows": 365,
+      "numeric_columns_parsed": [
+        "year",
+        "month",
+        "day",
+        "rainfall_mm",
+        "rainfall_period_days"
+      ],
+      "note": "Normalización de nombres, tipado y columnas derivadas afectan la representación de todas las filas; no son correcciones físicas. Marcadas/corregidas son subconjuntos de conservadas.",
+      "missing_cells_before": 9,
+      "missing_cells_after": 9,
+      "missing_rain_before": 3,
+      "missing_rain_after": 3,
+      "duplicate_rows_before": 0,
+      "duplicate_rows_after": 0,
+      "zero_intervals_before": 0,
+      "zero_intervals_after": 0,
+      "invalid_timestamps_before": 0,
+      "invalid_timestamps_after": 0,
+      "insufficient_prisms_before": 0,
+      "insufficient_prisms_after": 0,
+      "errors_before": 0,
+      "errors_after": 0,
+      "warnings_before": 3,
+      "warnings_after": 3
+    },
+    {
+      "source": "rainfall_2014",
+      "input_rows": 365,
+      "retained_rows": 365,
+      "excluded_rows": 0,
+      "exact_duplicate_excluded_rows": 0,
+      "quarantined_invalid_key_rows": 0,
+      "quarantined_conflicting_key_rows": 0,
+      "corrected_identifier_rows": 0,
+      "marked_retained_rows": 4,
+      "reordered_rows": 0,
+      "new_timestamp_rows": 365,
+      "numeric_columns_parsed": [
+        "year",
+        "month",
+        "day",
+        "rainfall_mm",
+        "rainfall_period_days"
+      ],
+      "note": "Normalización de nombres, tipado y columnas derivadas afectan la representación de todas las filas; no son correcciones físicas. Marcadas/corregidas son subconjuntos de conservadas.",
+      "missing_cells_before": 12,
+      "missing_cells_after": 12,
+      "missing_rain_before": 4,
+      "missing_rain_after": 4,
+      "duplicate_rows_before": 0,
+      "duplicate_rows_after": 0,
+      "zero_intervals_before": 0,
+      "zero_intervals_after": 0,
+      "invalid_timestamps_before": 0,
+      "invalid_timestamps_after": 0,
+      "insufficient_prisms_before": 0,
+      "insufficient_prisms_after": 0,
+      "errors_before": 0,
+      "errors_after": 0,
+      "warnings_before": 3,
+      "warnings_after": 3
+    }
+  ],
+  "load_checks": [
+    {
+      "source": "radar-deformation-data/slopeMovement.dat",
+      "kind": "slope_dat",
+      "rows": 82401,
+      "columns": 16,
+      "header_line": 1,
+      "source_sha256": "f53edfac6d8a3326354d01ef55c6992aee9a0c008b8cee9c3b7c29ce68f0b527",
+      "read_success": true
+    },
+    {
+      "source": "radar-deformation-data/South_West_Corner_06082014.csv",
+      "kind": "south_west",
+      "rows": 82401,
+      "columns": 11,
+      "header_line": 4,
+      "source_sha256": "3f323535d38ff3700a3d2d9d0c5d2f49ada690f9326a0ef6002f77d4f7b98b69",
+      "read_success": true
+    },
+    {
+      "source": "radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv",
+      "kind": "west_wall",
+      "rows": 7178,
+      "columns": 7,
+      "header_line": 1,
+      "source_sha256": "cbc1272f1ec0a8fc9b8b4e137a9d2bc007ee81937d0298f12908b2db954f2e02",
+      "read_success": true
+    },
+    {
+      "source": "seismic-event-data/events-and-blasts.csv",
+      "kind": "seismic",
+      "rows": 1171,
+      "columns": 7,
+      "header_line": 1,
+      "source_sha256": "b024b25b188c95c121da9e2f3bb45ec90efd3edc4c5773e9e74a40c2a78a1404",
+      "read_success": true
+    },
+    {
+      "source": "velocity-change-measurements/mean-velocity-changes.txt",
+      "kind": "velocity_changes",
+      "rows": 44,
+      "columns": 4,
+      "header_line": 1,
+      "source_sha256": "b870e5eba0dcae9dc2de54c0a572b5cd59749df41ecfc9275e05a5093fac331b",
+      "read_success": true
+    },
+    {
+      "source": "weather-data/IDCJAC0009_029167_2013_Data.csv",
+      "kind": "rainfall",
+      "rows": 365,
+      "columns": 8,
+      "header_line": 1,
+      "source_sha256": "d836033a4a543a641e61c9458e7faa5592b011be4a19c16da83dccbf0df93310",
+      "read_success": true
+    },
+    {
+      "source": "weather-data/IDCJAC0009_029167_2014_Data.csv",
+      "kind": "rainfall",
+      "rows": 365,
+      "columns": 8,
+      "header_line": 1,
+      "source_sha256": "da1e56a8fbf5293115060913e3c911e53fba3bc7997b5d63334ec1487b2fd9c7",
+      "read_success": true
+    }
+  ],
+  "processed_output_files": [
+    {
+      "path": "data/processed/west_wall/data.csv",
+      "bytes": 2502822,
+      "sha256": "bdb56ccf301b5f6489c3773705e31bb324d057a16ac13dfc35be1f7e4732aa2a"
+    },
+    {
+      "path": "data/processed/west_wall/excluded_rows.csv",
+      "bytes": 334,
+      "sha256": "c40a933cbdef43180c355dcbb8559626372e9530b4e71a4a41620f71299270b5"
+    },
+    {
+      "path": "data/processed/west_wall/metadata.json",
+      "bytes": 2732,
+      "sha256": "5ca275c9db4c610d07b91a521594dcb9296db85a0cbc21182c08d50b0da74849"
+    },
+    {
+      "path": "data/processed/west_wall/original_rows.csv",
+      "bytes": 999239,
+      "sha256": "b5cd3cbb85d27bf550cffe08abdd24367f2f4528a6e5ddda6642e9dab9b7897d"
+    },
+    {
+      "path": "data/processed/west_wall/quality_after.json",
+      "bytes": 2356,
+      "sha256": "a128afa0e0648099160e690214b1d05cb7892d8d3a84a33f312e00944f9f4e4e"
+    },
+    {
+      "path": "data/processed/west_wall/quality_before.json",
+      "bytes": 2356,
+      "sha256": "a128afa0e0648099160e690214b1d05cb7892d8d3a84a33f312e00944f9f4e4e"
+    },
+    {
+      "path": "data/processed/west_wall/row_dispositions.csv",
+      "bytes": 665968,
+      "sha256": "4c4e21c2343dc140b65973352febc01a04cfc5d08629b5275bdf0020702f3462"
+    },
+    {
+      "path": "data/processed/west_wall/transformations.jsonl",
+      "bytes": 18148,
+      "sha256": "29c0d38d8da6851b3ba41c5e8867a06279f2ba2d95cc8ac6fea5789890658d0d"
+    },
+    {
+      "path": "data/processed/south_west/data.csv",
+      "bytes": 41077799,
+      "sha256": "973ffddb341d78f8462ecbcf493e38fd0cd383bd2421d9610c3ce093928c58b8"
+    },
+    {
+      "path": "data/processed/south_west/excluded_rows.csv",
+      "bytes": 1123,
+      "sha256": "bb8effee0debee58f84a3d79298620f5326643c3dc9ed5b19dffea4dcf69751b"
+    },
+    {
+      "path": "data/processed/south_west/metadata.json",
+      "bytes": 3415,
+      "sha256": "6e0a03ef63858470f185e737ac6a6802c1a0c42c85513d47e1a3a189f2b3d6c0"
+    },
+    {
+      "path": "data/processed/south_west/original_rows.csv",
+      "bytes": 18634511,
+      "sha256": "73d65609cd1bd939ba00cbe32b642759532123ce4a211aca3b8da9774513e52b"
+    },
+    {
+      "path": "data/processed/south_west/quality_after.json",
+      "bytes": 2956,
+      "sha256": "ef788811ec6267c04a1dd0675fc26274792f7f530fec52fd9e67635fc4445d35"
+    },
+    {
+      "path": "data/processed/south_west/quality_before.json",
+      "bytes": 3238,
+      "sha256": "22347509a2272389ce0cb5f7774768d950137cbaef6b1bd95aed8834a28f2f28"
+    },
+    {
+      "path": "data/processed/south_west/row_dispositions.csv",
+      "bytes": 7806872,
+      "sha256": "552b386e54c19ea7372606cb437cee50ad4559b702f8be4f9b784b513866da8f"
+    },
+    {
+      "path": "data/processed/south_west/transformations.jsonl",
+      "bytes": 31327,
+      "sha256": "36a05bf8c2f9d68d7d95e64231a5f8d5df195be0aab62273ae5ce567c4554ae0"
+    },
+    {
+      "path": "data/processed/rainfall_2013/data.csv",
+      "bytes": 92725,
+      "sha256": "371cecf21dc860a57ad38ccba9e743ef80fa6acb27028780b5068fb6986fc3c5"
+    },
+    {
+      "path": "data/processed/rainfall_2013/excluded_rows.csv",
+      "bytes": 352,
+      "sha256": "de92adfe8bc03c871684a8f46df53cec5d66385191e23906471301fc36adc436"
+    },
+    {
+      "path": "data/processed/rainfall_2013/metadata.json",
+      "bytes": 2845,
+      "sha256": "0111c99ec5a47dd475397ae459c4c6c73fcf1c90a4b8aab85100a9453d0cfab5"
+    },
+    {
+      "path": "data/processed/rainfall_2013/original_rows.csv",
+      "bytes": 38744,
+      "sha256": "4d110f82237779510cc6e82a669d328d6390efe342d167cc642969b5d341cc76"
+    },
+    {
+      "path": "data/processed/rainfall_2013/quality_after.json",
+      "bytes": 1935,
+      "sha256": "6091bb7cb42a740f0348bbe9784b7b92289ddd69d540e9c4c813f25af9818df3"
+    },
+    {
+      "path": "data/processed/rainfall_2013/quality_before.json",
+      "bytes": 1935,
+      "sha256": "6091bb7cb42a740f0348bbe9784b7b92289ddd69d540e9c4c813f25af9818df3"
+    },
+    {
+      "path": "data/processed/rainfall_2013/row_dispositions.csv",
+      "bytes": 33309,
+      "sha256": "e2f9cda0102f6abafc2a9cba8a80a9eff7741c8069931191f7eacf42d9d2893a"
+    },
+    {
+      "path": "data/processed/rainfall_2013/transformations.jsonl",
+      "bytes": 19366,
+      "sha256": "d5a9645646fea00b3da870cd46cac8e1ff8f52450344ed1f1db82239b9d3402a"
+    },
+    {
+      "path": "data/processed/rainfall_2014/data.csv",
+      "bytes": 92812,
+      "sha256": "eacd8a51908788a38d8a778f242db3aee58d347fdf0384df4c87f021c5762095"
+    },
+    {
+      "path": "data/processed/rainfall_2014/excluded_rows.csv",
+      "bytes": 352,
+      "sha256": "de92adfe8bc03c871684a8f46df53cec5d66385191e23906471301fc36adc436"
+    },
+    {
+      "path": "data/processed/rainfall_2014/metadata.json",
+      "bytes": 2845,
+      "sha256": "fb6409a9f165f25f704371959a2e76393b7aa2effd142225fa7c73bfff96995f"
+    },
+    {
+      "path": "data/processed/rainfall_2014/original_rows.csv",
+      "bytes": 38754,
+      "sha256": "453c6d7c7c9be4af7da4d39b3e03a678c13c2a9e35474923b65b55494c0b0c1d"
+    },
+    {
+      "path": "data/processed/rainfall_2014/quality_after.json",
+      "bytes": 1937,
+      "sha256": "ed8193e614d2ea06e0ce20bc73a4e69c3a745a970e2563454506f17b16c81a78"
+    },
+    {
+      "path": "data/processed/rainfall_2014/quality_before.json",
+      "bytes": 1937,
+      "sha256": "ed8193e614d2ea06e0ce20bc73a4e69c3a745a970e2563454506f17b16c81a78"
+    },
+    {
+      "path": "data/processed/rainfall_2014/row_dispositions.csv",
+      "bytes": 33378,
+      "sha256": "610c6f815d9d54900c0773c18effd52d39795c37de396b9507d5dd9907ea14c1"
+    },
+    {
+      "path": "data/processed/rainfall_2014/transformations.jsonl",
+      "bytes": 19366,
+      "sha256": "59e7507b4daf769c931d9a52b79fb6572fc8c37d25f6da6568b99fe0c98f560e"
+    }
+  ],
+  "checkpoint_before_phase2": "2130e29",
+  "runtime": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  },
+  "operational_notes": "Fase 2 completa; Fase 3 pendiente de aprobación."
+}

@@ -1,0 +1,6 @@
+{
+  "method": "IPython InteractiveShell, one local process without kernel ports",
+  "code_cells_executed": 10,
+  "errors": 0,
+  "reason": "Managed runtime blocked TCP kernel startup; no source/output data changed."
+}

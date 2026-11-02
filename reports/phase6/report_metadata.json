@@ -1,0 +1,23 @@
+{
+  "files_sha256": {
+    "reports/phase6/phase6_findings.md": "c9b3d3409d666c83a0e73b007676e8462509b0cffa4ca321ede5eaf47e5a15d0",
+    "reports/phase6/policy_comparison.md": "2e0fd854a2d92a52265bcfcc3586c80a8818cea8ae6d12f3d8006d29905a2de4",
+    "reports/phase6/sensitivity_analysis.md": "933854afb71c03050ec4e8ce2dd09b452a3c83e1566c8d015a7469646653a932",
+    "reports/phase6/prism_30_1994_review.md": "d0560fd92c5abc71a35ce8ae9980b3aba4cfea4851029f6b789f83f1bbbde82f",
+    "reports/phase6/validation_report.md": "4a913293aad4d944326c6f5c321b293a4a1f4da6228402a6ed27d7654f37757a"
+  },
+  "test_totals": {
+    "tests": 200,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "previous_test_totals": {
+    "tests": 158,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_metadata_sha256": "cc824f4b09810ac4e8123382601d854ce5ca4c9c2afd4c5a9cb1324ac8b10e94",
+  "reproducibility_sha256": "745d57affc16371344e927b59c1971d5d750e1c9526a531595d5bab752193017"
+}

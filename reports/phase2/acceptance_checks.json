@@ -1,0 +1,39 @@
+{
+  "original_files_intact": 8,
+  "prepared_files_identical_across_runs": 32,
+  "sources": [
+    {
+      "source": "west_wall",
+      "original_values_preserved": true,
+      "rows_partitioned": true,
+      "timestamps_ordered_and_unique_per_id": true,
+      "journal_fingerprint_chain_valid": true,
+      "journal_steps": 15
+    },
+    {
+      "source": "south_west",
+      "original_values_preserved": true,
+      "rows_partitioned": true,
+      "timestamps_ordered_and_unique_per_id": true,
+      "journal_fingerprint_chain_valid": true,
+      "journal_steps": 19
+    },
+    {
+      "source": "rainfall_2013",
+      "original_values_preserved": true,
+      "rows_partitioned": true,
+      "timestamps_ordered_and_unique_per_id": true,
+      "journal_fingerprint_chain_valid": true,
+      "journal_steps": 15
+    },
+    {
+      "source": "rainfall_2014",
+      "original_values_preserved": true,
+      "rows_partitioned": true,
+      "timestamps_ordered_and_unique_per_id": true,
+      "journal_fingerprint_chain_valid": true,
+      "journal_steps": 15
+    }
+  ],
+  "errors": []
+}

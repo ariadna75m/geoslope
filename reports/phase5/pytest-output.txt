@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: /workspace/scratch/9cb3dba9b90b/monitoreo-taludes
+configfile: pytest.ini
+testpaths: tests
+plugins: platformdirs-4.12.2
+collected 158 items
+
+tests/test_anomaly_models.py .....                                       [  3%]
+tests/test_data_loader.py .............................                  [ 21%]
+tests/test_data_validation.py ...............                            [ 31%]
+tests/test_exploratory_analysis.py ..............                        [ 39%]
+tests/test_feature_engineering.py .......................                [ 54%]
+tests/test_feature_selection.py ..........                               [ 60%]
+tests/test_max_features_revision.py ...........                          [ 67%]
+tests/test_model_preprocessing.py ..                                     [ 68%]
+tests/test_no_temporal_leakage.py ...                                    [ 70%]
+tests/test_phase5_no_leakage.py ..                                       [ 72%]
+tests/test_preprocessing.py .................                            [ 82%]
+tests/test_synthetic_anomalies.py ............                           [ 90%]
+tests/test_temporal_features.py ............                             [ 98%]
+tests/test_temporal_split.py ...                                         [100%]
+
+- generated xml file: /workspace/scratch/9cb3dba9b90b/monitoreo-taludes/reports/phase5/pytest-results.xml -
+============================= 158 passed in 30.06s =============================

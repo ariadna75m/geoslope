@@ -1,0 +1,62 @@
+file,column,type_observed,missing,unique_nonempty,numeric_min,numeric_max,nonfinite_numeric,example
+radar-deformation-data/South_West_Corner_06082014.csv,Prism,text,0,160,,,0,31-1626
+radar-deformation-data/South_West_Corner_06082014.csv,Date,text,0,215,,,0,01-Jan-14
+radar-deformation-data/South_West_Corner_06082014.csv,Time,text,0,41556,,,0,16:16:55
+radar-deformation-data/South_West_Corner_06082014.csv,Easting,numeric-string,0,69362,46040.2768,46598.3442043441,0,46347.4871
+radar-deformation-data/South_West_Corner_06082014.csv,Northing,numeric-string,0,67636,27395.9333,28050.6255,0,27500.7488
+radar-deformation-data/South_West_Corner_06082014.csv,Height,numeric-string,0,70296,876.83033997567,1143.97078084094,0,1008.3686
+radar-deformation-data/South_West_Corner_06082014.csv,Adjusted Distance Diff,numeric-string,0,48796,-16615.519836849,9.00000000001455,0,0
+radar-deformation-data/South_West_Corner_06082014.csv,Unadjusted Slope Distance Diff,numeric-string,0,46652,-16582.30815295,32.5000000000273,0,0
+radar-deformation-data/South_West_Corner_06082014.csv,Easting Diff,numeric-string,0,52580,-231.901529055904,18255.7047003065,0,0
+radar-deformation-data/South_West_Corner_06082014.csv,Northing Diff,numeric-string,0,51133,-8277.33331385753,269.860131815221,0,0
+radar-deformation-data/South_West_Corner_06082014.csv,Height Diff,numeric-string,0,53321,-14376.4968958378,2770.65958158755,0,0
+radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv,Prism,text,0,49,,,0,22-1917
+radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv,Date,text,0,93,,,0,29-Dec-13
+radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv,Time,text,0,2742,,,0,09:02:04
+radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv,Easting,numeric-string,0,4153,46051.218,46671.6914,0,46671.6882
+radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv,Northing,numeric-string,0,4371,27441.8335,28360.0184,0,27441.8344
+radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv,RL,numeric-string,0,4694,876.849,1143.465,0,913.0731
+radar-deformation-data/West Wall Prism Movements - 3 months to 20-Feb-14.csv,Cumulative 3D Movement (mm) Since 20th Nov,numeric-string,0,6796,0.0,3243.655339,0,14.26218777
+radar-deformation-data/slopeMovement.dat,prism_part_1,numeric-string,0,5,24.0,40.0,0,31
+radar-deformation-data/slopeMovement.dat,prism_part_2,numeric-string,0,158,986.0,2132.0,0,1626
+radar-deformation-data/slopeMovement.dat,day,numeric-string,0,31,1.0,31.0,0,01
+radar-deformation-data/slopeMovement.dat,month,numeric-string,0,8,1.0,8.0,0,01
+radar-deformation-data/slopeMovement.dat,year,numeric-string,0,1,14.0,14.0,0,14
+radar-deformation-data/slopeMovement.dat,hour,numeric-string,0,24,0.0,23.0,0,16
+radar-deformation-data/slopeMovement.dat,minute,numeric-string,0,60,0.0,59.0,0,16
+radar-deformation-data/slopeMovement.dat,second,numeric-string,0,60,0.0,59.0,0,55
+radar-deformation-data/slopeMovement.dat,Easting,numeric-string,0,69362,46040.2768,46598.3442043441,0,46347.4871
+radar-deformation-data/slopeMovement.dat,Northing,numeric-string,0,67636,27395.9333,28050.6255,0,27500.7488
+radar-deformation-data/slopeMovement.dat,Height,numeric-string,0,70296,876.83033997567,1143.97078084094,0,1008.3686
+radar-deformation-data/slopeMovement.dat,Adjusted Distance Diff,numeric-string,0,48796,-16615.519836849,9.00000000001455,0,0
+radar-deformation-data/slopeMovement.dat,Unadjusted Slope Distance Diff,numeric-string,0,46652,-16582.30815295,32.5000000000273,0,0
+radar-deformation-data/slopeMovement.dat,Easting Diff,numeric-string,0,52580,-231.901529055904,18255.7047003065,0,0
+radar-deformation-data/slopeMovement.dat,Northing Diff,numeric-string,0,51133,-8277.33331385753,269.860131815221,0,0
+radar-deformation-data/slopeMovement.dat,Height Diff,numeric-string,0,53321,-14376.4968958378,2770.65958158755,0,0
+seismic-event-data/events-and-blasts.csv,#Index,numeric-string,0,1171,1.0,1171.0,0,1
+seismic-event-data/events-and-blasts.csv,EventTimeEpochSeconds,numeric-string,0,1171,1387970661.9015875,1396278696.451744,0,1387970661.901587500
+seismic-event-data/events-and-blasts.csv,Local Magnitude,numeric-string,0,45,-4.5,2.4,0,-2.9
+seismic-event-data/events-and-blasts.csv,Potency [m^3],numeric-string,0,789,2.21e-05,61.0,0,2.61E-03
+seismic-event-data/events-and-blasts.csv,LocE [m],numeric-string,0,861,45626.5,49738.2,0,46428.8
+seismic-event-data/events-and-blasts.csv,LocN [m],numeric-string,0,900,24694.9,28966.0,0,27456.5
+seismic-event-data/events-and-blasts.csv,LocU [m],numeric-string,0,835,-4025.1,1487.3,0,793.9
+velocity-change-measurements/mean-velocity-changes.txt,Date,text,0,44,,,0,2013-12-25T00:25:00
+velocity-change-measurements/mean-velocity-changes.txt,Velocity Change (%),numeric-string,0,44,-0.5158220670951329,0.194551691131094,0,0.0
+velocity-change-measurements/mean-velocity-changes.txt,Velocity Change plus Standard Deviation (%),numeric-string,0,44,-0.2070526531935304,0.4107572649144237,0,0.0
+velocity-change-measurements/mean-velocity-changes.txt,Velocity Change minus Standard Deviation (%),numeric-string,0,44,-0.8282602574883995,0.0,0,0.0
+weather-data/IDCJAC0009_029167_2013_Data.csv,Product code,text,0,1,,,0,IDCJAC0009
+weather-data/IDCJAC0009_029167_2013_Data.csv,Bureau of Meteorology station number,numeric-string,0,1,29167.0,29167.0,0,029167
+weather-data/IDCJAC0009_029167_2013_Data.csv,Year,numeric-string,0,1,2013.0,2013.0,0,2013
+weather-data/IDCJAC0009_029167_2013_Data.csv,Month,numeric-string,0,12,1.0,12.0,0,01
+weather-data/IDCJAC0009_029167_2013_Data.csv,Day,numeric-string,0,31,1.0,31.0,0,01
+weather-data/IDCJAC0009_029167_2013_Data.csv,Rainfall amount (millimetres),numeric-string,3,22,0.0,28.2,0,0.0
+weather-data/IDCJAC0009_029167_2013_Data.csv,Period over which rainfall was measured (days),numeric-string,3,1,1.0,1.0,0,1
+weather-data/IDCJAC0009_029167_2013_Data.csv,Quality,text,3,1,,,0,N
+weather-data/IDCJAC0009_029167_2014_Data.csv,Product code,text,0,1,,,0,IDCJAC0009
+weather-data/IDCJAC0009_029167_2014_Data.csv,Bureau of Meteorology station number,numeric-string,0,1,29167.0,29167.0,0,029167
+weather-data/IDCJAC0009_029167_2014_Data.csv,Year,numeric-string,0,1,2014.0,2014.0,0,2014
+weather-data/IDCJAC0009_029167_2014_Data.csv,Month,numeric-string,0,12,1.0,12.0,0,01
+weather-data/IDCJAC0009_029167_2014_Data.csv,Day,numeric-string,0,31,1.0,31.0,0,01
+weather-data/IDCJAC0009_029167_2014_Data.csv,Rainfall amount (millimetres),numeric-string,4,43,0.0,115.0,0,0.0
+weather-data/IDCJAC0009_029167_2014_Data.csv,Period over which rainfall was measured (days),numeric-string,4,1,1.0,1.0,0,1
+weather-data/IDCJAC0009_029167_2014_Data.csv,Quality,text,4,1,,,0,N

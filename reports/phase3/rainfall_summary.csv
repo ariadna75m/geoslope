@@ -1,0 +1,2 @@
+calendar_days,records,measured_days,measured_days_pct,missing_measurement_days,absent_calendar_records,rainy_days_observed,zero_rain_days_observed,missing_dates,measured_count,missing_count,min,max,mean,median,std_sample,q1,q3,iqr,range
+730,730,723,99.0410958904,7,0,93,630,2013-03-08;2013-10-07;2013-12-29;2014-08-17;2014-09-17;2014-10-09;2014-12-18,723,7,0,115,1.22849239281,0,6.49227252752,0,0,0,115

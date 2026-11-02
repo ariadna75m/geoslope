@@ -1,0 +1,810 @@
+PAGE 1
+Metadata compiled: 28 JUL 2021
+Station summary
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 1.
+Basic Climatological Station Metadata
+Current status
+CENTURY MINEStation:
+029167Bureau of Meteorology station number:
+Lower CarpentariaBureau of Meteorology district name:
+QLDState:
+94261World Meteorological Organization number:
+YCNYIdentification:
+Network Classification:
+Station purpose:
+AlmosAutomatic Weather Station:
+Current Station Location
+ 18°45'25"SHour Min Sec  -18.7569DecimalLatitude 
+ 138°42'20"EHour Min Sec  138.7056DecimalLongitude 
+127 mBarometer Height126.8 mStation Height
+GPSMethod of station geographic positioning
+2003Year opened:
+OpenStatus:
+No summary for this site has been written as yet.
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 2
+Observation summary
+The table below indicates the approximate completeness of the record for individual element types within the
+Australian Data Archive for Meteorology. For elements not listed see the note below.
+DAILY DATA HOLDINGS
+Basic Climatological Station Metadata
+Current status
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+Completeness
+HOURLY DATA HOLDINGS - from 1 to 24 observations per day
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 2.
+FULL
+MONTHS
+MISSED
+SINGLE
+DAYS
+MISSED
+COMPLETENESS
+(% estimate)
+LAST
+MONTH
+FIRST
+MONTHOBSERVATION TYPE
+0 207   96.8  JUN 2021 APR 2003 MAXIMUM AIR TEMPERATURE
+0
+5
+8
+1
+0
+0
+9
+1
+0
+5
+9
+1
+0
+0
+0
+2
+0 229   96.5  JUN 2021 APR 2003 MAXIMUM WIND GUST SPEED
+0
+5
+8
+1
+0
+0
+9
+1
+0
+5
+9
+1
+0
+0
+0
+2
+0 214   96.7  JUN 2021 APR 2003 WIND RUN ABOVE 10 FEET
+0
+5
+8
+1
+0
+0
+9
+1
+0
+5
+9
+1
+0
+0
+0
+2
+N/A N/A 97  JUL 2021 APR 2003 RAINFALL
+0
+5
+8
+1
+0
+0
+9
+1
+0
+5
+9
+1
+0
+0
+0
+2
+FULL
+MONTHS
+MISSED
+SINGLE
+DAYS
+MISSED
+FREQUENCY
+average daily
+COMPLETENESS
+(% estimate)
+LAST
+MONTH
+FIRST
+MONTHOBSERVATION TYPE
+0 45    14.0   98.6  JUN 2021 APR 2003 AIR TEMPERATURE
+0
+5
+8
+1
+0
+0
+9
+1
+0
+5
+9
+1
+0
+0
+0
+2
+0 45    14.0   98.6  JUN 2021 APR 2003 DEW POINT
+0
+5
+8
+1
+0
+0
+9
+1
+0
+5
+9
+1
+0
+0
+0
+2
+0 47    14.0   98.6  JUN 2021 APR 2003 MEAN SEA LEVEL PRESSURE
+0
+5
+8
+1
+0
+0
+9
+1
+0
+5
+9
+1
+0
+0
+0
+2
+0 45    14.0   98.6  JUN 2021 APR 2003 WIND SPEED
+0
+5
+8
+1
+0
+0
+9
+1
+0
+5
+9
+1
+0
+0
+0
+2
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 3
+THERE ARE NO RAINFALL INTENSITY DATA HOLDINGS
+ONE-MINUTE DATA HOLDINGS
+HALF-HOURLY DATA HOLDINGS
+THERE ARE NO UPPER-AIR EDT DATA HOLDINGS
+Holdings calculated up to 01 Jul 2021
+The % complete figure is the completeness of observations averaged over all months of record, for the given station and observation type,
+taking gaps into account. For hourly holdings, the completeness is relative to the maximum number of daily observations for the site each
+month, and is therefore an estimate. For daily holdings, the completeness figure shown is exact.
+The single days missed figure is the total number of days for which no observation was received, not including full missed months. The full
+months missed figure is the total of full month gaps over the period of record. Where an element is not included assumptions can generally
+be made about availability, and the list to use has been suggested below.
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 3.
+Basic Climatological Station Metadata
+Current status
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+FULL
+MONTHS
+MISSED
+SINGLE
+DAYS
+MISSED
+FREQUENCY
+average daily
+COMPLETENESS
+(% estimate)
+LAST
+MONTH
+FIRST
+MONTHOBSERVATION TYPE
+      0N/A  1433.3  99.5JUL 2021MAY 2011ALL ELEMENTS
+FULL
+MONTHS
+MISSED
+SINGLE
+DAYS
+MISSED
+FREQUENCY
+average daily
+COMPLETENESS
+(% estimate)
+LAST
+MONTH
+FIRST
+MONTHOBSERVATION TYPE
+      0N/A    48.0 100.0JUL 2021APR 2003ALL ELEMENTS
+Listed element to useUnlisted element
+Maximum air temperatureMinimum air temperature
+Dew pointWet bulb temperature
+10cm soil temperatureSoil temperature at 20, 50 & 100cm
+Dew pointRelative humidity
+Evaporimeter - max water tempMinimum temp. of water in evaporimeter
+Total cloud amountVisual observations eg. weather, visibility
+Sea stateSea related observations
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 4
+Instrument Location and Surrounding Features
+20/09/2010(most recent)
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 4.
+Extended Climatological Station Metadata
+All History
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 5
+Instrument Location and Surrounding Features
+18/07/2003
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 5.
+Extended Climatological Station Metadata
+All History
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 6
+Skyline Diagram
+20/09/2010(most recent)
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 6.
+Extended Climatological Station Metadata
+All History
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 7
+Skyline Diagram
+18/07/2003
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 7.
+Extended Climatological Station Metadata
+All History
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 8
+Station Observation Program Summary (Surface Observations) from 04/04/2003 to 11/05/2011
+Station Observation Program Summary (Surface Observations) 28 JUL 2021 (most recent)
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 8.
+Extended Climatological Station Metadata
+All History
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+HourlyHalf HourlyContinuousCurrent Observation
+YY-Surface Observations
+9 AM6 AM3 PM12 PM9 AM6 AM3 AM12 AMProgram TypeCurrent Observation
+YYYYYYYYPERFORMEDSurface Observation
+YYYYYYYYREPORTEDSurface Observation
+--------SEASONALSurface Observation
+HourlyHalf HourlyContinuousCurrent Observation
+YYYSurface Observations
+9 AM6 AM3 PM12 PM9 AM6 AM3 AM12 AMProgram TypeCurrent Observation
+YYYYYYYYPERFORMEDSurface Observation
+YYYYYYYYREPORTEDSurface Observation
+--------SEASONALSurface Observation
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 9
+Station Equipment History 
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 9.
+Extended Climatological Station Metadata
+All History
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+Equipment Install/Remove
+Cloud Height (No Electronic History)
+River Height (No Electronic History)
+Wind Run (No Electronic History)
+Spectral Radiation (No Electronic History)
+Sea Surface Temperature (No Electronic History)
+Sea Water Temperature (No Electronic History)
+Evaporation (No Electronic History)
+Minimum Temperature (No Electronic History)
+Soil Temperature 50cm (No Electronic History)
+Sub Surface Temperature (No Electronic History)
+Electrical Conductivity (No Electronic History)
+Maximum Temperature (No Electronic History)
+Soil Temperature 20cm (No Electronic History)
+Solar Radiation (No Electronic History)
+Soil Temperature 5cm (No Electronic History)
+Oxygen Content (No Electronic History)
+Sea Water Level (No Electronic History)
+Surface Inclination (No Electronic History)
+Terrestial Minimum Temperature (No Electronic History)
+Visibility (No Electronic History)
+Solar Radiation (Direct) (No Electronic History)
+Magnetic Bearing (No Electronic History)
+Wind Direction  
+INSTALL Anemometer (Type Synchrotac Cups - Type 732 S/N - 74100) Surface Observations04/APR/2003
+INSTALL Anemometer (Type Synchrotac Vane - Type 706 S/N - 74100) Surface Observations04/APR/2003
+INSTALL Mast Anemometer (Type Pivot, Standard 8m S/N - NONE) Infrastructure04/APR/2003
+Air Temperature  
+INSTALL Humidity Probe (Type Vaisala HMP45D S/N - Y0450039) Surface Observations04/APR/2003
+REPLACE Humidity Probe (Now Rotronics MP101A-T4-W4W S/N - 44691-019) Surface Observations23/MAY/2007
+REPLACE Humidity Probe (Now Vaisala HMP45D S/N - B4040002) Surface Observations11/DEC/2007
+INSTALL Temperature Probe - Dry Bulb (Type Rosemount S/N - 0672) Surface Observations04/APR/2003
+Wet Bulb Temperature (No Electronic History)
+Lightning (No Electronic History)
+Turbidity (No Electronic History)
+Total Column Ozone Amount (No Electronic History)
+Pressure  
+INSTALL Barometer (Type Vaisala PTB220B S/N - X3710013) Surface Observations04/APR/2003
+REPLACE Barometer (Now Vaisala PTB220B S/N - V0350020) Surface Observations10/APR/2003
+REPLACE Barometer (Now Vaisala PTB330B (General Use) S/N - K3750001) Surface Observations18/MAR/2015
+Humidity  
+INSTALL Humidity Probe (Type Vaisala HMP45D S/N - Y0450039) Surface Observations04/APR/2003
+REPLACE Humidity Probe (Now Rotronics MP101A-T4-W4W S/N - 44691-019) Surface Observations23/MAY/2007
+REPLACE Humidity Probe (Now Vaisala HMP45D S/N - B4040002) Surface Observations11/DEC/2007
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 10
+Station Equipment History (continued)
+The following table summarises information on field performance checks available electronically over the period indicated. The number
+of instances an instrument was found to fail field performance checks should only be used as a guide. A system of data quality flags
+is implemented by the Bureau of Meteorology to indicate the data quality of an observation as determined by a mutli-stage quality
+control process.
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 10.
+Extended Climatological Station Metadata
+All History
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+Equipment Install/Remove(Continued)
+Sunshine Hours (No Electronic History)
+Pressure Trend (No Electronic History)
+Snow Height (No Electronic History)
+Wind Speed  
+INSTALL Anemometer (Type Synchrotac Cups - Type 732 S/N - 74100) Surface Observations04/APR/2003
+INSTALL Anemometer (Type Synchrotac Vane - Type 706 S/N - 74100) Surface Observations04/APR/2003
+INSTALL Mast Anemometer (Type Pivot, Standard 8m S/N - NONE) Infrastructure04/APR/2003
+Rainfall  
+INSTALL Raingauge (Type Rimco 8020 TBRG S/N - 82469) Surface Observations04/APR/2003
+Soil Temperature 100cm (No Electronic History)
+Soil Temperature 10cm (No Electronic History)
+Solar Radiation (Long Wave) (No Electronic History)
+RF Reflectivity (No Electronic History)
+Fail Field Performance CheckElementAvailable Date Range
+1Wind Direction04/APR/2003 - 02/JUN/2021
+4Air Temperature04/APR/2003 - 02/JUN/2021
+1Pressure04/APR/2003 - 02/JUN/2021
+3Humidity04/APR/2003 - 02/JUN/2021
+1Wind Speed04/APR/2003 - 02/JUN/2021
+2Rainfall04/APR/2003 - 02/JUN/2021
+Station Detail Changes
+CLASSIFICATION AWS Priority 3 - Standard (SLP3-AWS) 01/FEB/2021
+CLASSIFICATION Category C (TAF C) 05/MAR/2015
+CLASSIFICATION Category D (TAF D)  ENDED 05-03-201509/MAY/2006
+CLASSIFICATION External - General (FEX) 16/APR/2003
+CLASSIFICATION Observing Operations Hub - Cairns (OOH-C) 01/JUL/2017
+CLASSIFICATION Processed by ASOS (PBA) 21/MAR/2016
+CLASSIFICATION SLS Flood forecasting priority â€“ Low (FWP-L) 01/JUL/2017
+CLASSIFICATION Standard (ASOSSTD) 10/JAN/2011
+CLASSIFICATION Standard Aviation or Defence (AVSTD)  ENDED 16-10-202010/JUN/2014
+OBJECT - (jtaylor2) Photo/EAST04/JUL/2017
+OBJECT - (jtaylor2) Photo/GENERAL STATION04/JUL/2017
+OBJECT - (jtaylor2) Photo/NORTH04/JUL/2017
+OBJECT - (jtaylor2) Photo/SOUTH04/JUL/2017
+OBJECT - (jtaylor2) Photo/WEST04/JUL/2017
+OBJECT Document/02915720191031_Mast_Audit31/OCT/2019
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 11
+Station Equipment History (continued)
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 11.
+Extended Climatological Station Metadata
+All History
+QLDState:CENTURY MINELocation:CENTURY MINEStation:
+Still openCurrent Status:04 Apr 2003Opened:YCNYAviation ID:94261WMO No.:029167Bureau No.:
+28 JUL 2021Metadata compiled:127 mBarometer Elev:126.8 mElevation: 138.7056Longitude: -18.7569Latitude:
+Station Detail Changes(Continued)
+OBJECT Document/AWS SITE AUDIT11/MAY/2011
+OBJECT Document/BAROMETER COEFFICIENTS01/JAN/2008
+OBJECT Document/SKYLINE DATA18/JUL/2003
+OBJECT Document/SKYLINE DATA20/SEP/2010
+STATION Opened04/APR/2003
+STATION Proposed20/FEB/2003
+STATION aviation_id Changed to YCNY04/APR/2003
+STATION bar_ht Changed to 127.021/MAR/2003
+STATION bar_ht_deriv Changed to SURVEY21/MAR/2003
+STATION latitude Changed to -18.7569New Station20/FEB/2003
+STATION latlon_deriv Changed to GPS20/FEB/2003
+STATION longitude Changed to 138.7056New Station20/FEB/2003
+STATION lu_0_100m Changed to Airport18/JUL/2003
+STATION lu_100m_1km Changed to Open farmland, grassland or tundra18/JUL/2003
+STATION lu_1km_10km Changed to Small town < 1000 population18/JUL/2003
+STATION name Changed to CENTURY MINE20/FEB/2003
+STATION soil_type Changed to clay18/JUL/2003
+STATION stn_ht Changed to 126.820/FEB/2003
+STATION stn_ht_deriv Changed to SURVEY20/FEB/2003
+STATION surface_type Changed to bare ground18/JUL/2003
+STATION wmo_num Changed to 9426104/APR/2003
+System Changes
+SYSTEM Infrastructure Commenced04/APR/2003
+SYSTEM Surface Observations Commenced04/APR/2003
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 12
+The following notes have been compiled to assist with interpreting the metadata provided in this
+document. These notes are subject to change as the network evolves. Changes in station-specific metadata
+occur more frequently, both as recent changes are recorded and historical information is transferred from
+paper file to electronic database.
+Reliability of the metadata
+The Commonwealth Bureau of Meteorology maintains information on more than 20,000 stations which have
+operated since observations began in the mid 1800s. The amount of information available for each of
+these sites and its associated uncertainty are influenced by a number of factors including the type and
+purpose of the station and the time over which it operated.
+Early information about stations was held only on paper file. In 1998 a corporate electronic database was
+established to help maintain information about the network and its components. The number of parameters
+recorded about a station is now much greater than before this database was established. The national 
+database has also helped improve consistency in the metadata through the implementation of predefined 
+fields. As a result, and through the refinement of operating procedures, station metadata recorded
+since 1998 are of a higher overall standard than previously, although occasional omissions and errors
+are still possible.
+The Bureau is part way through a task of entering historical information held on paper file into the
+corporate database. Until this process is completed there will remain large gaps in the information
+contained in these metadata documents and considerable caution should be used when deriving
+conclusions from the metadata. As an example, two consecutive entries about a rain gauge dated 50 years
+apart may appear in the equipment metadata. This may either mean that nothing happened to that
+instrument over the 50 years, or that information for the intervening period has yet to be entered
+into the database. Similarly, if no information was available about instruments at a site when it was
+first established, fields which were required to have a value present may have used the earliest
+information available as a best-guess estimate. Sometimes this was the metadata current when the database
+was established in 1998. In some instances there may be gaps in metadata relevant to the post 1998 period.
+For the above reasons it is recommended that all metadata prior to 1998 be considered as indicative only,
+and used with caution, unless it has been quality controlled. The Bureau of Meteorology should be
+contacted if further information or confirmation of the data is required. Depending on the nature of the
+inquiry there may be a fee associated with this request. Contact details are provided in the telephone
+book for each capital city or the Bureau's web site at:
+http://www.bom.gov.au 
+The following pages contain explanatory notes for selected terms found in this document.
+Station Number
+The Bureau of Meteorology station number uniquely specifies a station and is not intended to change over time
+time, although on very rare occasions a station number may change or be deleted from the record (usually
+to correct an error). Generally a new station number is established if an existing station changes in a way
+that would affect the climate data record for that site (measured in terms of air temperature and precipitation).
+Significant station moves are an example of this.
+Some stations also possess a World Meteorological Organization (WMO) station number. The WMO number is
+different to the Bureau of Meteorology number. It also uniquely specifies a station at any given time but
+can be reassigned to another station if the new station takes priority in the global reporting network.
+Only selected stations will have a WMO number. Significant stations may maintain their WMO number for
+many decades.
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 12.
+Notes on these metadata
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 13
+Network Classification
+Networks of stations are defined for a variety of purposes (as defined in above table).
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 13.
+Notes on these metadata
+SUPPORTING the BASIC CLIMATE SERVICE
+     Global Climate Observing System (GCOS)
+          GCOS Upper Air Network (GUAN)
+          GCOS Surface Network (GSN)
+     National Climate Network \{not yet assigned\}
+     Reference Climate Stations (RCS)
+     Regional Basic Climatological Network (RBCN)
+          CLIMAT Stations (CLC)
+          CLIMAT TEMP Stations (CLT)
+SUPPORTING the NATIONAL WEATHER WATCH SYSTEM
+     WMO Global Observing System (GOS)
+          GOS Upper Air Network
+          GOS Satellite Network
+          Global Atmospheric Watch
+               Background Atmospheric Pollution Monitoring Network (BAPMON)
+               Basic Ozone Network
+               Basic Solar and Terrestrial Radiation Network
+          Regional Basic Synoptic Network (RBSN)
+     WMO Global Oceanic Observing System (GOOS)
+SUPPORTING the BASIC WEATHER SERVICE (BWS)
+     BWS Land Network
+          Significant Land Locations
+          Capital City Mesonets
+          National Benchmark Network for Agrometeorology (NBNA)
+     BWS Marine Network
+          Significant Coastal Loactions
+          Open Ocean Network
+     BWS Upper Air Network
+          Major Significant Locations
+     BWS Remote Sensing Network
+          Weather Watch Radar Network
+          Fire Weather Wind Mesonets
+          High Resolution Satellite
+SUPPORTING the BASIC HYDROLOGICAL SERVICE
+     Regional Flood Warning Network
+     Water Resources Assessment Network
+     Global Hydrological Network
+          Global Terrestrial Observing System (GTOS)
+          World Hydrological Cycle Observing System (WHYCOS)
+     National Hydrological Network
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 14
+Network Classification Continued....
+Stations may be included in several different networks, which may change over time. The table on the
+previous page lists current network classifications related to the scientific purpose of the network.
+Some of these networks - the GCOS network for instance - are components of a global network. Entries
+in the database for some networks may not be complete, thus not properly representing the status
+of the network. The composition of the network will usually change over time. While several of the
+networks have international significance, other network classifications have been developed to aid
+operational management.
+Station Purpose
+The station purpose can be classified according to the observation program listed below. Parameters in
+brackets list some of the various different configurations which occur.
+     •   Synoptic [Seasonal, River Height, Climatological, Telegraphic Rain, Aeronautical, Upper Air]
+     •   Climatological [Seasonal, Telegraphic Rain]
+     •   Aeronautical
+     •   Rainfall [River Height]
+     •   River Height
+     •   Telegraphic Rain [Non-Telegraphic River Height, Telegraphic River Height]
+     •   Non-Telegraphic Rain [Telegraphic River Height]
+     •   Evaporation [Rainfall, River Height, Telegraphic River Height, Non-Telegraphic River Height,
+         Telegraphic Rain, Non-Telegraphic Rain]
+     •   Pluviograph [Rainfall, Telegraphic Rain, Non-Telegraphic Rain, River Height, Telegraphic River
+         Height, Non-Telegraphic River Height]
+     •   Radiation
+     •   Lightning Flash Counter
+     •   Public Information
+     •   Local Conditions
+     •   Radar Site
+     •   Unclassified
+     •   No Routine Observations
+Note: Telegraphic observations are those which are sent by some electronic means be it a phone or
+telegram to the responsible Bureau office. It is a term which is historically linked to analogue non
+automatic data transmission.
+Station Observation Program Summary
+Surface Observations
+The following terms are used to describe the frequency of surface observations at a site. Historical
+observation programs will typically be missing for many sites until the database is backfilled with
+information.
+Set a)
+     •   Continuous Program
+               ·   More than half hourly observations sent (eg an automatic weather station \{AWS\} which
+                   continuously transmits 10 minute observations). This will automatically include half
+                   hourly and hourly observations programs.
+     •   Half hourly observations
+               ·   Half hourly observations sent. This will automatically include hourly observations.
+     •   Hourly observations
+               ·   Hourly observations sent only. Stations report on non-synoptic hours (ie. 0100, 0200,
+                   0400, 0500, etc)
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 14.
+Notes on these metadata
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 15
+Surface observations continued....
+Set b)
+     •   Performed
+               ·   Observations performed, instruments read and observations recorded
+     •   Reported
+               ·   Observations performed, instruments read and reported real time
+     •   Seasonal
+               ·   The program may only be performed during a defined season (such as Fire Weather
+                   observations) or the routine program may increase in reporting frequency and/or
+                   parameters. The program dates are currently modified at the start and end of each season
+                   for stations performing seasonal observations. Historically this was not always the case.
+Current Station Equipment Summary
+Equipment listed in this metadata product is catalogued under one of systems listed below, appropriate to
+its application. The "Infrastructure" category has been included since it contains information about the
+mast height of an anemometer (if present).
+     •   Flood Warning
+     •   Infrastructure
+     •   Radiation
+     •   Rainfall Intensity
+     •   Surface Observations
+     •   Upper Air
+     •   Weather Watch \{RADAR\}
+Station Equipment History
+Equipment Install/Remove
+One of four types of actions can be performed on an instrument in this listing:
+Install - A new instrument is installed at the site. This can be either a completely new addition (eg the
+first barometer at the site), or the replacement of an existing instrument with a different type (eg replacing
+mercury barometer with electronic barometer)
+Remove - An instrument can be removed either when it is no longer necessary to measure a particular
+element, or when the element is to be measured by an instrument of a different type ( see under "Install"
+above)
+Replace - This occurs when one instrument is replaced with another of the same type (eg Kew pattern
+mercury barometer replacing another Kew pattern mercury barometer)
+Share - The same instrument is used for observations under two (or more) systems (eg a rain gauge may
+be used within both Surface Observations and Rainfall Intensity systems)
+Unshare - The instrument is no longer shared between systems
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 15.
+Notes on these metadata
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 16
+Calibration
+During a site inspection an instrument will be calibrated as either being within or not within the specified
+tolerance in accuracy.
+Where a quantative calibration result can be achieved by comparison to a transfer standard (eg
+barometer comparisons and tipping bucket rain gauge calibrations), the instrument will be recorded as being
+within or outside the required tolerance. Instruments (such as 203mm rain gauges, screens and evaporation
+pans) where quantitative calibrations cannot be derived should be regarded as meeting specifications when
+the instrument is in 'good working order'.
+This product provides a summary table of the number of times an instrument was found to be out of calibration
+Station Detail Changes
+This set of metadata indicates when some aspect of the general information about a station has changed.
+- STATION
+Metadata which are categorised as pertaining to STATION are items of (textual) information describing a
+specific attribute of the station. A reference to (nondB seeding) indicates initial information of this field
+has been sourced from a previous database.
+Station position
+- Latitude and longitude
+Derivation of station latitude and longitude, defined by the location of the rain gauge when it is present,
+has changed over time. Current practice is to locate or verify open and operational station latitude and
+longitude based on Global Positioning System equipment. Methods used to locate a station as described in
+this product (latlon_deriv) are as follows: GPS, MAP 1:10000, MAP 1:12500, MAP 1:25000, MAP 1:50000, 
+MAP 1:100000, MAP 1:250000, SURVEY, and Unknown (which is more commonly represented by a null value).
+The field latlon_error should be used with caution as the method of determining this value has been
+interpreted in different ways over time.
+- Height
+Determination of heights for observing sites is by survey where possible. Otherwise height may be
+determined using a Digital Aneroid Barometer and a known surveyed point, or derived from map contours.
+The source of height is provided in the corresponding parameter with a suffix of "_deriv".
+Heights which may appear in these metadata are:
+     •   aero_ht
+               ·   The official elevation of the aerodrome which normally corresponds to the altitude of the
+                   highest threshold of the runways at that airport;
+     •   bar_ht
+               ·   this represents the height of the mercury barometer cistern or the digital aneroid barometer
+                   above mean sea level (MSL);
+     •   stn_ht
+               ·   this normally represents the height of the rain gauge above MSL
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 16.
+Notes on these metadata
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.
+
+PAGE 17
+- Land Use
+To assist the long term understanding of climate change it is important to be able to determine the differences over
+time which are attributed to variations in the climate. Since land use has an effect on the micro climate around the
+site, and changes in land use will therefore affect the climate record, it is important that the characteristics of
+the site are monitored. Soil types are recorded as they affect the land use and also add to the knowledge of the
+site details.
+Defined Land use Types.
+     •   Non-vegetated (barren, desert)
+     •   Coastal or Island
+     •   Forest
+     •   Open farmland, grassland or tundra
+     •   Small town, less than 1000 population
+     •   Town 1000 to 10,000 population
+     •   City area with buildings less than 10 metres (3 stories)
+     •   City area with buildings greater than 10 metres (3 stories)
+     •   Airport
+The land use code is entered on the station inspection form in the ranges 0 to 100 m, 100 to 1 km and 1km to
+10 km; ie:
+     •   lu_0_100m:        Land Use 0 to 100 metres from the enclosure
+     •   lu_100m_1km:      Land Use 100 metres to 1 kilometre
+     •   lu_1km_10km:      Land Use 1 kilometre to 10 kilometres
+Defined Soil Type (At Enclosure).
+     •   unable to determine
+     •   sand
+     •   black soil
+     •   clay
+     •   rock
+     •   red soil
+     •   other
+Surface Type (At Enclosure).
+     •   unable to determine
+     •   fully covered by grass
+     •   mostly covered by grass
+     •   partly covered by grass
+     •   bare ground
+     •   sand
+     •   concrete
+     •   asphalt
+     •   rock
+     •   other
+Prepared by the Bureau of Meteorology.
+Contact us by phone on (03) 9669 4082, by fax on (03) 9669 4515, or by email on climatedata@bom.gov.au 
+Station metadata is compiled for a range of internal purposes and varies in quality and completeness. The Bureau cannot provide any warranty nor accept
+any liability for this information. © Copyright Commonwealth of Australia 2021, Bureau of Meteorology.Page 17.
+Notes on these metadata
+Historical metadata for this site has not been quality controlled for accuracy and completeness. Data other than current station information,
+particularly earlier than 1998, should be considered accordingly. Information may not be complete, as backfilling of historical data is incomplete.

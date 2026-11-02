@@ -1,0 +1,31 @@
+{
+  "previous_checkpoint": "8411a6306bebf2d2f18160f5511eb577a28ffca9",
+  "previous_report_sha256": "3f9cfc3a2b32e1c15298d082ecee85766359b4cf5edc5ab079b6c8b1d5c8abc8",
+  "previous_actual_max_features": 1.0,
+  "previous_actual_max_features_type": "float",
+  "current_max_features": 1.0,
+  "current_max_features_type": "float",
+  "primary_scores_recomputed": true,
+  "previous_numeric_and_marking_columns_unchanged": {
+    "model_eligible": true,
+    "baseline_score": true,
+    "isolation_forest_score": true,
+    "baseline_training_percentile": true,
+    "baseline_marked_q95": true,
+    "baseline_marked_q98": true,
+    "baseline_marked_q99": true,
+    "isolation_forest_training_percentile": true,
+    "isolation_forest_marked_q95": true,
+    "isolation_forest_marked_q98": true,
+    "isolation_forest_marked_q99": true,
+    "isolation_forest_marked_internal": true,
+    "baseline_robust_z_reference_marked": true
+  },
+  "learned_state_unchanged": true,
+  "synthetic_injections_unchanged": true,
+  "selection_unchanged": true,
+  "preprocessing_unchanged": true,
+  "split_unchanged": true,
+  "eligibility_unchanged": true,
+  "finding": "Existing artifact already had float 1.0; report presentation corrected, controls int 1 / float 0.5 / float 1.0 added."
+}

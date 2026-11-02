@@ -1,0 +1,40 @@
+{
+  "protected_files_intact": 294,
+  "rows_preserved": 7178,
+  "prisms": 49,
+  "model_reload_scores_exact": true,
+  "preprocessing_reload_exact": true,
+  "all_tree_fields_reload_exact": true,
+  "ineligible_rows_unknown": true,
+  "whole_calendar_days_preserved": true,
+  "validated_png_html_pairs": 20,
+  "full_reproduction_completed": true,
+  "source_sha256": "4fb5d7fc0e456c3e644186c56c5c149d910635e1e742141cb111237cb1c8e452",
+  "model_state_sha256": "7e0b6cb2cf6ea9d6614813800d48609362407e8dd5bc75416980008677954f07",
+  "primary_max_features_value": 1.0,
+  "primary_max_features_type": "float",
+  "effective_features_per_tree": 17,
+  "max_features_variants_verified": [
+    "1 (int)",
+    "0.5 (float)",
+    "1.0 (float)"
+  ],
+  "frozen_preprocessing_verified": true,
+  "previous_report_preserved": true,
+  "synthetic_injections_unchanged": true,
+  "existing_primary_numeric_results_unchanged": true,
+  "csv_tables_byte_identical": 34,
+  "training_invariance": {
+    "selected_features_identical": true,
+    "imputer_identical": true,
+    "scaler_identical": true,
+    "forest_parameters_identical": true,
+    "all_tree_fields_identical": true,
+    "baseline_identical": true,
+    "training_thresholds_identical": true,
+    "training_scores_identical": true,
+    "training_rows_checked": 3917
+  },
+  "future_rows_modified": 3261,
+  "model_serialization_policy": "CSV/JSON byte-identical; Joblib reloaded learned fields and scores exact; object alias/padding not treated as learned state"
+}

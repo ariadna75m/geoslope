@@ -1,0 +1,19 @@
+{
+  "protected_files_intact": 226,
+  "input_output_rows": 7178,
+  "prisms": 49,
+  "validated_png_html_pairs": 17,
+  "current_artifact_hashes_verified": true,
+  "full_reproduction_completed": true,
+  "csv_tables_byte_identical": 7,
+  "roundtrip_exact": true,
+  "temporal_leakage_test": {
+    "cutoff_timestamp": "2014-01-05 10:59:37.500000",
+    "prefix_rows": 2905,
+    "prefix_prisms": 46,
+    "future_rows_altered": 4273,
+    "all_columns_identical": true,
+    "failure_date_not_used": true
+  },
+  "feature_dataset_sha256": "4fb5d7fc0e456c3e644186c56c5c149d910635e1e742141cb111237cb1c8e452"
+}

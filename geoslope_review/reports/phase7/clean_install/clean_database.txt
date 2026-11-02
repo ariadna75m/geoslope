@@ -1,0 +1,2 @@
+SQLite inicializado; importación verificada: {'prismas': 49, 'registros': 7178, 'episodios': 48, 'episodios candidatos': 20, 'registros candidatos': 102, 'interrupciones de calidad': 4}
+Abre la aplicación para crear el administrador y configurar TOTP.

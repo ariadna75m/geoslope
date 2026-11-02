@@ -1,0 +1,453 @@
+{
+  "phase": 3,
+  "checkpoint_before": "f64070e",
+  "article_doi": "10.26443/seismica.v5i1.1902",
+  "article_path": "data/context/Articulo_Century_Mine_Slope_Failure_2026.pdf",
+  "article_pages": 8,
+  "article_context": "reports/documentation/article_context.md",
+  "protected_files_checked": 59,
+  "documentary_dates_only": {
+    "failure_date": "2014-02-23",
+    "failure_time": "not documented",
+    "blast_local": "2014-02-11 10:40",
+    "prism_timezone": "requires validation"
+  },
+  "no_failure_date_in_selection": true,
+  "no_velocity_acceleration": true,
+  "no_models": true,
+  "no_sources_joined_to_prisms": true,
+  "rainfall_concat": {
+    "source_years": [
+      2013,
+      2014
+    ],
+    "aliases": {
+      "product_code": "weather_product_code",
+      "quality_code": "rainfall_quality_code"
+    },
+    "unknowns_preserved": true,
+    "source_year_preserved": true,
+    "writes_only_to_phase3": true
+  },
+  "selection": {
+    "threshold": 20,
+    "ties": "prism_id ascending",
+    "low_variability": "sample std ddof=1; at least 20 unique timestamps",
+    "south_policy": "rank each component separately, union IDs without duplicating per-prism plots"
+  },
+  "south_units": "requiere validación",
+  "relative_component_norm": "not calculated; optional not necessary for descriptive scope",
+  "table_hashes": {
+    "west_wall_summary.csv": "c6b68e2c1a1c332b45ce713c808763820a33509013c298d3401d0b8eba9199b1",
+    "west_wall_prism_profiles.csv": "d26485306e6fe475471a78f6196cff41a29de26ab2a29b7468335b633340df23",
+    "west_wall_representative_prisms.csv": "8374e0ce341a8470020b15ac17423b39bc59292bc00e74e9bd38bbaf89c5a3be",
+    "south_west_summary.csv": "a3f7a3f72ed43f2ba2bbfc38c287fe4fe3bf5f2b9dd55eb08348b33ee3cae9ba",
+    "south_west_prism_profiles.csv": "bd266bab3fe4be45473113b09cb69a5165671bdae8aba164d296fa811d7c2964",
+    "south_west_representative_prisms.csv": "dcb44426713f5086ae5c8827d5ef8236697b4ff94dfe1cec32c689efa9d2022a",
+    "rainfall_summary.csv": "b18027063008c2302cdb786d99a7769eb78106b78e24960934e9a8da20d199e0",
+    "rainfall_monthly.csv": "83a6402c037cf9cf8a0ffdc3a454c84b045321fa2f9c4d9578b0f7476573b416",
+    "rainfall_daily_concatenated.csv": "0497dfcf810a23527775b2233f20922c88019ff85365916c2ea270f0746b5b08",
+    "events_summary.csv": "854b0ef72e33d8b570bad90f30c68ad01881f70ec20a81df8a76dcb152e00f15",
+    "events_records.csv": "d92408cbfc9c40cfa336af18d8673faf74d5f7015d1a6422851b3a42ca7932bb",
+    "seismic_velocity_summary.csv": "6419aaf9197f6981e50734e711cc71593ba4d111bceff9482cb6e59f2f4c7b98",
+    "seismic_velocity_records.csv": "bc6a4936d036232e2d5ae772524e5e177dd96ccffa3cf24e32249b6a7f6770c1",
+    "west_wall_daily_availability.csv": "54fab568c8aac7d6419f068ab945a56b55214792ec44bba654de0f1496885e85",
+    "indicator_dictionary.csv": "911a9e00af9980fb0f4be04324ceb5dfeaa4381026bc33459485814790616ebf"
+  },
+  "figures": [
+    {
+      "name": "west_observations",
+      "title": "West Wall: observaciones por prisma",
+      "png": "figures/west_observations.png",
+      "html": "interactive/west_observations.html",
+      "caption": ""
+    },
+    {
+      "name": "west_distribution",
+      "title": "West Wall: distribución del movimiento reportado",
+      "png": "figures/west_distribution.png",
+      "html": "interactive/west_distribution.html",
+      "caption": "Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_boxplot",
+      "title": "West Wall: distribución por prisma; valores extremos conservados",
+      "png": "figures/west_boxplot.png",
+      "html": "interactive/west_boxplot.html",
+      "caption": "Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_22_1917",
+      "title": "West Wall: prisma 22-1917",
+      "png": "figures/west_series_22_1917.png",
+      "html": "interactive/west_series_22_1917.html",
+      "caption": "Selección: menor_desviacion_muestral:reported_3d_movement_mm. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_30_1994",
+      "title": "West Wall: prisma 30-1994",
+      "png": "figures/west_series_30_1994.png",
+      "html": "interactive/west_series_30_1994.html",
+      "caption": "Selección: mayor_rango:reported_3d_movement_mm. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_30_1995",
+      "title": "West Wall: prisma 30-1995; cobertura insuficiente (<20)",
+      "png": "figures/west_series_30_1995.png",
+      "html": "interactive/west_series_30_1995.html",
+      "caption": "Selección: cobertura_insuficiente. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_31_1930",
+      "title": "West Wall: prisma 31-1930; cobertura insuficiente (<20)",
+      "png": "figures/west_series_31_1930.png",
+      "html": "interactive/west_series_31_1930.html",
+      "caption": "Selección: cobertura_insuficiente. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_31_2007",
+      "title": "West Wall: prisma 31-2007",
+      "png": "figures/west_series_31_2007.png",
+      "html": "interactive/west_series_31_2007.html",
+      "caption": "Selección: mayor_numero_observaciones. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_31_2010",
+      "title": "West Wall: prisma 31-2010",
+      "png": "figures/west_series_31_2010.png",
+      "html": "interactive/west_series_31_2010.html",
+      "caption": "Selección: mayor_rango:reported_3d_movement_mm. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_36_1969",
+      "title": "West Wall: prisma 36-1969",
+      "png": "figures/west_series_36_1969.png",
+      "html": "interactive/west_series_36_1969.html",
+      "caption": "Selección: mayor_numero_observaciones. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_40_1928",
+      "title": "West Wall: prisma 40-1928",
+      "png": "figures/west_series_40_1928.png",
+      "html": "interactive/west_series_40_1928.html",
+      "caption": "Selección: mayor_numero_observaciones. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_40_1933",
+      "title": "West Wall: prisma 40-1933",
+      "png": "figures/west_series_40_1933.png",
+      "html": "interactive/west_series_40_1933.html",
+      "caption": "Selección: menor_desviacion_muestral:reported_3d_movement_mm. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_series_40_1938",
+      "title": "West Wall: prisma 40-1938",
+      "png": "figures/west_series_40_1938.png",
+      "html": "interactive/west_series_40_1938.html",
+      "caption": "Selección: mayor_rango:reported_3d_movement_mm. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_availability",
+      "title": "West Wall: disponibilidad diaria por prisma",
+      "png": "figures/west_availability.png",
+      "html": "interactive/west_availability.html",
+      "caption": "0 indica ausencia de observación en el día, no movimiento cero; no se infiere frecuencia uniforme."
+    },
+    {
+      "name": "west_initial_final",
+      "title": "West Wall: comparación entre primera y última observación",
+      "png": "figures/west_initial_final.png",
+      "html": "interactive/west_initial_final.html",
+      "caption": "Cada prisma puede tener un período distinto. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_range",
+      "title": "West Wall: rango observado por prisma",
+      "png": "figures/west_range.png",
+      "html": "interactive/west_range.html",
+      "caption": "Rango descriptivo; no clasifica estabilidad. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "west_spatial",
+      "title": "West Wall: posiciones relativas de la primera observación por prisma",
+      "png": "figures/west_spatial.png",
+      "html": "interactive/west_spatial.html",
+      "caption": "Las coordenadas, CRS y datum requieren validación. El gráfico representa posiciones relativas del conjunto"
+    },
+    {
+      "name": "west_documentary_dates",
+      "title": "West Wall: límite de observaciones y fecha documental de falla",
+      "png": "figures/west_documentary_dates.png",
+      "html": "interactive/west_documentary_dates.html",
+      "caption": "Fecha de falla documentada en el artículo: 23-02-2014. Fin de datos: 20-02-2014. Referencia solo por fecha, no hora exacta ni reloj sincronizado. Voladura documentada en hora local; alineación temporal con prismas pendiente de validar. No se enlaza a mediciones ni se calcula anticipación. Movimiento 3D reportado en milímetros respecto a la referencia indicada en el archivo. No se asume que sea una trayectoria acumulativa estrictamente creciente"
+    },
+    {
+      "name": "south_observations",
+      "title": "South West: observaciones por prisma — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_observations.png",
+      "html": "interactive/south_observations.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación"
+    },
+    {
+      "name": "south_distribution_easting_diff",
+      "title": "South West: distribución de easting_diff — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_distribution_easting_diff.png",
+      "html": "interactive/south_distribution_easting_diff.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación"
+    },
+    {
+      "name": "south_range_easting_diff",
+      "title": "South West: rango por prisma de easting_diff — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_range_easting_diff.png",
+      "html": "interactive/south_range_easting_diff.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación"
+    },
+    {
+      "name": "south_distribution_northing_diff",
+      "title": "South West: distribución de northing_diff — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_distribution_northing_diff.png",
+      "html": "interactive/south_distribution_northing_diff.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación"
+    },
+    {
+      "name": "south_range_northing_diff",
+      "title": "South West: rango por prisma de northing_diff — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_range_northing_diff.png",
+      "html": "interactive/south_range_northing_diff.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación"
+    },
+    {
+      "name": "south_distribution_height_diff",
+      "title": "South West: distribución de height_diff — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_distribution_height_diff.png",
+      "html": "interactive/south_distribution_height_diff.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación"
+    },
+    {
+      "name": "south_range_height_diff",
+      "title": "South West: rango por prisma de height_diff — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_range_height_diff.png",
+      "html": "interactive/south_range_height_diff.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación"
+    },
+    {
+      "name": "south_series_24_1115",
+      "title": "South West: prisma 24-1115 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_24_1115.png",
+      "html": "interactive/south_series_24_1115.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: cobertura_insuficiente. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1464",
+      "title": "South West: prisma 31-1464 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1464.png",
+      "html": "interactive/south_series_31_1464.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: menor_desviacion_muestral:northing_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1478",
+      "title": "South West: prisma 31-1478 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1478.png",
+      "html": "interactive/south_series_31_1478.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_rango:easting_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1481",
+      "title": "South West: prisma 31-1481 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1481.png",
+      "html": "interactive/south_series_31_1481.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: cobertura_insuficiente. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1499",
+      "title": "South West: prisma 31-1499 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1499.png",
+      "html": "interactive/south_series_31_1499.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_rango:height_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1500",
+      "title": "South West: prisma 31-1500 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1500.png",
+      "html": "interactive/south_series_31_1500.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_rango:easting_diff;mayor_rango:height_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1502",
+      "title": "South West: prisma 31-1502 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1502.png",
+      "html": "interactive/south_series_31_1502.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_rango:northing_diff;mayor_rango:height_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1504",
+      "title": "South West: prisma 31-1504 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1504.png",
+      "html": "interactive/south_series_31_1504.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: menor_desviacion_muestral:northing_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1530",
+      "title": "South West: prisma 31-1530 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1530.png",
+      "html": "interactive/south_series_31_1530.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_rango:easting_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1608",
+      "title": "South West: prisma 31-1608 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1608.png",
+      "html": "interactive/south_series_31_1608.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: cobertura_insuficiente. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1633",
+      "title": "South West: prisma 31-1633 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1633.png",
+      "html": "interactive/south_series_31_1633.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: menor_desviacion_muestral:easting_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1867",
+      "title": "South West: prisma 31-1867 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1867.png",
+      "html": "interactive/south_series_31_1867.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_rango:northing_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1868",
+      "title": "South West: prisma 31-1868 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1868.png",
+      "html": "interactive/south_series_31_1868.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_rango:northing_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1871",
+      "title": "South West: prisma 31-1871 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1871.png",
+      "html": "interactive/south_series_31_1871.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: cobertura_insuficiente. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1910",
+      "title": "South West: prisma 31-1910 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1910.png",
+      "html": "interactive/south_series_31_1910.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_numero_observaciones. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1911",
+      "title": "South West: prisma 31-1911 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1911.png",
+      "html": "interactive/south_series_31_1911.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_numero_observaciones. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1913",
+      "title": "South West: prisma 31-1913 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1913.png",
+      "html": "interactive/south_series_31_1913.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: mayor_numero_observaciones. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_1957",
+      "title": "South West: prisma 31-1957 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_1957.png",
+      "html": "interactive/south_series_31_1957.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: menor_desviacion_muestral:easting_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_31_2132",
+      "title": "South West: prisma 31-2132 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_31_2132.png",
+      "html": "interactive/south_series_31_2132.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: menor_desviacion_muestral:height_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "south_series_40_1934",
+      "title": "South West: prisma 40-1934 — Valores relativos reportados; unidad pendiente de validación",
+      "png": "figures/south_series_40_1934.png",
+      "html": "interactive/south_series_40_1934.html",
+      "caption": "Valores relativos reportados; unidad pendiente de validación. Selección: menor_desviacion_muestral:height_diff. Los segmentos unen mediciones; no se imputan valores en huecos."
+    },
+    {
+      "name": "rainfall_daily",
+      "title": "Meteorología: serie diaria y fechas desconocidas",
+      "png": "figures/rainfall_daily.png",
+      "html": "interactive/rainfall_daily.html",
+      "caption": "Conserva 7 faltantes; la línea se interrumpe, no se interpola ni se une a prismas."
+    },
+    {
+      "name": "rainfall_distribution",
+      "title": "Meteorología: distribución de días medidos",
+      "png": "figures/rainfall_distribution.png",
+      "html": "interactive/rainfall_distribution.html",
+      "caption": "Los días desconocidos quedan fuera de la distribución; ceros medidos se conservan."
+    },
+    {
+      "name": "rainfall_monthly",
+      "title": "Meteorología: totales observados por mes",
+      "png": "figures/rainfall_monthly.png",
+      "html": "interactive/rainfall_monthly.html",
+      "caption": "Amarillo: mes incompleto; su suma es parcial y no un total completamente observado."
+    },
+    {
+      "name": "rainfall_rainy_days",
+      "title": "Meteorología: días lluviosos observados por mes",
+      "png": "figures/rainfall_rainy_days.png",
+      "html": "interactive/rainfall_rainy_days.html",
+      "caption": "No incluye días desconocidos; conservar cobertura mensual al comparar."
+    },
+    {
+      "name": "rainfall_missing_dates",
+      "title": "Meteorología: siete fechas con lluvia desconocida",
+      "png": "figures/rainfall_missing_dates.png",
+      "html": "interactive/rainfall_missing_dates.html",
+      "caption": "Las fechas se conservan, sin asignar lluvia cero."
+    },
+    {
+      "name": "events_distribution_local_magnitude",
+      "title": "Catálogo mixto: distribución de magnitud local",
+      "png": "figures/events_distribution_local_magnitude.png",
+      "html": "interactive/events_distribution_local_magnitude.html",
+      "caption": "Sin etiquetas sismo/voladura; definición operacional de Potency pendiente."
+    },
+    {
+      "name": "events_distribution_potency_m3",
+      "title": "Catálogo mixto: distribución de Potency reportada",
+      "png": "figures/events_distribution_potency_m3.png",
+      "html": "interactive/events_distribution_potency_m3.html",
+      "caption": "Sin etiquetas sismo/voladura; definición operacional de Potency pendiente."
+    },
+    {
+      "name": "events_timeline",
+      "title": "Catálogo mixto: fechas y magnitud, interpretación Unix/UTC",
+      "png": "figures/events_timeline.png",
+      "html": "interactive/events_timeline.html",
+      "caption": "No se compara con prismas sin reloj validado ni se identifica automáticamente la voladura del artículo."
+    },
+    {
+      "name": "events_spatial",
+      "title": "Catálogo mixto: cobertura espacial; CRS/datum pendientes",
+      "png": "figures/events_spatial.png",
+      "html": "interactive/events_spatial.html",
+      "caption": "PNG en planta; HTML muestra los 3 componentes reportados, sin convertir coordenadas."
+    },
+    {
+      "name": "seismic_velocity_series",
+      "title": "TXT: cambio de velocidad sísmica y bandas reportadas",
+      "png": "figures/seismic_velocity_series.png",
+      "html": "interactive/seismic_velocity_series.html",
+      "caption": "Contexto del artículo; sin prisma. No es velocidad de desplazamiento ni etiqueta de falla. Cadencia adjunta 48 h 50 min; no asumir 48 h."
+    }
+  ],
+  "figure_count": 55,
+  "plotly_js": "Local shared asset in interactive/; no internet required",
+  "disclaimer": "Este resultado es una señal de apoyo al seguimiento preventivo. No constituye una predicción definitiva de falla ni reemplaza la evaluación del ingeniero geomecánico.",
+  "versions": {
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "plotly": "7.1.0"
+  }
+}
