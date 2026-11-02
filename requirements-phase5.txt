@@ -1,0 +1,5 @@
+# Bibliotecas ya fijadas de datos, pruebas y gráficos; se añaden solo las usadas.
+-r requirements-phase4.txt
+scikit-learn==1.8.0
+scipy==1.17.0
+joblib==1.5.3

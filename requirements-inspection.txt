@@ -1,0 +1,4 @@
+# Solo dependencias utilizadas por la Fase 1; no son el stack completo del MVP.
+pandas==2.2.3
+numpy==2.3.5
+pypdf==6.10.0

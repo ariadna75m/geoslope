@@ -1,0 +1,24 @@
+data/raw/
+__pycache__/
+.pytest_cache/
+*.joblib
+*.db
+
+data/processed/
+.venv/
+
+# Gráficos reproducibles de Fase 3 se entregan en el paquete descargable.
+reports/phase3/figures/
+reports/phase3/interactive/
+reports/phase3/Exploracion_Fase3.html
+reports/phase3/git_checkpoint.txt
+
+# Gráficos y registro de commit de Fase 4 incluidos en el paquete entregable.
+reports/phase4/figures/
+reports/phase4/interactive/
+reports/phase4/git_checkpoint.txt
+
+# Modelos, datos y gráficos de Fase 5 se incluyen en el paquete descargable.
+reports/phase5/figures/
+reports/phase5/interactive/
+reports/phase5/git_checkpoint.txt
