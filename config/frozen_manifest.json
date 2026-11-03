@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "files": {
+    "config/phase5.json": "e3c6ac1bffa9c627f53f3a7874699dfb4a4e10592404c74cc2af903a3f2a4ea9",
+    "config/phase6.json": "9e4ea086ebd6341fba13cfdef7e842bf59e0534fb4debc07afcb757cdf84ec8b",
+    "data/processed/phase4/west_wall_features.csv": "4fb5d7fc0e456c3e644186c56c5c149d910635e1e742141cb111237cb1c8e452",
+    "data/processed/phase5/anomaly_scores.csv": "dd36d91c8edf841966bffbbdde05a9c7a46ca8ddee7e40c14a19bd547b90930e",
+    "data/processed/phase6/episodes.csv": "8d1dea7dca218e6b6eb3915c23e0847e20c6855e9f9f2e0cba70846457d5ae7f",
+    "data/processed/phase6/policy_comparison.csv": "c414298dc9a98d259dbc770fc5e27c728b47c8403afbedcd57125a4071fecef0",
+    "data/processed/phase6/review_candidates.csv": "850f130fdaf1e36bea7f274446de5f945d4ae4f63bcebda484460f7ad2e62e3e",
+    "data/processed/phase6/sensitivity_analysis.csv": "39bd55d841e5050aac5c4503d85c21bc4497e866ce11f74ebd3812d759fcccd9",
+    "data/processed/phase6/specialist_review_template.csv": "a20a3fb3cc81c8cde8e5ed218a537a3b707ea57de2c19e43e7eb625969381d84",
+    "models/phase5/isolation_forest.joblib": "f72e384c35a9253ffd22bba07923712d056ddec418cfc214b06f9aa644629e8b",
+    "models/phase5/model_metadata.json": "8b1739d1c70131116f9e5e4c7b57714aed61078c904601eb4eb9248f60502894",
+    "models/phase5/preprocessing_pipeline.joblib": "f096f8f29ad313c3393dc79bf48e9bf1f26d214e4db9a99538f4015a576e9af7",
+    "models/phase5/scoring_bundle.joblib": "efc0831189dbcf15dd76db2bc16b6911e13f1831425f3f3c5e7cf163c72beaf9",
+    "models/phase5/selected_features.json": "03366805a85fbd407214b1bc826bbc439676d4d8d61cfce03d2da8043f438e4a",
+    "models/phase5/statistical_baseline.json": "db2e2bb73879c843b9f68690e64b9c7d9d3543b7353463e55416a5b6e44b7670",
+    "reports/phase5/phase5_metadata.json": "fa3ab96e7daa50da54ef32ad0404fb7dc740f50af3e84d1225977fd9661132da",
+    "reports/phase6/phase6_metadata.json": "cc824f4b09810ac4e8123382601d854ce5ca4c9c2afd4c5a9cb1324ac8b10e94"
+  }
+}

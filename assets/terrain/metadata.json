@@ -1,0 +1,114 @@
+{
+  "dataset": "Copernicus GLO-30 DSM, AWS 2021 release",
+  "obtained_utc": "2026-10-05",
+  "native_horizontal_crs": "EPSG:4326",
+  "derived_xyz_horizontal_crs": "EPSG:32754",
+  "vertical_datum": "EGM2008, EPSG:3855",
+  "vertical_units": "metres",
+  "spacing_degrees": 0.0002777777777777778,
+  "nominal_spacing_m": 30,
+  "shape": [
+    216,
+    216
+  ],
+  "bounds_wgs84": [
+    138.57986111111111,
+    -18.759861111111114,
+    138.6398611111111,
+    -18.69986111111111
+  ],
+  "requested_bounds_wgs84": [
+    138.58,
+    -18.76,
+    138.64,
+    -18.7
+  ],
+  "reference_location": {
+    "longitude": 138.6018278,
+    "latitude": -18.7253,
+    "source": "Geoscience Australia Australian Operating Mines Map 2025",
+    "purpose": "AOI reference, not a surveyed prism control point"
+  },
+  "source_files": [
+    {
+      "file": "AUXFILES/Copernicus_DSM_COG_10_S19_00_E138_00_EDM.tif",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S19_00_E138_00_DEM/AUXFILES/Copernicus_DSM_COG_10_S19_00_E138_00_EDM.tif",
+      "sha256": "4cc905ca3c9af3cb5003936715bdc6970db3aaf564cda4da0ce0b756a3f0d2b6"
+    },
+    {
+      "file": "AUXFILES/Copernicus_DSM_COG_10_S19_00_E138_00_FLM.tif",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S19_00_E138_00_DEM/AUXFILES/Copernicus_DSM_COG_10_S19_00_E138_00_FLM.tif",
+      "sha256": "775d9b987cabda1d1e2cb921baee2e761f4bea220c3e7980ce1c25590302aa52"
+    },
+    {
+      "file": "AUXFILES/Copernicus_DSM_COG_10_S19_00_E138_00_HEM.tif",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S19_00_E138_00_DEM/AUXFILES/Copernicus_DSM_COG_10_S19_00_E138_00_HEM.tif",
+      "sha256": "f635ddf9ee646e7ca6928bc70beb264f749145e6fd9dea8e5adfe03e6783766f"
+    },
+    {
+      "file": "AUXFILES/Copernicus_DSM_COG_10_S19_00_E138_00_WBM.tif",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S19_00_E138_00_DEM/AUXFILES/Copernicus_DSM_COG_10_S19_00_E138_00_WBM.tif",
+      "sha256": "de830208d04e8b7d29be2cd0df4b4275005d1a107458f64455f7c6acefc5c9cd"
+    },
+    {
+      "file": "Copernicus_DSM_COG_10_S19_00_E138_00_DEM.tif",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S19_00_E138_00_DEM/Copernicus_DSM_COG_10_S19_00_E138_00_DEM.tif",
+      "sha256": "62e6e115b3820613a49f43b845988474a95cc3b1e374b9bf96487469cf108e6d"
+    }
+  ],
+  "statistics": {
+    "EDM": {
+      "valid_count": 46656,
+      "nodata": null,
+      "min": 1.0,
+      "max": 11.0,
+      "class_counts": {
+        "1": 45572,
+        "2": 32,
+        "3": 15,
+        "4": 617,
+        "9": 406,
+        "11": 14
+      }
+    },
+    "FLM": {
+      "valid_count": 46656,
+      "nodata": null,
+      "min": 1.0,
+      "max": 5.0,
+      "class_counts": {
+        "1": 1052,
+        "2": 45572,
+        "5": 32
+      }
+    },
+    "HEM": {
+      "valid_count": 45572,
+      "nodata": -32767.0,
+      "min": 0.1547851860523224,
+      "max": 2.5900373458862305
+    },
+    "WBM": {
+      "valid_count": 46656,
+      "nodata": null,
+      "min": 0.0,
+      "max": 2.0,
+      "class_counts": {
+        "0": 46250,
+        "2": 406
+      }
+    },
+    "DEM": {
+      "valid_count": 46656,
+      "nodata": null,
+      "min": -147.61557006835938,
+      "max": 258.1075744628906
+    }
+  },
+  "attribution": "produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved",
+  "prism_alignment": "Not validated; local mine CRS, vertical datum and survey control required",
+  "acquisition_note": "Mosaic: no exact 2014 mine survey date asserted. Original source footprint KML and XML retained. Generation dates are not acquisition dates.",
+  "processing": "Native grid subset only: no DEM interpolation, no elevation clipping, no terrain synthesis. UTM coordinates calculated for display/CSV; Z not vertically transformed.",
+  "asset_sha256": "0ed23ebd818eacf0dd82455279592f335b3e8d05ffe80149e671e66a19f04930",
+  "prism_alignment_validated": false
+}

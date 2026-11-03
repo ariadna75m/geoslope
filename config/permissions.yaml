@@ -1,0 +1,2 @@
+administrador: [read, review, export, users, audit, backup, integrity, settings, profile]
+ingeniero: [read, review, export, profile]

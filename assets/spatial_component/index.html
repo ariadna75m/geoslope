@@ -1,0 +1,17 @@
+<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="plotly.min.js"></script><style>
+html,body {margin:0;background:#0b2034;color:#dbeaf7;font-family:Arial,sans-serif;overflow:hidden} #plot {width:100%;height:100%} #wrap:fullscreen {height:100vh!important;background:#0b2034} #full {position:absolute;right:12px;top:8px;background:#15334e;color:#dbeaf7;border:1px solid #29455e;border-radius:6px;padding:6px;cursor:pointer;z-index:5} #full:focus-visible{outline:2px solid #36d8e7} .modebar {right:42px!important}
+</style></head><body><div id="wrap"><button id="full" title="Pantalla completa" aria-label="Pantalla completa"><svg width="14" height="14" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 7V2H7M13 2H18V7M18 13V18H13M7 18H2V13" fill="none" stroke="#dbeaf7" stroke-width="2"/></svg></button><div id="plot" aria-label="Ubicaciones instrumentales interactivas"></div></div><script>
+const plot=document.getElementById('plot'),wrap=document.getElementById('wrap');let initialized=false,renderArgs=null,revision=null;
+function send(type,fields){window.parent.postMessage({isStreamlitMessage:true,type,...fields},'*')}
+function height(){let h=540;try{h=Math.max(380,Math.min(780,window.parent.innerHeight-342))}catch{};wrap.style.height=h+'px';send('streamlit:setFrameHeight',{height:h});return h}
+async function render(args){renderArgs=args;let fig=JSON.parse(args.figure);fig.layout.height=height();const key=args.revision;
+if(initialized && revision===key && plot._fullLayout && plot._fullLayout.scene){fig.layout.scene.camera=plot._fullLayout.scene.camera}
+if(initialized && revision!==key){Plotly.purge(plot);initialized=false;} revision=key;await Plotly.react(plot,fig.data,fig.layout,{responsive:true,displaylogo:false,scrollZoom:true,modeBarButtonsToRemove:['toImage']});
+if(!initialized){initialized=true;plot.on('plotly_click',ev=>{const p=ev.points && ev.points[0];if(!p || !p.customdata)return;let camera=null;if(plot._fullLayout.scene)camera=JSON.parse(JSON.stringify(plot._fullLayout.scene.camera));
+send('streamlit:setComponentValue',{value:{prism_id:p.customdata[0],camera:camera,nonce:Date.now()},dataType:'json'})});}}
+window.addEventListener('message',event=>{if(event.source!==window.parent)return;if(event.data.type==='streamlit:render')render(event.data.args)});
+window.addEventListener('resize',()=>{if(initialized){height();Plotly.Plots.resize(plot)}});
+document.getElementById('full').onclick=()=>{if(document.fullscreenElement)document.exitFullscreen();else wrap.requestFullscreen()};
+document.addEventListener('fullscreenchange',()=>{wrap.style.height=document.fullscreenElement?'100vh':height()+'px';Plotly.Plots.resize(plot)});
+document.getElementById('full').hidden=!document.fullscreenEnabled;send('streamlit:componentReady',{apiVersion:1});height();
+</script></body></html>
