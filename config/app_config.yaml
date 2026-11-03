@@ -1,0 +1,19 @@
+name: GeoSlope Review
+subtitle: Sistema offline de apoyo a la revisión de anomalías en taludes mineros.
+version: 0.7.5
+colors:
+  navy: '#15334e'
+  teal: '#167b86'
+  purple: '#625390'
+  blue: '#3879ad'
+  gray: '#8995a2'
+  background: '#f3f6f9'
+  spatial_background: '#071a2b'
+  spatial_panel: '#0b2034'
+  spatial_border: '#29455e'
+  spatial_grid: '#28465e'
+  spatial_text: '#dbeaf7'
+  spatial_heading: '#eef7ff'
+  spatial_selected: '#36d8e7'
+  spatial_series: '#45b9ff'
+  spatial_agreement: '#b17cff'
