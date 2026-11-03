@@ -4,6 +4,7 @@ import os
 import sys
 from pathlib import Path
 
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import streamlit as st
 from gsreview.application.container import Container, APP_ROOT
@@ -11,7 +12,7 @@ from gsreview.domain.rules import AccessDenied, ValidationError
 from gsreview.presentation.views import login, VIEWS
 from gsreview.presentation.navigation import render_navigation
 from gsreview.configuration import BRAND
-
+from camera_ghost import render_camera_ghost_overlay
 
 @st.cache_resource
 def application(runtime, source, key):
@@ -56,7 +57,21 @@ def main():
         page = render_navigation(c, token, actor)
         if page != "Vista espacial":
             st.session_state.pop("spatial_access_logged", None)
+        # Renderizar la vista seleccionada normalmente
         VIEWS[page](c, token)
+        
+        # Módulo de Captura HU-47 (Guía de Encuadre Fantasma)
+        st.divider()
+        with st.expander("📷 Captura de Inspección - Guía de Encuadre (HU-47)", expanded=False):
+            st.caption("Superposición semitransparente para replicar encuadre de grietas y discontinuidades.")
+            ref_file = st.file_uploader(
+                "Cargar foto de referencia (opcional)", 
+                type=["jpg", "jpeg", "png"], 
+                key="hu47_ghost_ref"
+            )
+            ref_bytes = ref_file.read() if ref_file else None
+            render_camera_ghost_overlay(reference_image_bytes=ref_bytes)
+            
     except (AccessDenied, ValidationError) as e:
         st.error(str(e))
         if "challenge" in st.session_state and "expir" in str(e):
