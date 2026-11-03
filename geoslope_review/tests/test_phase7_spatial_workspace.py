@@ -73,3 +73,17 @@ def test_spatial_highlights_candidates_and_marks_with_size_hierarchy(app):
 
     assert sizes["Candidato para revisión"] > sizes["Marca estadística"]
     assert sizes["Marca estadística"] > sizes["Sin marca"]
+
+def test_spatial_legend_keeps_priority_order(app):
+    points = app.reader.spatial("2014-02-20 23:59:59")
+    fig = spatial(points, "3D")
+
+    ranks = {}
+
+    for trace in fig.data:
+        if trace.showlegend is not False:
+            ranks[trace.name] = trace.legendrank
+
+    assert ranks["Candidato para revisión"] < ranks["Marca estadística"]
+    assert ranks["Marca estadística"] < ranks["No evaluable"]
+    assert ranks["No evaluable"] < ranks["Sin marca"]

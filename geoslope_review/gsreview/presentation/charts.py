@@ -104,7 +104,13 @@ STATE_SYMBOLS = {
     "episodio_en_observacion": "diamond-open",
     "candidato_revision": "diamond",
 }
-
+STATE_LEGEND_RANK = {
+    "candidato_revision": 1,
+    "marca_aislada": 2,
+    "episodio_en_observacion": 2,
+    "no_evaluable": 3,
+    "sin_marca": 4,
+}
 
 def spatial(points, dimension="3D", colors=None, selected=None, focus=False, labels=True):
     """Only original points; focusing changes the camera, never the coordinates."""
@@ -139,6 +145,7 @@ def spatial(points, dimension="3D", colors=None, selected=None, focus=False, lab
             legendgroup=(
                 "mark" if state in ("marca_aislada", "episodio_en_observacion") else state
             ),
+            legendrank=STATE_LEGEND_RANK[state],
             showlegend=not (
                 state == "marca_aislada" and "episodio_en_observacion" in set(points.causal_state)
             ),
